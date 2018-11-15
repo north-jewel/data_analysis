@@ -1,0 +1,28 @@
+1 jupyter notebook 的安装,两种选择:
+一是推荐安装anacoda环境,里边自带jupyter
+二是在有Python环境的情况下,通过pip install Jupiter命令来安装
+
+2 Jupiter启动:
+	一是通过win开始找到对应的jupyter程序启动
+	二是通过命令,在cmd窗口中输入jupyter notebook启动,(在配置好环境变量的情况下)
+
+	备注:会默认开启默认浏览器,默认位置
+	如果想打开指定文件夹目录可以跟上路径,如下操作:
+	jupyter notebook D:\gitproject\data_analysis
+
+3 jupyter notebook配置文件
+	在cmd中输入  jupyter notebook --generate-config 
+	这样cmd中就会出现Jupiter的配置文件,
+	我们打开它
+
+	C:\Users\Administrator\.jupyter\jupyter_notebook_config.py
+
+4 配置  D:\gitproject\data_analysis
+	找到c.NotebookApp.notebook_dir=""
+	将其改成自己指定的目录
+	这样,默认新建的book文件就会出现在对应的目录下
+
+	事实证明 这个文件是建立在 启动目录下的(指定目录启动)
+	在对应的目录下进行文件创建,如果保存的话,同级目录也会出现一个.ipynb_checkpoints名称的文件夹(用于回滚)
+
+
