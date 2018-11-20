@@ -1,0 +1,110 @@
+l=plt.plot()
+plt.setp(l,markersize = 30) 控制l中单个图形的大小
+plt.setp(l,markerfacecolor = 'CO')控制单个图形内的颜色 CO为蓝色
+
+p1 = plt,bar(x,y,width = 0.5,yerr = list(int))
+p2 = plt.bar(x1,y1,width = 0.5,bottom =y ,yerr = '')
+	bar 柱状图
+	width 柱子的宽度
+	yerr 每张图上生成一个相应list上数长度的黑条
+	p2的bottom( 底端 ) p2在p1之上
+
+ax = plt.gca() 获取边框
+ax.spines['right'] .set_color('none') 将右边框变透明
+ax.spines['left'].set_position(('data',0)) 
+	将左边框(y轴)与下边框(x轴)的交接点为0,但此时x轴为别的数如(1,0)
+ax.spines['bottom'].set_position('zero')
+	此时才是x与y轴的交接点是(0,0)
+	'zero' 与('data',0)的作用相同 可更换
+ax.xaxis.set_ticks_position('bottom')
+	让x轴上的数据在x轴之下显示
+ax.yaxis.set_ticks_position('left')
+	让y轴上的数据字y轴之左显示
+plt.xticks([-np.pi,-np.pi/2,0,np.pi/2,np.pi],
+          [r'$-\pi$',r'$-\pi/2$',r'$0$',r'$\pi/2$',r'$\pi$'])
+	将x轴的数据变为-3.14 到3.14 并以 -π 到 π表示
+plt.legend(loc =0) 默认应该是哪里空位置多在哪(注意是应该,不确定)
+	loc=1 标记所在位置是 (1,1) 所在的模块
+	loc=2 标记所在位置是 (-1,1) 所在的模块
+	loc=3 标记所在位置是 (-1,-1) 所在的模块
+	loc=4 标记所在位置是 (1,-1) 所在的模块
+plt.legend(loc =(0,0))
+	loc=(0,0) 是在左下角
+	loc=(1,1)是往右上角平移了整个图形的大小
+ax.grid()
+	以标记点为行列将图形表格化 plt.xticks
+plt.fill_between(x,y1,y2,条件,color)
+	x决定x轴
+	y1和y2决定y轴
+	条件再次精准确定要填充的内容
+plt.annotate('cos(1)',xy=(4,4),xycoords='data',xytext = (+1,+2),\
+             textcoords='offset points',arrowprops = dict(arrowstyle='<|-|>',connectionstyle='arc3,rad=2'))
+	xytext 默认标记的坐标的绝对位置,没有的话用xy参数
+	textcoords 指定相对位置,相对点,和相对像素
+	箭头arrowprops 箭头风格connectionstyle
+fig = plt.figure()准备一张新的画布
+ax = fig.add_subplot(331)
+	将一张画布x分为3分y分为3y 它在其中的第一份画图
+plt.savefig('url\name') 将你做的图保存到指定的路径和指定的名字
+plt.xlim(n,m) 规定x轴的数从n到m 也有ylim
+plt.bar(x,y,facecolor = '',edgecolor='') 柱状图
+	facecolor  规定柱状图内的颜色
+	endecolor 规定柱状图外的颜色
+plt.subplot(111,projection='polar')
+	创建一个极地图
+
+from pylab import *
+mpl.rcParams['font.sans-serif'] =['SimHei']
+	在声明ticks如果要用到中文就需要导入此,不然会乱码
+size = [20,30,35,10]
+explode = (0,0,0,0.5)
+labels = 'cats','birds','dogs','pands'
+plt.pie(size,explode = ,labels = ,autopct = '%1.2f%%',shadow = False,startangle = (0-360))
+	size 组成饼图每个部分的大小
+	labels size对应的名称
+	explode 0表示不变.大于表示向外偏移了多少 (爆炸)
+	autopct 输出文字
+	shadow 阴影 False 没有阴影 当设为True时 有爆炸效果的块有阴影
+	startangle 默认为0 从0°开始画 可以修改成别的角度开始画
+	
+
+from mpl_toolkits.mplot3d import Axes3D
+画3d图要导入的包
+fig = plt.figure()
+ax = fig.add_subplot(111,projection = '3d')
+ax.plot(xs=[1,2,3],ys = [4,5,6],zs = [7,8,9])
+
+热力图
+	导入3d包
+	fig.add_subplot(313)
+	n = 256
+	def f(x,y):
+    		return (1-x/2+x**5+y**3)* np.exp(-x**2,-y**2)
+	x = np.linspace(-3,3,n)
+	y = np.linspace(-3,3,n)
+	X,Y = np.meshgrid(x,y)
+	plt.contourf(X,Y,f(X,Y),8,alpha = 0.75,cmap =plt.cm.hot)
+	plt.show()
+
+from matplotlib import cm
+cmap = cm.Blues#蓝色系
+data = np.random.rand(4,4)
+mat = plt.imshow(data,interpolation = 'nearset',
+	cmap = cmap,aspect = 'auto',vmin = 0,vmax = 1)
+	interpolation  传入不同的值决定网格图间隙的不同
+
+import matplotlib.patches as patches
+import matplotlib.cbook as cbook
+读取图片
+with cbook.get_sample_data('user') as image_life:
+	image = plt.imread(image_life)
+	将图片使用plt.imread的方法读取
+fig ,ax = plt.subplots()
+im = ax.imshow(image)展示图片 xy轴为图片像素
+patch = patches.Circle ((n1,n2),radius =n3 ,transform = ax.transData)
+im.set_clib_path(patch)
+ax.axis('off') 将图片的x,y坐标横列线清除
+
+
+
+

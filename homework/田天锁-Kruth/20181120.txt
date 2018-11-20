@@ -1,0 +1,47 @@
+plt.fill_between(x,y,color = 'red')直接声明color时是将填充色和边框色一起设置
+当要分开来设置需要:  plt.fill_between(x,y,facecolor= '',edgecolor = '')
+	facecolor 控制内填充色
+	edgecolor控制边框颜色
+
+
+plt.annotate (s,xy,xytext,xycoords,arrowprops=dict(arrowstyle='',connectionstyle='')) 为图添加注释
+	s 为注释内容
+	xy为坐标位置
+	xytext  传入的为(+1,+1)没有时默认为xy
+	xycoords给出了xy的坐标系
+	arrowprops 指示箭头
+		arrowstyle 箭头样式
+		connectionstyle 箭头指示身体的样式 如arc3,rad = 2 使其有弧度
+
+
+from pylab import *
+mpl.rcParams['font.sans-serif'] = ['SimHei'] 显示中文
+plt.rcParams['axes.unicode_minus'] 显示负号
+当可以显示中文时 负号会乱码 需要导入下面的显示负号
+	
+
+from IPpython.display  import Image
+Image('image')
+可以直接使用image读取一张图片
+
+还有二进制读取
+import matplot.patches  as patches
+import matplotlib.cbook as cbook
+
+with cbook.get_sample_data(r'url') as image_life:
+	image = plt.imread(image_life)
+fig ,ax = plt.subplots()
+im = ax.imshow(image) 
+
+plot.pie(explode = [0,0,0.1], startangle = 180)
+	explode 爆炸程度 偏离圆心的距离
+	startangle 从哪个角度考试画
+
+pivot_table () 重组一个数组
+
+corr 判断两个事物是否有关,关系的强弱看绝对值
+
+
+
+
+
