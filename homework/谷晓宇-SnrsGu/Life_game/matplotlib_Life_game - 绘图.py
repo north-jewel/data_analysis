@@ -45,20 +45,22 @@ class Life_game:
         return counts
 
     def game(self):
-        plt.ion()
+        #plt.ion()
+
         while True:
-            plt.cla()
-            for i in range(self.number + 1):
-                plt.plot([0, self.number], [i, i], 'black')
-                plt.plot([i, i], [0, self.number], 'black')
-            for x in range(self.number):
-                for y in range(self.number):
-                    if self.ndarray[x, y]:
-                        plt.fill_between([x, x + 1], [y + 1], [y], facecolor='r')
-            plt.ioff()
+            # for i in range(self.number + 1):
+            #     plt.plot([0, self.number], [i, i], 'black')
+            #     plt.plot([i, i], [0, self.number], 'black')
+            #plt.cla()
+            plt.imshow(self.ndarray)
+            # for x in range(self.number):
+            #     for y in range(self.number):
+            #         if self.ndarray[x, y]:
+            #             plt.fill_between([x, x + 1], [y + 1], [y], facecolor='r')
             plt.pause(0.03)
             nuw = self.initial(self.ndarray)
             self.ndarray = nuw
+        # plt.ioff()
 
 
 if __name__ == '__main__':
