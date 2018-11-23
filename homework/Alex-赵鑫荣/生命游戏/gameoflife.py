@@ -68,7 +68,6 @@ class gamelife:
         for x in range(self.x_dot):
             for y in range(self.y_dot):
                 copy_a[x,y] = self.live_or_die(self.has_counts(x,y),x,y)
-
         return copy_a
 
 

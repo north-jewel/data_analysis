@@ -85,6 +85,7 @@ class gamelife:
         plt.title('生命游戏与matplotlib')
         # define a variable to control the main loop
         running = True
+        #plt.ion()
         # main loop
         while running:
             
