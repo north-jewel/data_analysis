@@ -20,7 +20,7 @@ plt.rcParams['axes.unicode_minus'] 显示负号
 当可以显示中文时 负号会乱码 需要导入下面的显示负号
 	
 
-from IPpython.display  import Image
+from IPython.display  import Image
 Image('image')
 可以直接使用image读取一张图片
 
