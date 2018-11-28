@@ -9,8 +9,7 @@
    time:           14:22
 """
 import numpy as np
-import matplotlib.pyplot as plt
-
+import pygame
 # print(np.random.randint(0,2,(10,10)))
 class gamelife:
 
@@ -69,36 +68,47 @@ class gamelife:
         for x in range(self.x_dot):
             for y in range(self.y_dot):
                 copy_a[x,y] = self.live_or_die(self.has_counts(x,y),x,y)
-
         return copy_a
 
 
     def main(self,):
-        
-        fig = plt.figure(figsize = (10,10))
-        fig.add_subplot(111)
-        plt.rcParams['font.sans-serif'] = 'SimHei'
-        from matplotlib import cm    #colormap
-        #data = np.random.randint(0,2,(10,10))
-        #print(data)
-        cmap = cm.Blues    
-        plt.title('生命游戏与matplotlib')
+
+        # 初始化pygame模块
+        pygame.init()
+        # load and set the logo
+        logo = pygame.image.load("logo32x32.png")
+        pygame.display.set_icon(logo)
+        pygame.display.set_caption("minimal program")
+
+        # create a surface on screen that has the size of 240 x 180
+        screen = pygame.display.set_mode((self.x_dot * self.dot_px, self.y_dot * self.dot_px))
+
         # define a variable to control the main loop
         running = True
         # main loop
         while running:
-            
-            map = plt.imshow(self.source_a,interpolation = 'nearest',
-                             cmap = cmap,aspect = 'auto',vmin = 0,vmax = 1)
             #self.copy_a = np.random.randint(0,1,(self.x_dot,self.y_dot))
-            
+            screen.fill((255,255,255))
+            # event handling, gets all event from the eventqueue
+            for event in pygame.event.get():
+                # only do something if the event is of type QUIT
+                if event.type == pygame.QUIT:
+                    # change the value to False, to exit the main loop
+                    print('......')
+                    running = False
+
             for x in range(self.x_dot):
                 for y in range(self.y_dot):
-                    self.copy_a[x, y] = self.live_or_die(self.has_counts(x, y), x, y)
-                    
-            plt.pause(0.5)
+
+                    #self.copy_a[x, y] = self.live_or_die(self.has_counts(x, y), x, y)
+                    if self.source_a[x,y]:
+                        screen.fill((0, 0, 255), (y * self.dot_px, x * self.dot_px, self.dot_px, self.dot_px))
+                        pygame.draw.rect(screen, (0, 255, 0), (y * self.dot_px, x * self.dot_px, self.dot_px, self.dot_px), 2)
+            pygame.display.update()
+            self.copy_a = self.next_array(self.copy_a)
             self.source_a = np.copy(self.copy_a)
-        plt.ioff()
-        
+            pygame.time.wait(500)
+
+
 if __name__ == '__main__':
     gamelife(60,60).main()
