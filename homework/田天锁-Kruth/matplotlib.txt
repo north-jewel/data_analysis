@@ -105,6 +105,30 @@ patch = patches.Circle ((n1,n2),radius =n3 ,transform = ax.transData)
 im.set_clib_path(patch)
 ax.axis('off') 将图片的x,y坐标横列线清除
 
+plt.gca().set_aspect(1) 将所画的圆变为正圆
 
 
+matplotlib.__version__ 
+	当前matplotlib的版本号
 
+plot(figsize =(10,10))
+	控制画布的大小
+	第一个参数为x轴,改变它画布在屏幕上显示的大小不变,但确实增大或者缩小了
+	第二个参数为y轴,改变它画布会改变大小
+
+补丁
+x = np.random.normal(size=100)
+n,bins,patches = plt.hist(x)
+plt.setp(patches[0],'facecolor','r',alpha = 0.5)
+plt.show()
+plt.setp ()
+	传入要修改的图形的位置 patches[0] 将颜色改变facecolor
+	也可以加edgecolor 原图不变 只是将颜色修改
+
+pie 饼状图的爆炸设置 explode  explode  explode
+      饼状图开始画的位置 startangle 
+      阴影 shadow
+
+plt.text(10,10,'xxx',fontsize=n)
+	前连个参数传text所在位置
+	fontsize 设置字体的大小
