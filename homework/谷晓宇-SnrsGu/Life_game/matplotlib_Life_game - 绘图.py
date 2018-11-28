@@ -64,4 +64,4 @@ class Life_game:
 
 
 if __name__ == '__main__':
-    x = Life_game(50)
+    x = Life_game(20)
