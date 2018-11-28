@@ -1,0 +1,123 @@
+pie()饼图
+	matplotlib.pyplot.pie((x, explode, labels, colors, autopct, pctdistance, shadow, labeldistance, startangle, radius, counterclock, wedgeprops, textprops, center=(0, 0), frame, rotatelabels, *, data):
+		参数：
+			x:                比例
+			explode:          饼图的爆炸状态
+			labels:           对饼图的标记
+			colors:           饼图的颜色，默认有n个数组，就有n个颜色
+			shadow：          bool,在饼图的阴影
+			startangle ：     度数，将饼图的起点 从x轴逆时针旋转角度。
+			autopct           在饼图块上面，进行标注
+			radius:			  饼图的半径
+
+scatter()散点图
+	matplotlib.pyplot.scatter(x, y, s=None, c=None, marker=None, cmap=None, norm=None, vmin=None, vmax=None, alpha=None, linewidths=None, verts=None, edgecolors=None, *, data=None, **kwargs)
+    参数：
+		x,y				数据位置
+	    s				点的大小
+		c     			颜色，可以是一个，也可以是多个
+		alpha			透明度
+
+
+bar(柱状图)
+	matplotlib.pyplot.bar(x, height, width=0.8, bottom=None, *, align='center', data=None, **kwargs)
+	参数：
+		x				xz轴的坐标
+		height			条的高度
+		width			条形的宽度
+		bottom          条形的y坐标（默认为0）
+		algin			条形对齐x坐标{'center','edge'}
+		edgecolor       条边的颜色
+		facecolor       条形里面的颜色
+		yerr			在柱子中间插竖线
+
+
+polar(极地图)		
+	matplotlib.pyplot.polar （theta，radill）
+		参数：
+			theat         :角度np.pi
+			radill        :半径
+	
+imshow()
+	matplotlib.pyplot.polar(X, cmap=None, norm=None, aspect=None, interpolation=None, alpha=None, vmin=None, vmax=None, origin=None, extent=None, shape=None, filternorm=1, filterrad=4.0, imlim=None, resample=None, url=None, *, data=None, **kwargs)
+		参数：
+			x					:类似数组或PIL图像
+								 图像数据。 支持的数组形状是：
+								（M，N）：带有标量数据的图像。 使用色彩图可视化数据。
+								（M，N，3）：具有RGB值的图像（float或uint8）。
+								（M，N，4）：具有RGBA值（float或uint8）的图像，即包括透明度
+			cmap				:str or Colormap,   色图将标量数据映射到颜色
+			
+			aspect				:{'equal', 'auto'} or floa
+								 equal:确保长宽比为1。像素将是正方形(除非使用区段显式地使像素大小非平方)
+								 auto:轴保持固定，并调整纵横，使数据适合轴。 通常，这将导致非方形像素
+
+			interpolation       : str 使用的插值方法。默认为" nearest "
+								 'none', 'nearest', 'bilinear', 'bicubic', 'spline16', 'spline36', 'hanning', 'hamming', 'hermite', 'kaiser', 'quadric', 'catrom', 'gaussian', 'bessel', 'mitchell', 'sinc', 'lanczos'.
+
+			vmin, vmax          : scalar  当使用标量数据而没有明确的规范时，vmin和VMAX定义了颜色映射所覆盖的数据范围
+								如果使用范数参数，则忽略Vmin、Vmax。
+
+contourf()
+	matplotlib.pyplot.contourf(*args, data=None, **kwargs)
+		参数：
+			x,y					:数组，可选z轴，shape必须是二维数组，并且与z相同
+								 或者都为一维数组,len(X)= = M Z的列数和len(Y)= = N中的行数Z 
+
+			z					:绘制等高线的高度值。
+			
+			levels 				:int or array-like 确定轮廓线/区域的数量和位置
+			
+			c 					:
+			
+			cmap                : str or Colormap
+								Colormap实例或注册的colormap名称。 colormap将级别值映射到颜色。 默认为rcParams [“image.cmap”]
+								
+			alpha				:透明度
+			
+			vmin, vmax
+								 
+
+hist()直方图
+	matplotlib.pyplot.hist((x, bins, range, density, weights, cumulative, bottom, histtype, align, orientation, rwidth log, colorlabel, stacked, normed)):直方图
+		参数：
+			x 				:数组
+			bins			:
+			range			:筛选数据范围，默认是最小到最大的取值范围
+			density			:
+			weights			:
+			cumulative		:
+			bottom			:
+			histtype		:hist柱子类型
+			align			:
+			orientation		:水平或垂直方向
+			rwidth			:
+			log				:
+			colorlabel		:
+			stacked			:
+			normed			:normed=True是频率图，默认是频数图
+
+Axes3D.plot_surface(X, Y, Z, *args, **kwargs)：曲面图
+	参数：
+		x 				:二维数组
+		Y 				:二维数组
+		Z 				:二维数组
+		rstride			:数组行步长
+		cstride			:数组列步长
+		rcount			:最多使用这么多行，默认为50行
+		ccount			:最多使用这么多行，默认为50行
+		color 			:表面贴片的颜色
+		cmap 			:表面贴片的颜色图
+		facecolors		:每个部分的颜色
+		norm			:将值映射到颜色的Normalize实例
+		vmin			:映射的最小值
+		vmax            :映射的最大值
+		shade			: 是否遮盖脸部颜色
+
+
+
+
+
+
+
+

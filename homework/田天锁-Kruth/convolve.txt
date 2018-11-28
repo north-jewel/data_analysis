@@ -1,0 +1,20 @@
+import numpy as np
+np.convolve(M,N,mode = )
+convolve 中M和N 只接受一维数组
+mode的取值有三个 分别为full(默认)  same valid
+若M为[0,1,2,3] N为[1,2,3]
+
+full的个数为len(M)+len(N)-1
+full的计算:
+0*1	1*1	2*1	3*1
+	0*2	1*2	2*2	3*2
+		0*3	1*3	2*3	3*3
+
+0	1	4	10	12	6
+
+same的个数为M或N中较长的一个的长度
+
+在算出full时可以把full切成两半 然后从中间拼接出same的长度
+
+
+vaild的长度为max(M) - max(N) +1
