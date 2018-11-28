@@ -15,7 +15,7 @@ def Test_1(computer = 0,phone = 0,projector = 0,door = 0,rule = 0,class_n = '180
     ax.spines['top'].set_color('none')
     ax.spines['left'].set_color('none')
     ax.spines['bottom'].set_color('none')
-    plt.grid(3)
+    ax.yaxis.grid(True)
     for n,s,a in zip(Y,['未带电脑总数','未带手机总数','未关投影仪总数','未关门窗总数','校查违纪'],X):
         plt.annotate(s,xy = (a,n+1),xycoords = 'data',xytext = (-25,+25),
                      textcoords = 'offset pixels',arrowprops = dict(connectionstyle = 'arc3,rad = 0.5'))
