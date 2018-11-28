@@ -1,0 +1,21 @@
+figure好比画板
+画纸就相当于 axes/subplot
+
+
+axes和subplot的区别
+subplot
+	fig = plt.figure()
+	a=fig.add_subplot(211)
+	b=fig.add_subplot(212)
+	将画板分为两行一列共两份
+	a占了上面 b占了下面
+axes
+	fig = plt.figure()
+	c=fig.add_axes([0.1,0.1,0.8,0.8])
+	d=fig.add_axes([0.72,0.72,0.16,0.16])
+	c的初始(0,0)点相当于fig这张画板的(0.1,0.1)
+	前两个数决定(0,0)在画板的位置
+	后两个数的意义是c的x轴y轴单位长度相等于画板单位长度的0.8
+可以看出add_subplot()生成子图简单明了
+而add_axes()生成的子图更加灵活,可以完全实现add_subpolt()方法的功能
+	
