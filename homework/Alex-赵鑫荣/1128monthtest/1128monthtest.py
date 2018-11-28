@@ -10,6 +10,8 @@
 """
 import matplotlib.pyplot as plt
 import random
+import numpy as np
+
 def hist_plt(
         data,labels,
         title='1802C班违纪情况',xlabel='违纪情况',ylabel='违纪次数',
@@ -32,6 +34,7 @@ def hist_plt(
     fig,ax = plt.subplots()
     ax.set(ylim = ylim,title=title,xlabel=xlabel,ylabel=ylabel)
     plt.bar(left, data, width,tick_label=labels)
+    ax.set_axisbelow(True)
     plt.grid(axis="y")
     for x,y in zip(*[left,data]):
         plt.annotate(labels[left.index(x)]+':'+str(y), xy=(x,y),
@@ -43,7 +46,7 @@ def hist_plt(
 #          labels = ['未带电脑总数', '未带手机总数', '未关投影仪次数', '未关门窗次数', '校查违纪'])
 
 def hists_plt2(
-        x_labels,plt_label,
+        x_labels,#plt_label,
         title='9.25~10.25月度违纪对比',xlabel='班级',ylabel='违纪情况',
         width=0.8,
         left=[2,4,6,8,10,12,14,16,18,20],
@@ -65,29 +68,40 @@ def hists_plt2(
     fig,ax = plt.subplots()
     ax.set(ylim = ylim,title=title,xlabel=xlabel,ylabel=ylabel)
     kwargs_list = list(kwargs)
-    print(kwargs_list)
-    print(type(kwargs[kwargs_list[0]]))
-    color = [random.choice(list('rgb'))for i in range(len(kwargs_list))]
+    #bottom_list = []
     for i in range(len(kwargs)):
         if i == 0:
-            plt.bar(left,kwargs[kwargs_list[0]],width,label=plt_label[0])
+            plt.bar(left,kwargs[kwargs_list[0]],width,label=kwargs_list[0])
         else:
-            plt.bar(left,kwargs[kwargs_list[i]],width,bottom = kwargs[kwargs_list[i-1]],label=plt_label[i])
+            bottom_list = [kwargs[kwargs_list[x]] for x in range(0,i)]
+            bottom = [sum(t) for t in zip(*bottom_list)]
+            #bottom = list(np.array(bottom_list).cumsum(axis=0)[-1])
+            plt.bar(left,kwargs[kwargs_list[i]],width,bottom = bottom,label=kwargs_list[i])
+            #bottom_list = []
     plt.xticks(left,x_labels)
-    plt.grid(axis="y")
+    ax.set_axisbelow(True)
+    plt.grid(b = True,axis="y")
     plt.legend(loc='best')
+    data_list = [sum(e) for e in zip(*list(kwargs.values()))]
+    for x, y in zip(*[left, data_list]):
+        ana_text = '\n'
+        for k,v in kwargs.items():
+            ana_text += k + ':'+str(v[left.index(x)])+'\n'
+        print(ana_text)
+        plt.text(x,y+0.8,ana_text,fontsize = 13,color='blue',ha='center',
+                 bbox = dict(boxstyle="round", fc='w', ec="0.5", lw=1,alpha = 0.8))
+        # plt.annotate(ana_text, xy=(x, y),
+        #              xytext=(x, y), xycoords='data',
+        #              textcoords='offset points',
+        #              fontsize=14,
+        #              arrowprops=dict(arrowstyle='->',facecolor= 'r',
+        #                              connectionstyle='arc3,rad =1.2'))
 hists_plt2(x_labels = ['1802C', '1803C', '1804C', '1805C', '1806C1','1806C2','1807C1','1807C2','1808C1','1808C2'],
-           plt_label = ['未带电脑总数','未带手机总数','未关投影仪次数','未关门窗次数','校查违纪'],
-           data1 = [6,7,8,9,1,2,3,4,5,6],
-           data2 = [random.randint(0,10) for i in range(10)],
-           data3 = [random.randint(0,10) for i in range(10)],
-           data4 = [random.randint(0,10) for i in range(10)],
-           data5 = [random.randint(0,10) for i in range(10)],
+           # plt_label = ['未带电脑总数','未带手机总数','未关投影仪次数','未关门窗次数','校查违纪'],
+           未带电脑总数 = [6,7,8,9,1,2,3,4,5,6],
+           未带手机总数 = [random.randint(0,10)for i in range(10)],
+           未关投影仪次数 = [random.randint(0,10)for i in range(10)],
+           未关门窗次数 = [random.randint(0,10)for i in range(10)],
+           校查违纪 = [random.randint(0,10)for i in range(10)],
            )
 
-# for x, y in zip(*[left, data]):
-#     plt.annotate(labels[left.index(x)] + ':' + str(y), xy=(x, y),
-#                  xytext=(x, y), xycoords='data',
-#                  textcoords='offset points',
-#                  arrowprops=dict(arrowstyle='->',
-#                                  connectionstyle='arc3,rad =1.8'))
