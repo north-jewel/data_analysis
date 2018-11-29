@@ -1,0 +1,17 @@
+import numpy as np
+import os
+
+tofile与fromfile
+a = np.arange(0,12).reshape(3,4)
+保存	a.tofile('a.bin')
+读取	b = np.fromfile('a.bin',dtype = np.int32)
+读取出来的b是一维数组
+
+save ，load 与savez
+np.save('a.npy',a)
+c = np.load('a.npy')
+
+savez的使用
+a = np.array([[1,2,3],[4,5,6]])
+b = np.arange(0,1.0,0.1)
+c = np.sin(b)
