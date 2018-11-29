@@ -1,0 +1,76 @@
+			
+matplotlib.pyplot.legend()：图例的位置
+	loc:图例位置   int或string或float对
+		参数        	值
+		‘best'		    0
+		'upper right'	1
+		'upper left'	2
+		'lower left'	3
+		'lower right'	4
+		'right'			5
+		'center left'	6
+		'center right'	7
+		'lower center'	8
+		'upper center'	9
+		'center'		10
+		
+	ncol:			图列有多少列 默认为1
+	
+	bbox_to_anchor 		图例的位置，可以在画布任何位置
+	
+	mode		:           'expand'
+	
+	borderaxespad 			:  图列的间距
+	
+	
+
+matplotlib.pyplot.figure():创建一个新图形
+	参数：
+		num					整数或字符串，可选，默认值：无
+		
+		figsize				整数元组，可选，默认值：无,宽度，高度（英寸)[6.4, 4.8]
+		
+		dpi 				整数，可选，默认值：无   分辨率,默认为100
+		
+		facecolor			背景颜色 默认为'w'
+		
+		edgecolor			边框颜色 默认为‘w’
+		
+		frameon				bool，optional，默认值：True
+		
+		clear				bool，可选，默认值：False   如果为True并且该图已经存在，那么它将被清除
+		
+		projection='polar'  可以画极地图
+		
+		polar=True			也可以画极地图
+		
+		projection='3d'		画3D图	
+	
+	
+	
+matplotlib.pyplot.grid():添加网格线
+matplotlib.pyplot.grid(axis='x'/'y')#只显示x轴或y轴网格线
+
+
+
+ax.spines['上/下/左/右 轴'].set_color('none'):设置轴的颜色
+	
+ax.spines['上/下/左/右 轴'].set_position(('data',0)):设置轴的位置	
+	
+ax.xaxis.set_ticks_position('bottom')# 标记记号位置	
+
+matplotlib.pyplot.xlim():     获取或设置当前轴的x范围
+
+matplotlib.pyplot.ylim():	  获取或设置当前轴的y范围 
+
+
+matplotlib.pyplot.text(x, y, s, fontdict=None, withdash=False, **kwargs):   将文本s添加到数据坐标中x, y位置的坐标轴中 (一般需要循环，可以对x,y轴增加改变位置)
+参数：
+	x,y				放置文本的位置
+	s 				要添加的文本
+	fontdict		用于覆盖默认文本属性的字典
+	withdash
+	ha				文本坐标放置的位置比如 center
+	va				{'bottom','top'}文本在顶端内部还是外部
+	
+plt.bar() bottom参数在图行上堆叠其他图像
