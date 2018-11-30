@@ -1,0 +1,3 @@
+参数：bottom 柱状图的叠加
+
+plt,legend(bbox_to_anchor = (x,x,x,x)ncol = )
