@@ -1,0 +1,5 @@
+bottom   柱状图  叠加
+
+plt.legend(bbox_to_anchor(四个参数)  ncol = 一行有几列图例  mode = 'dxpand')    图例放置得位置
+
+ax.spines   可以直接迭代  
