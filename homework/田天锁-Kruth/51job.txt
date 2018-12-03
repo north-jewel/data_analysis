@@ -1,0 +1,38 @@
+
+哪个城市 
+city
+
+技能类别:
+skill_type
+
+公司名
+company_name
+
+公司规模
+company_size
+
+公司类型
+company_type
+
+公司地点
+company_location
+
+薪资(范围)
+salay
+
+职位要求:
+	技能要求: skills_required
+	学历要求:edu_required
+	工作经验:experience_required
+	公司福利:company
+	公司待遇:company_treatment = 公司福利+薪资
+
+
+	其他字段:
+
+拉钩 智联 boss 猎聘 世纪英才 51job 前程无忧 100offer
+可以看看歪果人的
+
+
+
+
