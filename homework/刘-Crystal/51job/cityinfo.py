@@ -1,4 +1,4 @@
-def cityInfo():
+def city_info():
     area = {
         "010000": "北京",
         "010100": "东城区",
