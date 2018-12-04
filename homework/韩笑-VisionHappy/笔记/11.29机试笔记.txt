@@ -1,0 +1,14 @@
+ax.set_axisbelow(True) 
+让网格线在图的后面 
+plt.legend(bbox_to_anchor=(-0.2, -0.2, 1.3,100), loc=3,ncol=5, mode='expand', borderaxespad=0.1)
+bbox_to_anchor参数：边界框的位置。前两个值为起始位置，第三个值为宽度，第四个值为高度，所有值均
+                   
+基于归一化轴坐标系。
+
+mode参数：可设置为None或expand，
+expand图例框水平扩展至整个坐标轴区域。
+
+borderaxespad参数：指定坐标轴和图例边界之间的间距。
+for i in ax.spines:
+        ax.spines[i].set_color('none')
+#删除四周的坐标轴
