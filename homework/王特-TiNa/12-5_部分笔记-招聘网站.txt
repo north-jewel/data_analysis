@@ -1,0 +1,53 @@
+-->城市City
+#-->公司名称Company_name
+#-->公司规模Company_size
+#-->公司类型Company_type
+-->公司描述Company_description
+#-->办公地点Company_location
+#-->薪资salary(范围)
+#-->职位要求job_required
+#-->技能要求Skills_required
+#-->学历要求edu_required
+#-->工作经验experience_required
+#-->公司福利company_welfare
+-->公司待遇company_treatment 公司福利加薪资
+-->其他字段
+
+拉钩  智联  boss直聘  猎聘  世纪英才  51job  前程无忧  100offer
+
+清洗css标签：
+	p = re.compile('<[^>]+>')
+    re_cont1 = p.sub('',re_cont)
+
+字符串变列表：
+	str.split(' ' )
+列表变字符串：
+	' '.join(列表)
+
+验证子类：
+	如果想要查看一个类是不是另一个类的子类，可以使用內建的 issubclass函数 （子类,父类）
+	如果想要检查一个对象是不是一个类的实例，可以使用內建的isinstance函数  （检测对象,猜测类型）
+	
+解析文档:
+	导入模块：
+		from bs4 import BeautifulSoup
+		import bs4
+		
+	s = BeautifulSoup(html,'html.parser')
+	s.title             # 返回文档中title标签内容,返回的是Tag类型,类似于字典
+	s.title.name        # 返回标签名
+	s.title.text        # 返回标签的文本内容,是 str 类型
+	s.title.string      # 返回标签的文本内容,是 bs4.element.NavigableString 类型
+	s.find('p')         # 返回标签的内容,只返回一个Tag
+	s.find('p').get('title') # 返回p标签里title的内容
+	s.find_all('p')     # 返回标签的所有内容,是 bs4.element.ResultSet 类型,类似列表
+	s.find_all('p',class_='title')     # 返回 p 标签中class属性为 title 的数据
+	s.select('.title')  # 返回所有的名称为'title'的标签,为列表类型
+	s.select_one('.title') # 只返回第一个名称为'title'的标签,为列表类型
+	
+	
+	
+	
+	
+	
+	
