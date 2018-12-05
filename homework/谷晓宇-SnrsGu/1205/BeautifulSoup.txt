@@ -1,0 +1,15 @@
+soup = BeautifulSoup(html_doc,'html,parser')   'lxml'
+tag = soup.find(id = 'link1')
+tag是一个Tag对象类似一个字典，
+
+
+find
+	返回一个精确的<bs4.element.Tag>对象（以下简称Tag对象）
+
+find_all
+	返回一个Tag对象的集合（类型与列表）
+
+select
+	返回一个Tag对象的集合（列表）
+scelect_one
+	返回一个精确的Tag对象
