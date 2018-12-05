@@ -71,7 +71,8 @@ class lagouzp:
         headers ={
             'Host': 'www.lagou.com',
             'Referer': 'https://www.lagou.com/jobs/list_python?labelWords=&fromSearch=true&suginput=',
-            'User-Agent': random.choice(self.agent_list),
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+            #random.choice(self.agent_list),
         }
         #设置代理
         # proxies ={
@@ -79,7 +80,7 @@ class lagouzp:
         #     'http': '119.27.177.169:80', 'https': '119.27.177.169:80',
         #     'http': '221.7.255.168:8080', 'https': '221.7.255.168:8080'
         # }
-        res_status = requests.post(url,headers = headers,data = param,proxies = self.get_random_ip(ip_list,x))
+        res_status = requests.post(url,headers = headers,data = param)   #,proxies = self.get_random_ip(ip_list,x)
         res_status.encoding = 'utf-8'
         if res_status.status_code == 200:
             res_info = res_status.json()
@@ -198,9 +199,9 @@ class lagouzp:
 
 
     def to_datacsv(self,data,
-                     columns = ['公司全名','公司链接','公司简称','公司规模','融资阶段','区域',
+                     columns = ['工作链接','公司全名','公司链接','公司简称','公司规模','融资阶段','区域',
                                 '职位名称','学历要求','工作经验','薪资范围','职位福利','工作领域',
-                                '工作类型','发布时间','是否全职','具体工作','地铁线路','工作要求','办公地点']):
+                                '工作类型','发布时间','是否全职','具体工作','地铁线路']):
         df = pd.DataFrame(data=data, columns=columns)
         #print(df)
         try:
@@ -234,14 +235,6 @@ class lagouzp:
 #print(job)
 
 
-kind = 'python'
-all_python_job = []
-pyt_obj = lagouzp(kd=kind)
-# all_ip_list = []
-# for i in range(1,20):
-#     ip_list = pyt_obj.get_ips(pn=i)
-#     all_ip_list+=ip_list
-# print(all_ip_list)
 # df = pd.read_csv('./manageip.csv',index_col = None,names = None)
 df1 = pd.read_csv('./xiciip.csv',index_col=None,names = None)
 df2 = pd.read_csv('./kuaidaili.csv',index_col=None,names = None)
@@ -250,39 +243,17 @@ list1 = []
 for i in range(0,len(df3)):
     list1.append(str(df3.iloc[i]['ip'])+':'+str(df3.iloc[i]['port']))
 
-for i in range(0,3):
+
+kind = 'python'
+all_python_job = []
+pyt_obj = lagouzp(kd=kind)
+for i in range(38,56):
     all_python_job = []
-    # time.sleep(12)
-    try:
-        json_data = pyt_obj.get_json(pn=i + 1,ip_list=list1,x = i)
-        all_python_job += pyt_obj.get_detailinfo(json_data=json_data)
-        print(all_python_job)
-    except:
-        json_data = pyt_obj.get_json(pn=i + 1,ip_list=list1, x=i+1)
-        all_python_job += pyt_obj.get_detailinfo(json_data=json_data)
-    finally:
-        for y in all_python_job:
-            time.sleep(8)
-            print(y[0])
-            try:
-                job_info = pyt_obj.get_job_detail(url=y[0],ip_list=list1,x=all_python_job.index(y)+1)
-                print(len(job_info))
-                y.append(job_info[0])
-                y.append(job_info[1])
-                y.remove(y[0])
-                time.sleep(2)
-                print('暂停2秒')
-            except:
-                job_info = pyt_obj.get_job_detail(url=y[0], ip_list=list1, x=all_python_job.index(y) + 2)
-                print(len(job_info))
-                y.append(job_info[0])
-                y.append(job_info[1])
-                y.remove(y[0])
-            finally:
-                print('第{}页数据爬取完毕，目前职位总数为：{}'.format(i,len(all_python_job)))
-                pyt_obj.to_datacsv(all_python_job)
-                print('第{}页数据正在写入，目前职位总数为：{}'.format(i, len(all_python_job)))
-        time.sleep(8)
-
-
+    json_data = pyt_obj.get_json(pn=i + 1, ip_list=list1, x=i)
+    time.sleep(15)
+    all_python_job += pyt_obj.get_detailinfo(json_data=json_data)
+    print('第{}页数据爬取完毕，目前职位总数为：{}'.format(i,len(all_python_job)))
+    pyt_obj.to_datacsv(all_python_job)
+    print('第{}页数据正在写入，目前职位总数为：{}'.format(i, len(all_python_job)))
+    time.sleep(15)
 
