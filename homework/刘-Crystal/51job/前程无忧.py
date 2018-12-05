@@ -7,7 +7,6 @@ import pandas as pd
 
 
 class Job:
-
     header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36'}
     CITY = city_info()
     All_re = all_re()
@@ -52,11 +51,11 @@ class Job:
         page_re = '<span class="td">共(.*?)页，到第</span>'
         page = re.findall(page_re, res.text)[0]
         job_url_list = []
-        for i in range(1, 5):
+        for i in range(1, 6):
             if i > 2:
-                url = url.replace('2,{}.'.format (i - 1), '2,{}'.format (str (i) + '.'))
+                url = url.replace('2,{}.'.format(i - 1), '2,{}'.format(str(i) + '.'))
             else:
-                url = url.replace('1.', '{}'.format (str (i) + '.'))
+                url = url.replace('1.', '{}'.format(str(i) + '.'))
 
             job_url_list.append(url)
         print(job_url_list)
@@ -151,12 +150,12 @@ class Job:
                 # 公司福利
                 company_welfare = re.findall(self.All_re['company_welfare'], url_res.text)
                 if len(company_welfare) == 0:
-                    company_fuli = np.nan
+                    company_happy = np.nan
                 else:
-                    company_fuli = ''
+                    company_happy = ''
                     for i in company_welfare:
-                        company_fuli = company_fuli+i
-                # print(company_fuli)
+                        company_happy = company_happy+i
+                # print(company_happy)
                 # 薪资
 
                 salary = re.findall(self.All_re['salary'], url_res.text)[1]
@@ -188,7 +187,7 @@ class Job:
                 company_name_list.append(company_name)
                 company_description_list.append(company_description)
                 company_location_list.append(company_location)
-                company_welfare_list.append(company_welfare)
+                company_welfare_list.append(company_happy)
                 company_size_list.append(company_size)
                 company_type_list.append(company_type)
                 salary_list.append(salary)
@@ -215,6 +214,7 @@ class Job:
         df = pd.DataFrame(data=self.data)
         df.to_csv(location, encoding='gbk')
 
+if '__name__'=='__main__':
 
-J = Job(city='太原', job='Java')
-J.save_csv()
+    J = Job(city='太原', job='Java')
+    J.save_csv()
