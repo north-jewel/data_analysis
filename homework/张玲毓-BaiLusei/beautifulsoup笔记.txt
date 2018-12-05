@@ -1,0 +1,76 @@
+爬虫
+	content   返回二进制内容
+	text   返回网页源码    对二进制内容进行了ss码
+
+tag   dict    
+验证谁是谁的子类:isinstance(变量,数据类型)
+		issubclass(bs4.tag,dict)
+
+beautifulsoup是一个可以从html或者xml文件中提取数剧的python库
+
+解析器:  
+	html解析器   
+	lxml解析器:效率高 
+
+
+soup = BeautifulSoup(文档内容,'lxml')   通过beautifulsoup转换成python可以看懂的代码
+###返回一个beautifulsoup对象
+
+soup.title   返回一个Tag对象   title标签
+
+soup.title.name   返回标签名称   字符串类型    title标签返回title   head标签返回head 
+
+soup.title.string  返回标签内的文本   类型NavigableString
+
+soup.title.parent.name   打印出title父级标签的名字  字符串类型
+
+soup.p   返回一个Tag对象   文档内容中的第一个p标签
+
+soup.a['id'/'class']   打印出标签的id名  或者class名  
+
+####Tag对象类似于字典   可以当作字典使用  索引键得到值
+	属性操作方法和字典一样   可以被添加  and 删除  and  修改
+修改 :  tag['class'/'id'] = ' xxx '
+删除:   del tag['class'/'id']
+
+
+
+find_all    &   find:
+
+	soup.find_all('a')  返回一个类似列表的ResultSet集合对象  获取到所有符合的数据  可以通过迭代得到想要的数据 
+
+	soup.find_all('a')[0].get('href')      Tag对象通过get('标签属性')得到数据   
+
+	soup.find('a'/id = 'link3'/class_ = 'sister')   返回一个Tag对象   类似字典  可以当作字典使用  只返回第一个符合的数据
+
+
+select     &   select_one
+	soup.select('title')  以列表的形式返回soup中所有的title标签
+	soup.select_one('p') 返回soup中第一个p标签   type:Tag
+
+
+
+soup.get_text()   返回文档中所有的文本
+
+标签属性:
+	tag.attrs   返回p标签的属性     字典形式   例如:  {'class': ['title']}
+
+	tag('p')['class'/'id']   返回p标签的属性    例如:  ['title']
+	tag.get('class'/'id')   和 tag('p')['class'] 一样
+
+多值属性
+ rel , rev , accept-charset , headers , accesskey  多值属性Beautiful Soup中多值属性的返回类型是list:
+id  返回字符串
+
+soup.p['id']   'my id'    类型字符串
+
+soup.b.prettify()   输出注释的内容  
+
+
+
+
+
+
+
+
+
