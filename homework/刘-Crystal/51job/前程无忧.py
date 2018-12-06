@@ -24,29 +24,10 @@ class Job:
         self.data = self.job_info()
 
     def job_url(self):
-        params = {
-            'lang': 'c',
-            'stype': '',
-            'postchannel': '0000',
-            'workyear': '99',
-            'cotype': '99',
-            'degreefrom': '99',
-            'jobterm': '99',
-            'companysize': '99',
-            'providesalary': '99',
-            'lonlat': '0,0',
-            'radius': '-1',
-            'confirmdate': '9',
-            'fromType': '',
-            'dibiaoid': '0',
-            'address': '',
-            'line': '',
-            'specialarea': '00',
-            'from': '',
-            'welfare': ''}
+
         num = self.CITY[self.city]
         url = 'https://search.51job.com/list/{},000000,0000,00,9,99,{},2,1.html'.format(num, self.job)
-        res = requests.get(url, params=params, headers=self.header)
+        res = requests.get(url, headers=self.header)
         res.encoding = self.encoding
         page_re = '<span class="td">共(.*?)页，到第</span>'
         page = re.findall(page_re, res.text)[0]
@@ -214,7 +195,5 @@ class Job:
         df = pd.DataFrame(data=self.data)
         df.to_csv(location, encoding='gbk')
 
-if '__name__'=='__main__':
-
-    J = Job(city='太原', job='Java')
-    J.save_csv()
+J = Job(city='太原', job='Java')
+J.save_csv()
