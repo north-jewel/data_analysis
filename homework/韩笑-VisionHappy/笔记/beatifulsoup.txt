@@ -1,0 +1,32 @@
+bs4
+find：返回的是：bs4.element.Tag 操作类似字典
+find_all：返回的是：<class 'bs4.element.ResultSet'>可以近似当成list来用
+
+select：select中传的参数是选择器
+select_one：select返回一个list，list里面的元素也是bs4.element.Tag 
+
+
+官网 ：https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.html#quick-start
+
+解析引擎：
+"html.parser"默认的
+"pip install lxml"
+
+bs4.element.Tag ：
+找到标签后，找属性
+.get('hre')没有这个属性，返回值是None
+
+
+
+其他
+搜索 encoding
+查找标签：通过查找父标签，子标签，兄弟标签来找
+
+
+sout.encoding 有可能猜不出来
+
+找唯一标识
+有n种方法 仁者见仁智者见智
+https://jobs.51job.com/beijing/108989384.html?s=01&t=0
+https://jobs.51job.com/beijing-dcq/108180547.html?s=01&t=0
+https://jobs.51job.com/beijing-cpq/108738668.html?s=01&t=0																																									
