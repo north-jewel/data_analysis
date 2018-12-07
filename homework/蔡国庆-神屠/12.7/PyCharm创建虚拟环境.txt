@@ -1,0 +1,6 @@
+1、新建一个虚拟环境
+2、安装numpy pillow matplotlib wordcloud
+
+3、conda install numpy
+4、conda remove numpy
+5、conda create -n name  python=3.7
