@@ -41,10 +41,24 @@ class method:
     def add_city(self,city):
         list_1 = city.split(',')
         return list_1
-    def writes(self,name,text,arg):
+    def writes(self,name,text,arg='utf-8'):
         with open(name,'w',encoding=arg) as f:
-            f.write(text)
+            f.write(str(text))
+    def l_str(self,list_):
+        a=''
+        for i in range(len(list_)):
+            a+=str(list_[i])
+        return a
+    def split_(self,list_):
+        b = []
+        for i in list_:
+            if type(i) == list:
+                for x in i:
+                    b.append(x)
+            if type(i) == str:
+                b.append(i)
+        return b
 if __name__ == "__main__":
     m=method()
-    b=m.add_city('dsfsd,sdfsd,fsdf')
+    b=m.l_str_([1,2,3])
     print(b)
