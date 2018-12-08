@@ -1,0 +1,1 @@
+WordCloud(font_path='./fonts/simhei.ttf')
