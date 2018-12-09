@@ -1,0 +1,27 @@
+﻿load  josn字符串变成python内存当中存在得数据结构
+        字典是一个数据结构  硬盘得特点:持久化   内存得特点 :非持久化
+
+        想要把字典存到硬盘中   把字典转成json格式  可以保存到硬盘中  可以叫做 序列化到硬盘 用dumps
+        反之  硬盘json字符串想转到内存中  叫做反序列化  可以用load
+
+eval
+    a = '[1,2,3,4,5]'
+    eval(a)
+    a = [1,2,3,4,5]
+
+bincount
+
+
+pip freeze >  requirement.txt 生成这个文件  叫requirement.txt   把你的项目都用了什么包  都写进这个txt文档里边
+requirements.txt   可以看到这个项目都安了哪些包
+pip  install -r requirement.txt   安装项目中用到的那些包
+
+
+新建一个虚拟环境
+安装numpy  pillow  matplotlib
+
+conda的使用
+conda env list   查看当前有几个环境  都在什么位置
+conda create -n xxx python=3.7   创建一个新的环境
+conda install numpy等等  安装新的包
+conda remove numpy 卸载包
