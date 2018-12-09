@@ -1,51 +1,53 @@
 import requests
 import re
 from bs4 import BeautifulSoup
-url = 'https://search.51job.com/list/010000,000000,0000,00,9,99,Python,2,1.html'
-res = requests.get(url)
-res.encoding = 'gbk'
-soup = BeautifulSoup(res.text, 'html.parser')
-page_re = '<span class="td">共(.*?)页，到第</span>'
-page = re.findall(page_re, res.text)[0]
+from secondurlpy import Result
+from cityinfo import city_info
 
-def first_url(page):
+class Job:
+    result = Result()
+    CITY = city_info()
 
-    big_url = []
-    for i in range(1, int(page)+1):
-        shouye_url = 'https://search.51job.com/list/010000,000000,0000,00,9,99,Python,2,{}.html'.format(i)
-        big_url.append(shouye_url)
-    return big_url
+    def __init__(self, city, job, encoding='gbk'):
+        self.city = city
+        self.job = job
+        self.header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36'}
+        self.encoding = encoding
+        self.first_url = self.first_url()
 
-def second_url(page):
+    def first_url(self,):
+        num = self.CITY[self.city]
+        print(num)
+        print(self.job)
+        url = 'https://search.51job.com/list/{},000000,0000,00,9,99,{},2,1.html'.format(num, self.job)
+        url_res = requests.get(url, headers=self.header)
+        url_res.encoding = self.encoding
+        page = '<span class="td">共(.*?)页，到第</span>'
 
-    big_url = first_url(page)
-    for zong_url in range(len(big_url)):
-        res_1 = requests.get(big_url[zong_url])
-        res_1.encoding = 'gbk'
-        soup1 = BeautifulSoup(res_1.text, 'html.parser')
-        url_job_list = soup1.select('p.t1 > span > a')
+        page = re.findall(page, url_res.text)[0]
+        print (page)
+        job_url_list = []
+        for i in range(1, 6):
+            if i > 2:
+                url = url.replace('2,{}.'.format(i - 1), '2,{}'.format(str(i) + '.'))
+            else:
+                url = url.replace('1.', '{}'.format(str(i) + '.'))
 
-        for url_job in url_job_list:
-            url = url_job.get('href')
-            res1 = requests.get(url)
-            res1.encoding = 'gbk'
-            soup_1 = BeautifulSoup(res1.text, 'html.parser')
-            title = soup_1.select_one('h1').get('title')
-            company_name = soup_1.select_one('a.catn').get('title')
-            info_list = soup_1.select_one('p.msg').get('title').split()
-            [info_list.remove(i) for i in (soup_1.select_one('p.msg').get('title').split()) if i is '|']
-            company_description = soup_1.select('p.at')
-            for i in company_description:
-                print(i.get_text())
-            company_welfare = soup_1.select('span.sp4')
-            for y in company_welfare:
-                print(y.text)
+            job_url_list.append(url)
+        print(job_url_list)
+        return job_url_list
 
-            info = soup_1.select_one('p.msg').text.split('|')
-            salary = soup_1.select('div.cn > strong')
-            for i in salary:
-                print(i.text)
-            print(salary)
-            job_require = soup_1.select_one('div.bmsg').text
-            print(job_require)
-second_url(page)
+    def second_url(self):
+        for every_page_url in self.first_url:
+            url_res = requests.get(every_page_url, headers=self.header)
+            url_res.encoding = self.encoding
+            soup = BeautifulSoup(url_res.text,'html.parser')
+            every_url_list = soup.select('p.t1 > span  > a')
+            every_url_list = [i.get('href') for i in every_url_list]
+            print(every_url_list)
+j = Job('北京','python')
+j.second_url()
+
+
+
+
