@@ -42,9 +42,9 @@ class Result:
         职位要求
         :return:[1...,2...,3...,4...,5...,...]
         '''
-        job_required = self.soup.select('div.inbox > p')[:-1]
-        job_required = [i.text.replace(',',';') for i in job_required]
-        job_required = [''.join(i.split()) for i in job_required if len(i) != 0]
+        job_required = self.soup.select_one('div.job_msg').text
+        # job_required = [i.text.replace(',',';') for i in job_required]
+        # job_required = [''.join(i.split()) for i in job_required if len(i) != 0]
         # print(job_required)
         return job_required
     def company_location(self):
@@ -167,7 +167,7 @@ class Result:
         公司福利
         :return:['五险一金', '员工旅游', '餐饮补贴', '通讯补贴', '定期体检', '周末双休', '免费班车', '年终奖金', '专业培训']
         '''
-        company_welfare = self.soup.select_one('div.t1')
+        company_welfare = self.soup.select_one('div.t1').text
         # company_welfare = [''.join(i.text.split()) for i in company_welfare]
         # print(company_welfare)
         return company_welfare
@@ -184,7 +184,7 @@ class Result:
         技能要求
         :return:['高级软件工程师', '软件工程师']
         '''
-        skills_required = self.soup.select('p.fp > a')
+        skills_required = self.soup.select_one('div.mt10').text
         # skills_required = [''.join(i.text.split()) for i in skills_required]
         # print(skills_required)
         return skills_required
@@ -201,7 +201,8 @@ def save_p(url_list):
                     shijia.edu_required(),shijia.recruit_num(),shijia.company_type(),shijia.company_size(),
                     shijia.salary(),shijia.company_info(),shijia.company_welfare(),shijia.skills_required()))
                 except:
-                    error_list.append(i)
+                    # error_list.append(i)
+                    pass
                 else:
                     continue
             else:
@@ -248,6 +249,7 @@ class Threadq(threading.Thread):
             f.close()
 
             print('共{}页，第{}页完成'.format(spage, i))
+
 if __name__ == '__main__':
     t = Bsprid('https://search.51job.com/list/010000,000000,0000,00,9,99,python,2,1.html?lang=c&stype=&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&providesalary=99&lonlat=0%2C0&radius=-1&ord_field=0&confirmdate=9&fromType=&dibiaoid=0&address=&line=&specialarea=00&from=&welfare=','gbk')
     spage = int(t.get_dict(spage='span.td')['spage'][1:4])
@@ -272,8 +274,8 @@ if __name__ == '__main__':
 #     print('共{}页，第{}页完成'.format(spage,i))
 
 '''
-cc = Result('https://jobs.51job.com/beijing/107487885.html?s=01&t=0')
-cc.company_info()
+# cc = Result('https://jobs.51job.com/beijing-ftq/85790644.html?s=01&t=0')
+save_p(['https://jobs.51job.com/beijing-ftq/85790644.html?s=01&t=0'])
 '''
 # print(res)
 if res.status_code==200:
