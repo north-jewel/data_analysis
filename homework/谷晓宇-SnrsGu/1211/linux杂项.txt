@@ -1,0 +1,27 @@
+查看ip
+	ip addr
+
+修改网络配置文件
+	cd /etcsysconfig/network-scripts
+	vi ifcfg-ens33
+	ONBOOT = yes
+重启网关
+	service network restart
+切换用户
+	su '用户名'
+安装vim
+	rpm -qa|grep vim
+		若只出现了 vim-minimal包，则可以使用
+		yum -y install vim*
+		或
+		yum -y install vim-enhanced
+		yum -y install vim-common
+		yum -y install vim-filesystem
+安装wget
+	yum -y install wget
+安装python
+	首先安装依赖包
+		yum -y groupinstall development    or    yum -y groupinstall "Development tools"
+		yum -y install zlib-devel    or    yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel 						tk-devel gdbm-devel db4-devel libpcap-devel xz-devel
+	下载python 源文件
+		wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz
