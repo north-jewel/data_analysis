@@ -54,11 +54,13 @@ def request(url):
 def details(url):
     heads = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36'}
     obj = requests.get(url, headers=heads)
-    obj.encoding = 'gbk'
+    obj.encoding = 'gb2312'
     text = obj.text
     soup = BeautifulSoup(text, 'html.parser')
-    title_name = soup.title.string
+    title_name = soup.select('div.com_tag > p.at')[0].text
     #print(title_name)
+    city_name=soup.select('div.cn > p.msg.ltype ')[0].text.replace('\t','').replace('\xa0','').replace('\r','').replace('\n','').split('|')
+    #print(city_name)
     title = soup.select('.cn > h1')[0].get('title')
     #print(title)
     wage = soup.select('.cn > strong')[0].string
@@ -82,21 +84,24 @@ def details(url):
     new_dict={
         'order': [0],
         'url':'',
-        'city':[city],
+        'city':[city_name[0]],
         'company_name': [company],
-        'wage':wage,
+        'wage':[wage],
+        'experience': [city_name[1]],
+        'education':[city_name[2]],
+        'time':[city_name[4]],
         'company_size':  [meth.l_str(company_content_list).replace('\xa0','')],
         'work_type': [title],
         'company_type': [title_name],
         'company_location' : [site_list[0]],
-        'job_required' : [meth.l_str(position_list).replace('<b></b>','').replace('<i></i>','').replace('<u></u>','').replace('<sub></sub>','').replace('<sup></sup>','').replace('<strike></strike>','')],
-        'company_welfare': [meth.l_str(boon_list)],
+        'job_required' : [meth.l_str(position_list).replace('\ufffd','').replace('<b></b>','').replace('<i></i>','').replace('<u></u>','').replace('<sub></sub>','').replace('<sup></sup>','').replace('<strike></strike>','').replace('\xa0',' ')],
+        'company_welfare': [boon_list],
     }
-    #print(new_dict)
+    print(new_dict)
     return new_dict
 
 
-#details(url='https://jobs.51job.com/guangzhou/108381415.html?s=01&t=0')
+#details(url='https://jobs.51job.com/beijing-cpq/108738668.html?s=01&t=0')
 
 # a=search('python','北京,广州')
 # z,list1=request(a)
@@ -114,25 +119,32 @@ a=meth.read_file('detail.txt',evals=True)
 a=meth.split_(a)
 counts=1
 head=True
-error=[]
-for i in a:
+print('总共{}条数据'.format(len(a)))
+for i in a[:2000]:
     print(i)
+    print('第{}条数据'.format(counts))
+    try:
+        d=details(i)
+        d['order']=counts
+        d['url']=i
+        counts+= 1
+    except Exception as e :
+        print('第{}条数据失败'.format(counts))
+        meth.writes('错误日志.txt', e)
+        d=None
+    if counts > 2:
+        head=False
+    df = pd.DataFrame(d)
     try:
 
-        b=details(i)
+        df.to_csv('return.csv',header=head,mode='a',encoding='gb2312',index=False)
+    except Exception as v:
+        print('第{}条写入数据失败'.format(counts))
+        meth.writes('错误日志.txt', v)
 
 
-        b['order']=counts
-        b['url']=i
-        counts += 1
-    except Exception as e :
-        error.append(e)
-    if counts > 1:
-        head=False
+#
 
-    b.to_csv('return.csv',header=head,method='a')
-
-meth.writes('错误日志.txt',error)
 
 
 
