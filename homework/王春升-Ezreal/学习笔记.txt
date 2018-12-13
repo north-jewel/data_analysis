@@ -1,0 +1,22 @@
+查看环境列表  conda env list
+创建独立环境   conda create -n py37(自己起的名字) python=3.6    #创建环境为python3.6版本独立的虚拟环境
+conda activate py36   激活名为py37的虚拟环境
+conda deactivate   使当前环境失活
+conda env remove -n 环境名   移除当前环境（删除前必须使其先失活否则不能移除）
+conda create -n py361 --clone py36   克隆一个虚拟环境
+conda info --envs  检查所有的环境  （同 conda env list）
+python --version   检查新环境中的python版本
+activate （虚拟环境名称）   直接切换虚拟环境
+deactivate  直接注销当前虚拟环境
+ndarray.ndim
+阵列的轴数（尺寸）。
+ndarray.shape
+数组的大小。这是一个整数元组，表示每个维度中数组的大小。对于具有n行和m列的矩阵，shape将是(n,m)。shape因此，元组的长度 是轴的数量ndim。
+ndarray.size
+数组的元素总数。这相当于元素的乘积shape。
+ndarray.dtype
+描述数组中元素类型的对象。可以使用标准Python类型创建或指定dtype。此外，NumPy还提供自己的类型。numpy.int32，numpy.int16和numpy.float64就是一些例子。
+ndarray.itemsize
+数组中每个元素的大小（以字节为单位）。例如，类型的元素数组float64有itemsize8（= 64/8），而其中一个类型complex32有itemsize4（= 32/8）。它相当于ndarray.dtype.itemsize。
+ndarray.data
+包含数组实际元素的缓冲区。通常，我们不需要使用此属性，因为我们将使用索引工具访问数组中的元素。
