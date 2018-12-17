@@ -1,0 +1,22 @@
+爬虫突破
+    没反爬，requests.get(url)
+    robot.txt爬虫协议文档
+        在header中添加useragent
+    添加其他字段
+        refere
+        cookie
+    seo（网页优化）
+        爬虫不要太频繁
+            识别身份：cooke
+            封ip
+                解决方法：找代理
+    多线程
+        任务种类
+            计算密集型
+            IO密集型
+        GIL
+    http协议状态码
+        200+没问题
+        300+重定向
+        400+客户端问题
+        500+服务器问题
