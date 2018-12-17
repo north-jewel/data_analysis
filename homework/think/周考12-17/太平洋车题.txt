@@ -1,0 +1,28 @@
+url:https://price.pcauto.com.cn/top/oil/s1-t3.html
+车名:carname	启辰R30
+官方价: officialprice	3.99-5.19万
+车主平均油耗:carfuelc	4.90-6.00L/100km
+品牌:brand		东风启辰
+工信部油耗:MIITfuelc	暂无信息   re
+级别:rank		小型车
+排量:displacement	1.2L
+
+变速箱:gearbox		手动
+车身类型:cartype	两厢车
+排名:ranking		该车暂未被列入榜单，暂无排名信息
+车实力:carstrength	39.2非总得分
+配置水平:configuration	较弱
+专业测评:major		测试中
+车主评价:ownerevaluate	良好
+价格:price		优秀
+版本:versions		启辰R30 2016款 1.2L 手动易享版
+版本售价:versionsp	售3.99万
+
+大排量车有哪些?
+小排量车有哪些?
+
+# 最贵的是哪款车? 
+
+# 哪些车车主评价比较高?
+
+## 其他问题?
