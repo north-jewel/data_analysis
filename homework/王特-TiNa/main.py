@@ -51,7 +51,7 @@ class wiwj:
         self.url =  'https://bj.5i5j.com/zufang'
         self.selp = random.randint(10,20)
         self.ip_dic = {'http':random.choice(ip_list)}
-        self.header = {'User-Agent':useragent}
+        self.header = {'User-Agent':random.choice(useragent)}
 
     # 返回100页的url链接
     def generate_urls(self):
@@ -71,25 +71,15 @@ class wiwj:
     # 传入网页的url，返回房子的url链接，存储到url.txt中
     def parse_homepage(self,page_url):
         house_urls = []
-        print(page_url)
         s = self.get_page_html(page_url)
-        print('A')
         try:
             url_list = s.find_all('h3',class_ ="listTit")
             print(url_list[0])
         except Exception as e:
             print('B')
-            try:
-                page_url = s.find('script').text.split("'")[1]
-            except Exception as e:
-                page_url = s.find('div',class_='p-more').find('p').find('span').text
-                s = self.get_page_html(page_url)
-        print('C')
-        print(s)
+            page_url = s.find('script').text.split("'")[1]
+            s = self.get_page_html(page_url)
         url_tag = s.find_all('h3', class_="listTit")
-        print('D')
-        print(url_tag)
-        print('E')
         a = 1
         for url_a in url_tag:
             house_url = url_a.find('a').get('href')
@@ -107,7 +97,6 @@ class wiwj:
 
     # 输入解析的网页源代码，返回房屋信息的字典
     def parse_house(self,s,house_url):
-        print(house_url)
         url_info_dic = {}
         houskeyword = s.find('h1').text
         house_info = s.find_all('p', class_="jlinfo")
