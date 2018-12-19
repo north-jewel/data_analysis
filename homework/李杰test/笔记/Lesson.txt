@@ -1,0 +1,642 @@
+
+enumerate(枚举)
+list.index(values):Python查询值在列表中的位置
+索引的时候如果是‘，’加[],相反是‘：’，不加[]
+
+导入数据1
+	pd.read_csv(filename)：从CSV文件导入数据
+	pd.read_table(filename)：从限定分隔符的文本文件导入数据
+	pd.read_excel(filename)：从Excel文件导入数据
+	pd.read_sql(query, connection_object)：从SQL表/库导入数据
+	pd.read_json(json_string)：从JSON格式的字符串导入数据
+	pd.read_html(url)：解析URL、字符串或者HTML文件，抽取其中的tables表格
+	pd.read_clipboard()：从你的粘贴板获取内容，并传给read_table()
+	pd.DataFrame(dict)：从字典对象导入数据，Key是列名，Value是数据
+导出数据1
+	df.to_csv(filename)：导出数据到CSV文件
+	df.to_excel(filename)：导出数据到Excel文件
+	df.to_sql(table_name, connection_object)：导出数据到SQL表
+	df.to_json(filename)：以Json格式导出数据到文本文件
+创建测试对象1
+	pd.DataFrame(np.random.rand(20,5))：创建20行5列的随机数组成的DataFrame对象
+	pd.Series(my_list)：从可迭代对象my_list创建一个Series对象
+	pd.date_range('1900/1/30', periods=df.shape[0])：增加一个日期索引
+查看、检查数据
+	df.head(n)：查看DataFrame对象的前n行
+	df.tail(n)：查看DataFrame对象的最后n行
+	df.shape()：查看行数和列数
+	df.info() ：查看索引、数据类型和内存信息
+	df.describe()：查看数值型列的汇总统计
+	s.value_counts(dropna=False)：查看Series对象的唯一值和计数 inplace=True在原数据上删除
+	df.apply(pd.Series.value_counts)：查看DataFrame对象中每一列的唯一值和计数
+数据选取
+	df[col]：根据列名，并以Series的形式返回列
+	df[[col1, col2]]：以DataFrame形式返回多列
+	s.iloc[0]：按位置选取数据
+	s.loc['index_one']：按索引选取数据
+	df.iloc[0,:]：返回第一行
+	df.iloc[0,0]：返回第一列的第一个元素
+数据清理
+	df.columns = ['a','b','c']：重命名列名
+	pd.isnull()：检查DataFrame对象中的空值，并返回一个Boolean数组
+	pd.notnull()：检查DataFrame对象中的非空值，并返回一个Boolean数组
+	df.dropna(axis=1,thresh=n)：删除所有小于n个非空值的行
+	df.fillna(x)：用x替换DataFrame对象中所有的空值
+	df.isna():检查NaN
+	s.astype(float)：将Series中的数据类型更改为float类型
+	s.replace(1,'one')：用‘one’代替所有等于1的值
+	s.replace([1,3],['one','three'])：用'one'代替1，用'three'代替3
+	df.rename(columns=lambda x: x + 1)：批量更改列名
+	df.rename(columns={'old_name': 'new_ name'})：选择性更改列名
+	df.set_index('column_one')：更改索引列
+	df.reset_index()可以还原索引，从新变为默认的整型索引 
+	df.rename(index=lambda x: x + 1)：批量重命名索引
+数据处理：Filter、Sort和GroupBy
+	df[df[col] > 0.5]：选择col列的值大于0.5的行
+	df.sort_values(col1)：按照列col1排序数据，默认升序排列
+	df.sort_values(col2, ascending=False)：按照列col1降序排列数据
+	df.sort_values([col1,col2], ascending=[True,False])：先按列col1升序排列，后按col2降序排列数据
+	df.groupby(col)：返回一个按列col进行分组的Groupby对象
+	df.groupby([col1,col2])：返回一个按多列进行分组的Groupby对象
+	df.groupby(col1)[col2])：返回按列col1进行分组后，列col2的均值
+	df.pivot_table(index=col1, values=[col2,col3], 		                  aggfunc=max)：创建一个按列col1进行分组，并计算col2和col3的最大值的数据透视表
+	df.groupby(col1).agg(np.mean)：返回按列col1分组的所有列的均值
+	data.apply(np.mean)：对DataFrame中的每一列应用函数np.mean
+	data.apply(np.max,axis=1)：对DataFrame中的每一行应用函数np.max
+数据合并
+	df1.append(df2)：将df2中的行添加到df1的尾部
+	df.concat([df1, df2],axis=1)：将df2中的列添加到df1的尾部
+	df1.join(df2,on=col1,how='inner')：对df1的列和df2的列执行SQL形式的join
+	df1.merage():通过按列或索引执行数据库样式的联接操作来合并DataFrame对象。
+	合并两列, 默认方法是how=inner, 只合并相同的部分
+数据统计
+	df.describe()：查看数据值列的汇总统计
+	df.mean()：返回所有列的均值
+	df.corr()：返回列与列之间的相关系数
+	df.count()：返回每一列中的非空值的个数
+	df.max()：返回每一列的最大值
+	df.min()：返回每一列的最小值
+	df.median()：返回每一列的中位数
+	df.std()：返回每一列的标准差
+
+先选行，要loc。先选列，不要loc
+loc——通过行标签索引行数据 
+iloc——通过行号索引行数据 
+ix——通过行标签或者行号索引行数据（基于loc和iloc 的混合） 
+
+
+
+
+
+
+pd.Series必须是一维的
+ascending默认为True
+												1 Lesson
+
+zip(a,b)：拉链函数,把两个数据和在一起
+
+df.to_csv(fname,index,header,mode='')  #保存文件
+参数：
+	fname		:文件名
+	index
+	header		:None没有columns
+	mode		写入的模式默认为'w','a'叠加
+
+pd.read_csv(fname)             #读取文件
+
+import os
+os.remove(fname)               #删除文件
+
+df查看数据类型用dtypes         #df.types
+也可以查看#df.(列的表头).dtype
+
+Sorted = df.sort_values(by, axis=0, ascending=True, inplace=False, kind='quicksort', na_position='last')    	     #按任一轴的值排序
+
+	by可以设置多个值，但只会对第一个值进行排序
+	by:str or list of str；如果axis=0，那么by="列名"；如果axis=1，那么by="行名"； 
+	axis:{0 or ‘index’, 1 or ‘columns’}, default 0，默认按照索引排序，即纵向排序，如果为1，则是横向排序  
+	ascending:布尔型，True则升序，可以是[True,False]，即第一字段升序，第二个降序 
+	inplace:布尔型，是否用排序后的数据框替换现有的数据框  
+	kind:排序方法，{‘quicksort’, ‘mergesort’, ‘heapsort’}, default ‘quicksort’。似乎不用太关心  
+	na_position : {‘first’, ‘last’}, default ‘last’，默认缺失值排在最后面  
+
+
+random.randint(low=a,high=b)   #随机生成一个a到b之间的数
+												2 Lesson
+DataFrame.info()(verbose=None, buf=None, max_cols=None, memory_usage=None)
+	#查看数据信息
+	memory_usage：布尔值，默认无
+	buf：可写缓冲区，默认为sys.stdout
+	max_cols：int，默认无											
+												
+df.nunique(axis=0, dropna=True)   #返回具有所请求轴上的不同观察数的系列。(去重)
+	dropna：布尔值，默认为True
+	axis  ：{0或'index'，1或'columns'}，默认为0
+											
+df.describe(percentiles=None, include=None, exclude=None)
+	'all'：输入的所有列都将包含在输出中
+	#生成描述性统计数据，总结数据集分布的集中趋势，分散和形状，不包括 NaN值。	
+	每一列也可以进行计算
+
+df索引和numpy一样，	
+												
+pandas.date_range(start=None, end=None, periods=None, freq=None, tz=None, normalize=False, name=None, closed=None, **kwargs)#返回固定频率DatetimeIndex。 
+	参数:
+	
+		start：string或datetime-like，默认值是None，表示日期的起点。
+		
+		end：string或datetime-like，默认值是None，表示日期的终点。	
+		periods：integer或None，默认值是None，表示你要从这个函数产生多少个日期索引			值；如果是None的话，那么start和end必须不能为None。	
+		freq：string或DateOffset，默认值是’D’，表示以自然日为单位，这个参数用来指定				计时单位，比如’5H’表示每隔5个小时计算一次。
+		
+		tz：string或None，表示时区，例如：’Asia/Hong_Kong’。	
+		normalize：bool，默认值为False，如果为True的话，那么在产生时间索引值之前会			先把s		tart和end都转化为当日的午夜0点。
+		
+		name：str，默认值为None，给返回的时间索引指定一个名字。    
+		closed：string或者None，默认值为None，表示start和end这个区间端点是否包     区间内，可以有三个值，’left’表示左闭右开区间，’right’表示左开右闭区间，None表示两边都是闭区间。	
+												
+df.head(n=5)       #返回前n行
+    参数：
+		n：int，要选择的行数。默认值为5
+
+df.tail(n=5)       #返回后n行
+	参数：
+		n：int，要选择的行数。默认值为5
+df.index           #DataFrame的索引（行标签）
+	
+df.columns         #函数/ dict值必须是唯一的（1对1）。 未包含在字典/系列中的标签将保留原样。 列出的额外标签不会引发错误
+
+
+df.values          #出来的值是array,只有DataFrame中的值会返回，ax标签会被删除
+
+df.describe( )     #生成描述性统计数据，总结数据集分布的集中趋势，分散和形状，不包括NaN值
+
+df.T#转置索引和列。
+
+df.sort_index(axis=,ascending=)   #按索引排序对象（沿轴）
+axis根据shape设定，ascending=False则倒序排列
+
+df.loc[index/index,columns/columns条件]   #通过标签或布尔数组访问一组行和列。
+
+df.iloc[]    							#纯粹基于整数位置的索引，用于按位置选择
+
+df.at['index','clumns']      										#访问行/列标签对的单个值。at的使用方法与loc类似，但是比loc有更快的访问数据的速度，而且只能访问单个元素，不能访问多个元素。
+df.iat[]     	#按整数位置访问行/列对的单个值。iat对于iloc的关系就像at对于loc的关系，是一种更快的基于索引位置的选择方法，同at一样只能访问单个元素。
+
+df.ix()      			#以上说过的几种方法都要求查询的秩在索引中，或者位置不超过长度范围，而ix允许你得到不在DataFrame索引中的数据。
+
+
+
+df.copy()	 		#复制数据		
+	
+pd.to_dict()        #将DataFrame转换为字典
+
+drop_duplicates()   #返回删除了重复行的DataFrame，可选择仅考虑某些列 
+
+pd.isnull()	        #检测类似数组的对象的缺失值。 
+pd.isnull()	        #检测类似数组的对象的缺失值。 
+																		
+s = pd.Series([values])	
+
+
+df会在isin中找值
+df.isin([values])	#分类别list,dict,dataFrame,返回boolean DataFrame，显示DataFrame中的每个元素是否包含在values中
+											
+s.isin(list)        #检查系列中是否包含值。		
+	list:如果是list则list其中任意一个值满足s则为True(会与s每一个值进行比较)
+	dict:
+    Series:	
+
+df.isin([values2)
+	list:如果values2是list,则values2会对里面每一个值进行比较
+	dict:如果values2是dict,则values2会对里面对应的字典进行迭代对比
+	DataFrame:如果values2是DataFrame,则value和value2进行对应位置对比，这是精确对比	
+												
+df = pd.DataFrame([values])		
+	
+df.mean()			:平均值
+
+df.fillna()			：使用指定的方法填充NA / NaN值
+
+df.reindex()		：创建一个新索引的新对象
+
+a.sub(b)			：a减去b,没有对应的值则合在一起
+
+df.apply()			：版本删除
+
+series.values.counts()	：返回包含唯一值计数的对象。
+
+series.str.lower()		:将Series / Index中的字符串转换为小写。
+
+
+
+df.stack()				:将指定级别从列堆叠到索引。把数组的columns变为index,值对应的元素依旧不变
+
+df.unstack()			:将索引轴上的规定级别拆分到列轴上。
+	stack的逆操作，把index变为columns，层级和stack的index层级一样
+
+		时间类型及其在python中对应的类型
+		时间戳–timestamp ：  时区转换功能
+		时间间隔–timedelta
+		时期–period   ：时期表示的是时间区间，比如数日、数月、数季、数年等
+		period_range ： 函数可用于创建规则的时期范围
+		pd.period_range('1/1/2012','6/8/2012',freq='') 从2012/1/1到20126/8，分秒取决于freq 
+
+df.resample				:用于频率转换和重新采样常规时间序列数据的便捷方法。(时间间隔)
+s.resample('M') 
+	M:月分组
+	T:按秒分组
+	S:按秒分组
+
+df.tz_localize			:将tz-naive TimeSeries本地化为目标时区。
+
+tz_convert				:转换时区
+
+to_period()			：通过to_period方法，可以将时间戳(timestamp)索引的Series和DataFrame对象转换为以时期(period)索引
+
+to_timestamp()			：to_timestamp可以将period转换为timestamp
+
+	
+pandas.DataFrame.reindex		#修改index
+	reindex	自动对齐，不是补齐，找index label相同的数据进行计算
+        #对齐，行标签对应，如果没有对应的则用NaN填补
+        #补齐， 行号对应
+
+	DataFrame.reindex(labels=None, index=None, columns=None, axis=None, method=None, copy=True,level=None, fill_value=nan, limit=None, tolerance=None)
+	属性：
+		labels:
+		index,columns: 头标
+		axis:   轴 method可能会用刀axis,比如method='ffill',axis=0,意思是按照0轴的方向，把NaN补齐
+		method:ffill或pad 如果数值为NaN,则把前面的值补到对应的NaN地方
+			   bfill或backfill 如果数值为NaN,则把后面的值补到对应的NaN地方
+		copy:  
+		level:
+		fill_value: 用于缺失的值，默认为NaN 可以fill_value='',也可以fill_value('')
+		limit:
+		tolerance:
+		
+pandas.DataFrame.drop
+	df.drop('index')  未删除原数据，创建一个新的数据
+	df.drop('index','columns')
+	df.drop('index',inplace=True)#删除原数据
+	df.drop('columns',axis=1)
+	df.drop('index',axis=0)
+
+										Lesson 3
+upper()：将序列/索引中的字符串转换为大写
+
+										2018-10-25
+
+os.chdir() 				:方法用于改变当前工作目录到指定的路径。
+
+glob是python自己带的一个文件操作相关模块，用它可以查找符合自己目的的文件，类似于Windows下的文件搜索，支持通配符操作,glob模块的主要方法就是glob,该方法返回所有匹配的文件路径列表（list）
+比如：
+	glob.glob(r’c:*.txt’)获得C盘下的所有txt文件
+
+os.path.join函数
+	用法：将多个路径组合后返回
+	语法：os.path.join(path1[,path2[,path3[,...[,pathN]]]])
+	返回值：将多个路径组合后返回
+	注意：第一个绝对路径之前的参数将会被忽略
+
+lambda表达式，通常是在需要一个函数，但是又不想费神去命名一个函数的场合下使用，也就是指匿名函数。
+
+										2018/10/26
+Python支持四种不同的数值类型：
+
+	?int（符号整数）：通常被称为是整数或整数，没有小数点的正或负整数。
+
+	?long（长整数）：或渴望，无限大小的整数，这样写整数和一个大写或小写的L。
+
+	?float（浮点实际值）：彩车，代表实数，小数除以整数部分和小数部分的书面。花车也可能是在科学记数法与E或指示的10次方é（2.5e2= 2.5×102=250）。
+
+	?complex  （复数）：+ BJ的形式，其中a，b是彩车和J（或J）表示-1的平方根（这是一个虚数）。 a是真正的数字部分，b是虚部。复数不使用Python编程。
+
+random.seed():当我们设置相同的seed，每次生成的随机数相同。如果不设置seed，则每次会生成不同的随机数,()
+用法：
+	numpy.random.seed(M) ; numpy.random.rand(N)#每次随机，M和N都必须与之前相同，否则随机结果不一样
+
+random.randint(low=a,high=b)	:随机生成一个a到b之间的数，不包括a和b
+random.randint(0,2)				#随机但不包括最后一
+
+										2018/10/29
+pd.count()						：计算每列或每行的非NA单元格
+										2018/10/30
+DataFrame.abs（）				:返回具有每个元素的绝对数值的Series / DataFrame。
+pd.var()						：方差
+
+								2018/10/31
+np.sqlt()			:开方
+np.exp('')
+df.add(df1)			:元素相加
+df.mul()			:乘法
+df.div()			：除法
+np.repeat(x,3)		:可以把数组变重复3个
+创建DataFrame的时候，如果数据类型为字典，则字典的键默认为columns
+
+								2018/11/1
+del df['']			:删除键
+
+pd.shift(a)			:shift函数是对数据进行移动的操作 a向上移动，-a向下移动
+
+df.sub(a,参数)		：减法
+	参数有fill_value,相减的时候，可以减NaN，没有的话只有有一个NaN，结果就为NaN
+df.cumsum()			:列相加
+
+df.value_counts()	:总结df列的重复信息，结果按值降序排列
+
+s.str.lower()		:把大写改为小写
+
+pd.concat([df,df1],axis=0/1)	:(默认为0)沿特定轴连接pandas对象，沿其他轴使用可选的设置逻辑。
+合并的时候加[]
+
+df.append()						:将其他行附加到此帧的末尾，
+	参数：
+		  other:Dataframe/Series
+		  ignore_index:如果为True，不使用原标签(用0123...代替)，默认使用原标签
+		  
+创建MultiIndex对象
+	创建方式一：元组列表
+		pandas.Multilndex.from_tuples():将元组列表转换为MultiLndex
+		参数：
+			tuples:   元组类的列表/序列 
+			sortorder:  int或None
+			names:索引中级别的名称
+
+	创建方式二：特定结构
+		pandas.Multilndex.from_arrays():将元组列表转换为MultiLndex
+		参数：
+			tuples:   元组类的列表/序列 
+			sortorder:  int或None
+			names:索引中级别的名称
+		
+	创建方式三：笛卡尔积
+		pandas.Multilndex.from_product():将元组列表转换为MultiLndex
+		参数：
+			iterables:   列表/可迭代序列
+			sortorder:  int或None
+			names:索引中级别的名称
+
+	调用.get_loc()和.get_indexer()获取标签的下标
+	MultiIndex对象还有属性labels保存标签的下标
+
+df.index.is_lexsorted()		#来检查index是否有序
+
+
+pd.concat,join,merge区别
+	df.merge():
+		参数：
+			on						:指定列名,按指定的的列进行连接(默认连接相同的列)
+			left_on					:左表对齐的那一列，可以是列名，也可以是和DataFrame同样长的arrays
+			right_on				:右表对齐的列，可以是列名，也可以是和DataFrame同样长的arrays
+			left_index/right_index	:如果是True的haunted以index作为对齐的key
+			how						:数据融合的方法
+			sort					:根据dataFrame合并的keys按字典顺序排列，
+
+			how的方法有：
+				left	:只保留左表的所有数据没有的用NaN补齐
+				right	:只保留右表的所有数据没有的用NaN补齐
+				outer	:连接两个表不相同的数据
+				inner	:连接两个表相同的数据
+				
+	df.concat([df1,df2,axis=0/1])
+		参数：
+			on		:指定列名,按指定的的列进行连接(默认连接相同的列)
+			join = 'outer':默认取并集
+			join = 'outer':取交集
+			ignore_index=True/False		改变或不改变原数据索引
+			
+			axis
+				0:两个数组按列的方向连接
+				1:两个数组按行的方向连接
+				
+	
+
+
+df.set_index( )				:函数会将一个或多个列转换为行索引
+	默认情况下，转换的列会从DataFrame中移除，但也可以将其保留下来(drop=False)
+	
+df.reset_index( )
+	reset_index( )是set_index( )的逆运算	
+	
+df.shape[0]					:代表index总数
+df.shape[1]					:代表columns总数
+df.columns					:打印所有columns头标
+df.index					:打印index总数
+
+GroupBy对象  数据分组
+GroupBy=df.groupby("columns")	####以columns为index对整个数据进行分组####
+	by：			mapping, function, str, or iterable。
+					用于确定groupby的组。如果by是一个函数，那么会调用对象索引的每个值。如果传递了一个dict或Series,
+					则将使用Series或dict的值来确定组。一个str或者一个strs列表可以通过自己的列传递给group
+					
+	axis：			轴，int值，默认为0
+	level：			如果axis是一个MultiIndex（分层），则按特定的级别分组。int值，默认为None
+	as_index：		对于聚合输出，返回带有组标签的对象作为索引。as_index=False实际上是“SQL风格”分组输出，boolean值，默认为True。
+	sort：			排序。关闭此功能以获得更好的性能。boolean值，默认True。
+	group_keys：	当调用apply时，添加group key来索引来识别片断。boolean值，默认True。
+	squeeze：		尽可能减少返回类型的维度，否则返回一致的类型。boolean值，默认False。
+	
+		函数名				说明
+		count			分组中非NA值的数量
+		sum				非NA值的和
+		mean			非NA值的平均值
+		median			非NA值的算术中位数
+		std、var		无偏（分母为n-1）标准差和方差
+		min、max		非NA值的最小值和最大值
+		prod			非NA值的积
+		first、last		第一个或最后一个非NA值
+
+	
+df.drop(how='any')				:只要有一个NaN,整行都删除
+df.drop(hoe='all')				:整行全为NaN,才执行删除（都删整行）
+
+df.mean(1)						:每行平均值
+df.mean(0)						:默认为0，每列平均值
+
+********************************************************************************************
+透视表
+最简单的透视表必须有一个数组和一个索引
+df.pivot_table(values='columns',index='columns1',columns='columns2',aggfunc='func'):数据透视表
+	参数：
+		values:					将分析columns的数据
+		index:					以columns1列的唯一值为index
+		columns：				以columns2列的唯一值为columns
+		aggfunc:				将需要计算的方法传进里面 默认为np.mean  
+								aggfunc=[np.max,len] 可以查看最大值，和总个数
+		fill_value:				填充缺失的值
+		margins ：              True/False显示所有数据
+		
+
+行分组透视表	df.pivot_table(index=)
+列分组透视表	df.pivot_table(columns=)
+行列分组透视表	df.pivot_table(index=,columns=)
+			
+********************************************************************************************
+tz_localize					:将tz-naive TimeSeries本地化为目标时区
+
+tz_convert					:将tz感知轴转换为目标时区
+
+to_period					:使用所需频率将DataFrame从DatetimeIndex转换为PeriodIndex（如果未传递，则从索引推断）
+
+to_timestamp				:在期间开始时转换为时间戳的DatetimeIndex
+
+asfreq						:将TimeSeries转换为指定的频率。设置时间间隔
+
+astype						：将pandas对象转换为指定的dtype 
+
+在matplotlib中，如果想要显示图表，需要使用plt.plot()函数，但在pandas中，我们只要对序列数据调用plot()函数就能显示其所拥有的数据，
+
+xlim  ylim
+
+plt.figure()边框设置
+
+legend
+
+Categoricals			：Categoricals有效地编码了包含大量重复文本的数据
+
+df.cummax()				:每列的第二项与前一项比较，哪个值大，就把另一个值覆盖，然后再和下一个值再次进行比较
+df.cummin()				:每列的第二项与前一项比较，哪个值小，就把另一个值覆盖，然后再和下一个值再次进行比较
+df.cumprod()			:每一列的第二项与前一项相乘
+df.cumsum()				:每一列的第二项与前一项相加
+
+cat.categories
+cat.set_categories
+
+chr(str)						：打印ASCII中该字符串的位置
+
+df.rank(first)					:数据列位置排序，如果有重复的数据，则谁在前面，谁的排名优先
+df.rank(pct=True)
+
+pd.quct
+
+DataFrame创建columns多级索引最外层的索引 紧挨着的
+	可以用 dict和list 直接创建DataFrame
+
+df.read_csv('filname',sep=';')			:指定它的分隔符是 ';' , '\t'
+
+series.unique()							:返回对象中唯一元素的数量(类型nuppry)。
+
+df.a.value_counts()						:a列所有的元素的唯一值，并计算有多少个重复值
+
+$价格更改，lambda x: float(x[1:-1])
+
+DataFrame.nlargest() 					:返回第一个?通过有序的行列按降序排列。
+
+df.plot.pie()							:plot不加（）
+
+df.duplicated('col')					:返回boolean Series表示重复行，可选择仅考虑某些列
+
+df[].corr(df[])							：判断两个是否相关，绝对值越大越相关，正相关，(类型需要相同)
+
+df.isnull().sum()						:每列有多少空值
+
+
+df.map()								：映射每一行或列，可以使用lambda,方法，等等
+
+df.transform()							:和map类似
+
+df.rename()								:替换索引
+
+to_numeric() 							：将参数转换为数字类型
+
+infer_objects()							:会自动把值变为合适的类型
+
+tolist()			:把series的值变为列表，如果是DataFrame的话，可以变为series(df[columns])
+*********************************************************************************************
+
+isspace()							:检查Series / Index中每个字符串中的所有字符是否都是空格
+
+去除空格		
+	:df['columns']=df['columns'].apply(lambda x: np.NaN if str(x).isspace() else x)
+	apply方法来修改变量VIN中的每个值。如果发现是空格，就返回Nan，否则就返回原值
+
+
+
+df.dropna(axis=0, how='any',subset=['b'],inplace=True)  #不可以df['columns'].dropna(inplace=True),因为这样并不会删除
+
+	axis		：0-行操作（默认），1-列操作 
+	how			：any-只要有空值就删除（默认），all-全部为空值才删除 
+	inplace		：False-返回新的数据集（默认），True-在愿数据集上操作
+	subset		:删除某列或某行的空值，具体由 axis决定
+	thresh=n	:删除所有小于n个非空值的行
+	
+*********************************************
+pandas 的数据都可以直接画图
+	df.plot(kind='',rot=90)
+*********************************************
+
+crosstable
+
+del df[] 		删除某列
+
+idxmax			:返回请求轴上第一次出现最大   值的  索引。NA / null值被排除在外。
+
+str.startswith	:测试每个字符串元素的开头是否与模式匹配
+df.median		:返回请求轴的值的中值
+div
+
+df.groupby(['col1','col2']).agg({'col2':‘count’})			它是一个字典形式,可以单独对col2进行count方法
+			   .agg(['mean','max','min'])			也可以是一个列表形式,没有指定的时候，对所有列使用方法
+			   .agg('col':['mean','max','min'])		也可以对某一列加多个方法
+当按多列表进行分组的时候，可以通过agg按字典的形式，单独对某列进行运算(方法需要加引号并且不带括号)
+		unstack()		从后往前将索引轴上的规定级别拆分到列轴上
+
+数组相加，列和行对应的位置相加
+rename
+to_frame
+reset_index
+
+pivot_table 索引
+
+groupby  和pivot_table
+df[.index]
+assign
+apply 和applymap
+
+groupby:可以根据一个列的值，对另一列进行分组--df[col1].groupby(df[col2])并且可以多层分组
+
+size()
+
+分组 : 按列分组
+		通过字典进行分组
+		通过函数分组
+		通过索引级别进行分组
+无论计算结果是什么，一定要搞懂结果的类型	
+
+聚合 : 内置聚合函数
+		自定义聚合函数（agg）
+		一次性应用多个聚合函数
+		不同的列应用不同聚合函数
+		重置索引
+		
+		
+可视化	:pandas可以只见进行画图，另一方面，df可以自由变化，只有是pandas类型，就可以花式画图
+		:df.plot(x轴，y轴)
+		:df.pot.pie()--plot后面跟图形,画法和原来一模一样
+		
+pivot()方法是指定相应的列分别作为行标签和列标签，并指定相应的列作为值，然后重新生成一个新的DataFrame对象，这样的好处是使得数据更加的直观和容易分析，俗称数据透视；而groupby()方法是指定相应的列进行分组，把这列中具有相同值的行分为同一组，这个过程称为分组，返回一个groupby对象，一般的，分组之后会伴有聚合运算，即对每组进行需要的聚合运算（比如求和求积等）。因此，pivot()方法是为了让数据重新排列组合，使其更直观，数据透视；而groupby()方法则是对数据进行分组聚合运算；两者实际上功能特点很明显，并没有什么可比性，只是在利用这两种方法时，原数据的结构是有些相似的
+
+df[col].sort_values()  和df.sort_values('col')
+前者结果范围小，后者是全部数据，其他方法类推
+
+
+str:可以代替for循环
+    例如：
+	使用for循环	for i in df.col:   #才可以查看col列的每一行
+	使用str		df.col.str[:]	   #查看每行，可以换其他方法
+
+
+df.col.str.contains(values)	可以通过这个值，查看整行
+
+
+
+
+
+
+
+
+
+
+
+
