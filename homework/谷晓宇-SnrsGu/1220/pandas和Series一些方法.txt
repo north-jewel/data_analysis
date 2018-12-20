@@ -1,0 +1,1486 @@
+				### pandas.DataFrame.pivot ###
+DataFrame.pivot(index=None, columns=None, values=None)
+返回根据给定索引/列值组织的重新形状的DataFrame。
+根据列值重新定义数据(生成一个“pivot”表)。使用来自指定索引/列的惟一值来形成结果DataFrame的轴。此函数不支持数据聚合，多个值将导致列中出现多索引。
+参数：			index: 字符串 或 object,可选
+				用来创建新框架索引的列。如果没有，则使用现有索引。
+			columns: 字符串 或 object
+				用于创建新框架的列的列。
+			values: 字符串，object 或 前一个的列表，可选
+				用来填充新框架值的列。
+		0		如果没有指定，将使用所有剩余的列，结果将具有分层索引的列。
+				在版本0.23.0中更改:也接受列名列表。
+返回：			DataFrame
+				返回重塑了的DataFrame。	
+Raises：		ValueError
+				当有任何索引时，列与多个值组合。
+				当你需要聚合的时候,可以使用DataFrame.pivot_table
+Notes:			有关更好的调优控制，请参阅层次索引文档以及相关的stack/unstack方法。
+
+df = pd.DataFrame({'foo': ['one', 'one', 'one', 'two', 'two',
+...                            'two'],
+...                    'bar': ['A', 'B', 'C', 'A', 'B', 'C'],
+...                    'baz': [1, 2, 3, 4, 5, 6],
+...                    'zoo': ['x', 'y', 'z', 'q', 'w', 't']})			
+df
+	foo	bar	baz	zoo
+0	one	A	1	x
+1	one	B	2	y
+2	one	C	3	z
+3	two	A	4	q
+4	two	B	5	w
+5	two	C	6	t	
+df.pivot(index = 'foo',columns ='bar',values = 'baz')
+bar	A	B	C
+foo			
+one	1	2	3
+two	4	5	6
+df.pivot(index ='foo',columns = 'bar')['baz']
+bar	A	B	C
+foo			
+one	1	2	3
+two	4	5	6
+df.pivot(index = 'foo',columns = 'bar',values = ['baz','zoo'])
+	baz			zoo
+bar	A	B	C	A	B	C
+foo						
+one	1	2	3	x	y	z
+two	4	5	6	q	w	t
+如果存在重复值，则会引发ValueError。
+df = pd.DataFrame({"foo": ['one', 'one', 'two', 'two'],
+...                    "bar": ['A', 'A', 'B', 'C'],
+...                    "baz": [1, 2, 3, 4]})
+df
+	foo	bar	baz
+0	one	A	1
+1	one	A	2
+2	two	B	3
+3	two	C	4
+注意，对于索引和列参数，前两行是相同的。
+df.pivot(index='foo', columns='bar', values='baz')
+Traceback (most recent call last):
+   ...
+ValueError: Index contains duplicate entries, cannot reshape
+
+
+				### pandas.DataFrame.melt ###
+DataFrame.melt(id_vars=None, value_vars=None, var_name=None, value_name='value', col_level=None)
+“Unpivots”一个DataFrame，从宽格式改为长格式，可以选择留下标识符变量。
+这个函数可以将DataFrame推演成一种格式，其中一列或多列是标识变量(id_vars)，而所有其他列(被认为是测量变量(value_vars))都“非旋转”到行轴，只留下两个非标识列“变量”和“值”。
+参数：			frame: DataFrame
+			id_vars: 元组，列表 或者 数组，可选
+				列用作标识变量。
+			value_vars: 元组，列表 或者 数组，可选
+				列(s)透视。如果没有指定，则使用未设置为id_vars的所有列。
+			var_name: 标量
+				“变量”列的名称。如果没有，则使用frame.column .name或' variable '。
+			value_name: 标量，默认'value'
+				'value'列的名称
+			col_level: int 或者 string，可选
+				如果列是一个多索引，那么使用这个级别融化。
+
+df = pd.DataFrame({'A': {0: 'a', 1: 'b', 2: 'c'},
+...                    'B': {0: 1, 1: 3, 2: 5},
+...                    'C': {0: 2, 1: 4, 2: 6}})
+df
+	A	B	C
+0	a	1	2
+1	b	3	4
+2	c	5	6
+df.melt(id_vars = ['A'],value_vars = ['B'])
+	A	variable	value
+0	a		B	1
+1	b		B	3
+2	c		B	5
+df.melt(id_vars=['A'],value_vars = ['B','C'])
+	A	variable	value
+0	a		B	1
+1	b		B	3
+2	c		B	5
+3	a		C	2
+4	b		C	4
+5	c		C	6
+'variable'和'value'的列的名称可以定制
+df.melt(id_vars = ['A'],value_vars = ['B'],
+        var_name = 'myVarname',value_name = 'myValname')
+	A	myVarname	myValname
+0	a	B		1
+1	b	B		3
+2	c	B		5
+如果有多索引列:
+df.columns = [list('ABC'),list('DEF')]
+df
+	A	B	C
+	D	E	F
+0	a	1	2
+1	b	3	4
+2	c	5	6
+df.melt(col_level = 0,id_vars = ['A'],value_vars = ['B'])
+	A	variable	value
+0	a	B		1
+1	b	B		3
+2	c	B		5
+df.melt(id_vars=[('A', 'D')], value_vars=[('B', 'E')])
+	(A, D)	variable_0	variable_1	value
+0	a	B		E		1
+1	b	B		E		3
+2	c	B		E		5
+
+
+				### pandas.qcut ###
+pandas.qcut(x, q, labels=None, retbins=False, precision=3, duplicates='raise')
+Quantile-based离散化功能。将变量离散为大小相等的桶，基于等级或基于样本分位数。
+例如，10个分位数的1000个值将产生一个类别对象，指示每个数据点的分位数隶属关系。
+参数：			x: 一维数组 或者 Series
+			q: 整数或分位数数组
+				分位数。10表示十分位数，4表示四分位数，
+				例：[0,.25,.5,.75,1.]为4分位数
+			labels: 数组 或 布尔，默认为 None
+				用作结果容器的标签。必须与结果箱的长度相同。
+				如果为False，只返回箱子的整数指示器。
+			retbins: 布尔，可选
+				是否返回(箱子，标签)。如果箱子是以标量形式给出的，可能会很有用。
+			precision: int，可选
+				存储和显示容器标签的精度
+			duplicates: {default ‘raise’, ‘drop’},可选
+				如果箱子的边缘不是唯一的，提高值错误或删除非单一性。
+返回：			out: 如果标签为假，则为类别整数或整数序列或整数数组
+				返回类型(类别或系列)取决于输入:如果输入是其他类别的系列，
+				则返回类型类别的系列。当返回类别数据时，垃圾箱表示为类别。						bins: 浮点型的数组
+				只有当retbin为True时才返回。
+Notes:			超出的值将在生成的Categorical对象中为NA
+pd.qcut(range(5),4)
+[(-0.001, 1.0], (-0.001, 1.0], (1.0, 2.0], (2.0, 3.0], (3.0, 4.0]]
+Categories (4, interval[float64]): [(-0.001, 1.0] < (1.0, 2.0] < (2.0, 3.0] < (3.0, 4.0]]
+pd.qcut(range(5),3,labels = ['good','medium','bad'])
+[good, good, medium, bad, bad]
+Categories (3, object): [good < medium < bad]
+pd.qcut(range(5),4,labels = False)
+array([0, 0, 1, 2, 3], dtype=int64)
+
+		
+				### pandas.DataFrame.nlargest ###
+DataFrame.nlargest(n, columns, keep='first')
+返回以降序排列的列排序的前n行。
+按降序返回列中值最大的前n行。未指定的列也会返回，但不用于排序。
+这个方法等于 df.sort_values(columns,ascending = False).head(n),但性能更好
+参数：			n: int
+				返回的行数。
+			columns: 标签或标签列表
+				列标签按顺序排列。
+			keep : {‘first’, ‘last’}, default ‘first’
+				有重复值的地方:
+				first: 优先考虑第一个事件
+				last: 对最后一个事件排序
+返回：			DataFrame
+				按照给定列的降序排列的前n行。
+Notes：			此函数不能用于所有列类型。例如，当用object或category dtypes指定列时，会引发TypeError。
+df = pd.DataFrame({'a': [1, 10, 8, 10, -1],
+...                    'b': list('abdce'),
+...                    'c': [1.0, 2.0, np.nan, 3.0, 4.0]})
+df
+	a	b	c
+0	1	a	1.0
+1	10	b	2.0
+2	8	d	NaN
+3	10	c	3.0
+4	-1	e	4.0
+在下面的示例中，我们将使用nlargest选择“a”列中值最大的三行。
+df.nlargest(3,'a')
+	a	b	c
+1	10	b	2.0
+3	10	c	3.0
+2	8	d	NaN
+当使用keep='last'时，连接以相反的顺序解析:
+df.nlargest(3,'a',keep = 'last')
+	a	b	c
+3	10	c	3.0
+1	10	b	2.0
+2	8	d	NaN
+为了按照“a”和“c”列中的最大值排序，我们可以指定多个列，如在下一个示例中所示。
+df.nlargest(3,['a','c'])
+	a	b	c
+3	10	c	3.0
+1	10	b	2.0
+2	8	d	NaN
+尝试在非数字dtype上使用nlargest会导致类型错误:
+df.nlargest(3,'b')
+TypeError: Column 'b' has dtype object, cannot use method 'nlargest' with this dtype
+
+
+				### pandas.DataFrame.nsmallest ###
+DataFrame.nsmallest(n, columns, keep='first')
+获取按列的n个最小值排序的DataFrame的行。
+参数：			n: int
+				要检索的项数
+			columns: 列表 或 字符串
+				列名或按顺序排列的列名
+			keep: {'first':'last'}，默认为 'first'
+				如果有重复的值:- first:取第一个出现的值。-last:取最后一个事件。
+返回：			DataFrame
+df = pd.DataFrame({'a':[1,10,8,11,-1],
+                  'b':list('abcde'),
+                  'c':[1.0,2.0,np.nan,3.0,4.0]})
+df
+	a	b	c
+0	1	a	1.0
+1	10	b	2.0
+2	8	c	NaN
+3	11	d	3.0
+4	-1	e	4.0
+df.nsmallest(3,'a')
+	a	b	c
+4	-1	e	4.0
+0	1	a	1.0
+2	8	c	NaN
+
+
+				### pandas.DataFrame.filter ###
+DataFrame.filter(items=None, like=None, regex=None, axis=None)
+根据指定索引中的标签对dataframe的行或列进行子集划分。
+注意，这个例程不会在其内容上过滤dataframe。过滤器应用于索引的标签。
+参数：			items: list-like
+				限制到的信息轴列表(不能全部出现)
+			like: string
+				将info轴放在“arg in col == True”处
+			regex: string(正则表达式)
+				保持info轴与re.search(regex, col) == True
+			axis: 整数 或 字符串轴名字
+				要过滤的轴。默认情况下，这是info轴，“index”表示系列，“column”表示DataFrame
+返回：			与输入对象类型相同
+Notes：			这些项，比如正则表达式参数被强制强制互斥。
+			axis默认为[]索引时使用的信息轴。
+df = pd.DataFrame({'one':[1,4],'two':[2,5],
+                  'three':[3,6]},index = ['mouse','rabbit'])
+df
+	one	two	three
+mouse	1	2	3
+rabbit	4	5	6
+#通过名字选择列
+df.filter(items = ['one','three'])
+	one	three
+mouse	1	3
+rabbit	4	6
+#通过正则表达式选择列
+df.filter(regex = 'e$',axis =1)
+	one	three
+mouse	1	3
+rabbit	4	6
+#选择包含'bbi'的行
+df.filter(like = 'bbi',axis = 0)
+	one	two	three
+rabbit	4	5	6
+
+
+				### agg ###
+pandas.core.groupby.DataFrameGroupBy.agg
+DataFrameGroupBy.agg(arg,*args,**kwargs)
+在指定轴上使用一个或多个操作进行聚合。
+参数：			func: 函数、字符串、字典或字符串/函数列表
+				用于聚合数据的函数。如果是函数，则必须在传递DataFrame时或传递给				DataFrame.apply时工作。	
+				对于DataFrame，如果键是DataFrame列名，则可以传递一个dict。			
+				接受的组合是:
+					字符串函数的名字。
+					函数。
+					函数的列表。
+					列名称的字典->函数(或函数列表)。			
+			*args:
+				位置参数传给func。
+			**kwargs:
+				传递给func的关键字参数。
+返回：			聚合了的：DataFrame
+Notes：
+agg是aggregate的别名。使用这个别名。
+传递的用户定义函数将被传递到一个用于求值的序列中。
+df = pd.DataFrame({'A':[1,1,2,2],
+                   'B':[1,2,3,4],
+                  'C':np.random.randn(4)})
+df
+	A	B	C
+0	1	1	-1.226358
+1	1	2	0.532720
+2	2	3	-0.231106
+3	2	4	0.821682
+聚合是针对每个列的。
+df.groupby('A').agg('min')
+	B	C
+A		
+1	1	-1.226358
+2	3	-0.231106
+多个聚合
+df.groupby('A').agg(['min','max'])
+	B	C
+	min	max	min		max
+A				
+1	1	2	-1.226358	0.532720
+2	3	4	-0.231106	0.821682
+选择用于聚合的列
+df.groupby('A').B.agg(['min','max'])
+	min	max
+A		
+1	1	2
+2	3	4
+每个列有不同的聚合
+df.groupby('A').agg({'B':['min','max'],'C':'sum'})
+	B	C
+	min	max	sum
+A			
+1	1	2	-0.693638
+2	3	4	0.590576
+				
+			
+				### pandas.DataFrame.apply ###
+DataFrame.apply(func,axis=0,broadcast=None,raw=False,reduce=None,result_type=None,args=(),**kwds)
+沿着DataFrame的轴应用一个函数。
+传递给函数的对象是Series对象，其索引要么是DataFrame的索引(axis=0)，要么是DataFrame的列(axis=1)。默认情况下(result_type=None)，从应用函数的返回类型推断出最终的返回类型。否则，它取决于result_type参数。
+参数：			func: 函数
+				函数的作用是:应用于每一列或每一行。
+			axis : {0 or ‘index’, 1 or ‘columns’}, default 0
+				应用该函数的轴:
+				0 or ‘index’: 对每一列应用函数。
+				1 or ‘columns’:对每一行应用函数。
+			broadcast: 布尔，可选
+				仅与聚合功能相关:
+				False或None:返回一个长度为索引长度或列数(基于axis参数)的序列
+				True:结果将广播到原来的形状的框架，原来的索引和列将被保留。
+
+			raw: 布尔，默认 False
+				False:将每个行或列作为一个系列传递给函数。
+				True:传递的函数将接收ndarray对象。
+				如果您只是应用一个NumPy约简函数，这将获得更好的性能。
+			reduce: bool or None，默认为 None
+				试着应用减少程序。如果DataFrame为空，apply将使用reduce来确定结果应该是一个				系列还是一个DataFrame。如果reduce=None(默认值)，应用程序的返回值将通过调用				空序列上的func来猜测(注意:在猜测时，func引发的异常将被忽略)。如果				reduce=True，则总是返回一个系列，如果reduce=False，则总是返回一个DataFrame	
+			result_type : {‘expand’, ‘reduce’, ‘broadcast’, None}, default None
+				这些只在axis=1(列)时起作用:
+				“expand”:类似列表的结果将被转换为列。
+				' reduce ':如果可能，返回一个系列，而不是扩展列表式的结果。这是“扩张”的					反义词。
+				“broadcast”:结果将被广播到DataFrame的原始形状，原始索引和列将被保留。
+					默认行为(None)取决于应用函数的返回值:类列表的结果将作为一系列结果					返回。然而，如果apply函数返回一个级数，这些级数将展开为列。
+			args: 元组
+				除了数组/序列外，还要传递给func的位置参数。
+			**kwds
+				额外的关键字参数作为关键字参数传递给func。
+返回：			应用了的：Series或DataFrame
+Notes：			在当前的实现中，在第一列/行上两次apply调用func，以决定它是采用快路径还是慢路径。如			果func有副作用，这可能会导致意想不到的行为，因为它们将对第一列/行产生两次影响。
+
+df = pd.DataFrame([[4,9],]*3,columns = ['A','B'])
+df
+	A	B
+0	4	9
+1	4	9
+2	4	9
+使用numpy通用函数(在本例中与np.sqrt(df)相同):
+df.apply(np.sqrt)
+	A	B
+0	2.0	3.0
+1	2.0	3.0
+2	2.0	3.0
+在任意轴上使用一个约简函数
+df.apply(np.sum,axis = 0)
+A    12
+B    27
+dtype: int64
+df.apply(np.sum,axis = 1)
+0    13
+1    13
+2    13
+dtype: int64
+重新调整类似列表将导致系列
+df.apply(lambda x:[1,2],axis=1)
+0    [1, 2]
+1    [1, 2]
+2    [1, 2]
+dtype: object
+传递result_type= ' expand '将把类似列表的结果扩展到Dataframe的列
+df.apply(lambda x:[1,2],axis=1,result_type = 'expand')
+	0	1
+0	1	2
+1	1	2
+2	1	2	
+在函数内部返回一个级数类似于传递result_type='expand'。生成的列名将是Series索引。
+df.apply(lambda x:pd.Series([1,2],index = ['foo','bar']),axis=1)
+	foo	bar
+0	1	2
+1	1	2
+2	1	2
+传递result_type='broadcast'将确保得到相同的形状结果，不管函数返回的是list-like还是scalar，都一样。生成的列名将是原始列名。
+df.apply(lambda x:[1,2],axis=1,result_type = 'broadcast')
+	A	B
+0	1	2
+1	1	2
+2	1	2
+
+
+				### rank ###
+pandas.core.groupby.DataFrameGroupBy.rank
+DataFrameGroupBy.rank(method='average', ascending=True, na_option='keep', pct=False, axis=0)
+提供每个组内值的级别。
+参数：			method : {‘average’, ‘min’, ‘max’, ‘first’, ‘dense’}, default ‘average’
+				average: 组平均等级
+				min: 组内最低等级
+				max: 组内最高排名
+				first: 按数组中出现的顺序排列
+				dense: 和min一样，但组间的增加总是增加1
+			ascending: 布尔，默认为 True
+				False 从高到低
+			na_option: {'keep','top','bottom'},默认 'keep'
+				keep: 让NA值留在原来的位置
+				top: 升序时的最小级
+				bottom: 降序排列最小
+			pct: 布尔 默认 False
+				计算每组数据的百分比等级
+			axis: int,默认 0
+				计算等级的对象的轴
+返回：			DataFrame与值在每个组中的排名
+
+ddef = pd.DataFrame({'A':['人工智能','大数据','h5','人工智能','大数据','h5','大数据','h5','人工智能'],
+                    'B':['甲班','乙班','丙班','A班','B班','C班','1班','2班','3班'],
+                    'C':['张三','李四','王五','张三','李四','王五','张三','李四','王五'],
+                    '分数':[99,80,100,80,69,92,88,98,76],
+                    '年龄':[21,22,20,18,19,20,23,22,21]})
+ddef
+	A		B	C	分数	年龄
+0	人工智能	甲班	张三	99	21
+1	大数据		乙班	李四	80	22
+2	h5		丙班	王五	100	20
+3	人工智能	甲班	张三	80	18
+4	大数据		乙班	李四	69	19
+5	h5		丙班	王五	92	20
+6	大数据		甲班	张三	88	23
+7	h5		乙班	李四	98	22
+8	人工智能	丙班	王五	76	21
+ddef.rank(method = 'dense')
+	A	B	C	分数	年龄
+0	2.0	3.0	1.0	7.0	4.0
+1	3.0	2.0	2.0	3.0	5.0
+2	1.0	1.0	3.0	8.0	3.0
+3	2.0	3.0	1.0	3.0	1.0
+4	3.0	2.0	2.0	1.0	2.0
+5	1.0	1.0	3.0	5.0	3.0
+6	3.0	3.0	1.0	4.0	6.0
+7	1.0	2.0	2.0	6.0	5.0
+8	2.0	1.0	3.0	2.0	4.0
+ddef.rank(pct = True)
+	A		B		C		分数		年龄
+0	0.555556	0.888889	0.222222	0.888889	0.611111
+1	0.888889	0.555556	0.555556	0.388889	0.833333
+2	0.222222	0.222222	0.888889	1.000000	0.388889
+3	0.555556	0.888889	0.222222	0.388889	0.111111
+4	0.888889	0.555556	0.555556	0.111111	0.222222
+5	0.222222	0.222222	0.888889	0.666667	0.388889
+6	0.888889	0.888889	0.222222	0.555556	1.000000
+7	0.222222	0.555556	0.555556	0.777778	0.833333
+8	0.555556	0.222222	0.888889	0.222222	0.611111
+ddef.rank(method = 'min')
+	A	B	C	分数	年龄
+0	4.0	7.0	1.0	8.0	5.0
+1	7.0	4.0	4.0	3.0	7.0
+2	1.0	1.0	7.0	9.0	3.0
+3	4.0	7.0	1.0	3.0	1.0
+4	7.0	4.0	4.0	1.0	2.0
+5	1.0	1.0	7.0	6.0	3.0
+6	7.0	7.0	1.0	5.0	9.0
+7	1.0	4.0	4.0	7.0	7.0
+8	4.0	1.0	7.0	2.0	5.0
+ddef.分数.rank(method = 'dense',ascending = False)
+0    2.0
+1    6.0
+2    1.0
+3    6.0
+4    8.0
+5    4.0
+6    5.0
+7    3.0
+8    7.0
+Name: 分数, dtype: float64
+ddef.分数.rank(method = 'average')
+0    8.0
+1    3.5
+2    9.0
+3    3.5
+4    1.0
+5    6.0
+6    5.0
+7    7.0
+8    2.0
+Name: 分数, dtype: float64
+ddef.分数.rank(method = 'first')
+0    8.0
+1    3.0
+2    9.0
+3    4.0
+4    1.0
+5    6.0
+6    5.0
+7    7.0
+8    2.0
+Name: 分数, dtype: float64
+ddef.分数.rank(pct = True)    #pct=True 用百分比排名
+0    0.888889
+1    0.388889
+2    1.000000
+3    0.388889
+4    0.111111
+5    0.666667
+6    0.555556
+7    0.777778
+8    0.222222
+Name: 分数, dtype: float64
+
+
+				### pandas.DataFrame.sample ###
+DataFrame.sample(n=None, frac=None, replace=False, weights=None, random_state=None, axis=None)
+从对象的轴返回随机的项目样本。
+可以使用random_state来表示可再现性。
+参数：			n: int,可选
+				从轴返回的项数。不能与frac一起使用。如果frac = None，则默认= 1。
+			frac: float,可选
+				返回轴项的分数。不能与n一起使用。
+			replace: 布尔，可选
+				有或没有更换的样品。默认= False。
+			weights: str 或者 ndarray-like 可选
+				默认的“None”结果是等概率加权。如果传递了一个序列，将在索引上与目标对象对				齐。将忽略采样对象中未找到的权重中的索引值，并将分配权重为0的采样对象中的				索引值。如果在DataFrame上调用，当axis = 0时，将接受列的名称。除非权值是一				个级数，否则权值必须与被采样的轴长度相同。如果权值没有和1，它们将被规范化				为和1。权重列中的缺失值将被视为零。inf和-inf值不允许。
+			random_state: int 或者 numpy.random.RandomState,可选
+				用于随机数生成器(如果int)或numpy随机状态对象的种子。
+			axis: int 或者 string，可选
+				轴样品。接受轴号或名称。默认值是给定数据类型的stat轴(对于系列和DataFrames 				0，对于面板1)。
+返回：			与调用者类型相同的新对象。
+
+s = pd.Series(np.random.randn(50))
+s.head()
+0   -0.040353
+1   -1.033387
+2    1.659683
+3    1.508338
+4    0.703128
+dtype: float64
+df = pd.DataFrame(np.random.randn(50,4),columns = list('ABCD'))
+df.head()
+	A		B		C		D
+0	0.206522	0.229823	0.974113	-0.132541
+1	-0.578594	-2.117393	0.011130	-1.054220
+2	-0.510029	0.809943	-0.113050	-2.042442
+3	-0.195602	1.159780	0.744120	-0.545278
+4	0.011841	2.343153	1.559134	0.626637
+接下来从这两个对象中提取一个随机样本……
+Series中的3个随机元素:
+s.sample(n=3)
+17   -0.584998
+44   -1.330665
+22    0.150489
+dtype: float64
+随机10％的DataFrame替换：
+df.sample(frac = 0.1,replace = True)
+	A		B		C		D
+33	0.568311	-0.679086	-1.213079	0.607019
+37	-0.774836	-0.754939	-1.049003	0.409542
+26	0.069344	-1.407706	-1.826368	-1.166722
+6	1.303988	1.703660	0.413253	-0.289425
+45	-0.587427	0.821262	0.255145	1.598518
+您可以使用随机状态的重现性:
+df.sample(random_state = 1)
+	A		B	C		D
+27	-0.981308	0.5299	0.577739	0.507897
+
+
+				### pandas.merge ###
+pandas.merge(left, right, how='inner', on=None, left_on=None, right_on=None, left_index=False, right_index=False, sort=False, suffixes=('_x', '_y'), copy=True, indicator=False, validate=None)
+通过按列或索引执行数据库样式的联接操作来合并DataFrame对象。
+如果将列连接到列上，则将忽略DataFrame索引。否则，如果将索引上的索引或列上的索引连接起来，就会传递索引。
+参数：
+		left ： DataFrame
+		right ： DataFrame
+		how：{'left'，'right'，'outer'，'inner'，默认'inner'
+
+		left：仅使用左框架中的键，类似于SQL左外连接; 保留关键顺序
+		right：仅使用右框架中的键，类似于SQL右外连接; 保留关键顺序
+		outer：使用来自两个帧的键的并集，类似于SQL全外连接; 按字典顺序排序键
+		inner：使用两个帧的键交集，类似于SQL内连接; 保留左键的顺序
+		on：标签或列表
+
+		要加入的列或索引级别名称。这些必须在两个DataFrame中找到。
+		如果on为None且未合并索引，则默认为两个DataFrame中列的交集。
+
+		left_on：标签或列表，或类似数组
+
+		要在左侧DataFrame中连接的列级或索引级别名称。
+		也可以是左数据帧长度的数组或数组列表。这些数组被视为列。
+
+		right_on：标签或列表，或类似数组
+
+		要在右侧DataFrame中连接的列级或索引级别名称。
+		也可以是右侧DataFrame长度的数组或数组列表。这些数组被视为列。
+
+		left_index：布尔值，默认为False
+
+		使用左侧DataFrame中的索引作为连接键。
+		如果是MultiIndex，则其他DataFrame中的键数（索引或列数）必须与级别数相匹配
+
+		right_index：布尔值，默认为False
+
+		使用右侧DataFrame中的索引作为连接键。与left_index相同的警告
+
+		sort：布尔值，默认为False
+
+		在结果DataFrame中按字典顺序对连接键进行排序。
+		如果为False，则连接键的顺序取决于连接类型（关键字如何）
+
+		后缀：2长度序列（元组，列表，...）
+
+		后缀分别应用于左侧和右侧的重叠列名称
+
+		copy：boolean，默认为True
+
+		如果为False，则不要不必要地复制数据
+
+		指示符：布尔值或字符串，默认为False
+
+		如果为True，则添加一列以输出名为“_ merge ”的DataFrame ，其中包含每行源的信息。
+		如果string，具有每行源的信息的列将被添加到输出DataFrame，并且列将被命名为string的值。
+		信息列为分类型，对于其合并键仅出现在“左”DataFrame中的观察值为“left_only”，
+		对于其合并键仅出现在“右”DataFrame中的观察值为“right_only”，
+		如果为观察的合并密钥在两者中找到。
+
+		validate：string，默认无
+
+		如果指定，则检查merge是否为指定类型。
+
+		“one_to_one”或“1：1”：检查合并键是否在左右数据集中都是唯一的。
+		“one_to_many”或“1：m”：检查合并键在左数据集中是否唯一。
+		“many_to_one”或“m：1”：检查合并键在右侧数据集中是否唯一。
+		“many_to_many”或“m：m”：允许，但不会导致检查。
+
+返回：		合并了的：DataFrame
+		如果输出类型是DataFrame的子类，则输出类型将与' left '相同。
+
+Notes：		支持将索引级别指定为on、left on和right on参数的功能
+
+>>> A              >>> B
+    lkey value         rkey value
+0   foo  1         0   foo  5
+1   bar  2         1   bar  6
+2   baz  3         2   qux  7
+3   foo  4         3   bar  8
+
+>>> A.merge(B, left_on='lkey', right_on='rkey', how='outer')
+   lkey  value_x  rkey  value_y
+0  foo   1        foo   5
+1  foo   4        foo   5
+2  bar   2        bar   6
+3  bar   2        bar   8
+4  baz   3        NaN   NaN
+5  NaN   NaN      qux   7
+
+adf = pd.DataFrame({'x1':list('ABC'),'x2':[1,2,3]})
+bdf = pd.DataFrame({'x1':list('ABD'),'x3':list('TFT')})
+adf
+	x1	x2
+0	A	1
+1	B	2
+2	C	3
+bdf
+	x1	x3
+0	A	T
+1	B	F
+2	D	T
+
+#链接从bdf到adf的匹配行
+pd.merge(adf,bdf,how = 'left',on = 'x1')
+	x1	x2	x3
+0	A	1	T
+1	B	2	F
+2	C	3	NaN
+连接从adf到bdf的匹配行。
+pd.merge(adf,bdf,how = 'right',on = 'x1')
+	x1	x2	x3
+0	A	1.0	T
+1	B	2.0	F
+2	D	NaN	T
+
+加入数据。在两个集合中只保留行。
+pd.merge(adf,bdf,on = 'x1')
+	x1	x2	x3
+0	A	1	T
+1	B	2	F
+pd.merge(adf,bdf,how = 'inner',on = 'x1')
+	x1	x2	x3
+0	A	1	T
+1	B	2	F
+
+加入数据。保留所有值，所有行。
+pd.merge(adf,bdf,how = 'outer',on = 'x1')
+	x1	x2	x3
+0	A	1.0	T
+1	B	2.0	F
+2	C	3.0	NaN
+3	D	NaN	T
+*******************************************************
+adf中与bdf匹配的所有行
+adf[adf.x1.isin(bdf.x1)]
+	x1	x2
+0	A	1
+1	B	2
+
+adf中没有匹配bdf的所有行。
+adf[~adf.x1.isin(bdf.x1)]
+	x1	x2
+2	C	3
+
+ydf = pd.DataFrame({'x1':list('ABC'),'x2':[1,2,3]})
+zdf = pd.DataFrame({'x1':list('BCD'),'x2':[2,3,4]})
+ydf
+	x1	x2
+0	A	1
+1	B	2
+2	C	3
+zdf
+	x1	x2
+0	B	2
+1	C	3
+2	D	4
+ydf+zdf
+	x1	x2
+0	AB	3
+1	BC	5
+2	CD	7
+
+同时出现在ydf和zdf中的行(交集)。
+pd.merge(ydf,zdf)
+	x1	x2
+0	B	2
+1	C	3
+
+出现在或同时出现在ydf和zdf中的行（并集）。
+pd.merge(ydf,zdf,how = 'outer')
+	x1	x2
+0	A	1
+1	B	2
+2	C	3
+3	D	4
+
+pd.merge(ydf,zdf,how = 'outer',indicator = True)
+	x1	x2	_merge
+0	A	1	left_only
+1	B	2	both
+2	C	3	both
+3	D	4	right_only
+
+pd.merge(ydf,zdf,how = 'outer',indicator = True).query('_merge == "left_only"')
+	x1	x2	_merge
+0	A	1	left_only
+
+出现在ydf而不是zdf (Setdiff)中的行
+pd.merge(ydf,zdf,how = 'outer',indicator = True).query('_merge == "left_only"').drop(columns = ['_merge'])
+	x1	x2
+0	A	1
+
+******************************************************
+				### pandas.DataFrame.groupby ###
+DataFrame.groupby(by = None,axis=0,level=None,as_index = True,sort = True,group_keys=True,
+squeeze=False,observed=False,**kwargs)
+使用映射器(dict或键函数，将给定的函数应用到组中，以级数返回结果)或通过一个列的序列。
+参数：
+			by:映射、函数、标签或标签列表
+				用于确定groupby的组。如果by是一个函数，它会调用对象索引的每个值。如果传递				了一个dict或序列，将使用该序列或dict值来确定组(序列的值首先对齐;
+				如果传递ndarray，则按原样使用值确定组。标签或标签列表可以通过self中的列传				递到组中。注意，一个元组被解释为一个(单个)键。
+			axis: 整数，默认为 0
+			level: int，级别名，或此类的序列，默认无
+			as_index: 布尔，默认 True
+				对于聚合输出，返回以组标签为索引的对象。只与DataFrame输入相关。因						为index=False实际上是“sql风格”的分组输出
+			sort: 布尔，默认为 True
+				组密钥。通过关闭它来获得更好的性能。注意这不会影响每组观察的顺序。groupby				保留每个组中的行顺序。
+			group_keys: 布尔，默认为 True
+				调用apply时，向索引中添加组键来标识各个部分
+			squeeze: 布尔，默认为 False
+				如果可能的话，减少返回类型的维度，否则返回一致的类型
+			observed: 布尔，默认为 False
+				这只适用于任何组群为类别组群，如果为真:只显示组群组的观测值。如果为False:				显示类别分类值的所有值。
+返回：			GroupBy object
+
+dfff = pd.DataFrame({'A' : ['foo', 'bar', 'foo', 'bar',
+   ....:                           'foo', 'bar', 'foo', 'foo'],
+   ....:                    'B' : ['one', 'one', 'two', 'three',
+   ....:                           'two', 'two', 'one', 'three'],
+   ....:                    'C' : np.random.randn(8),
+   ....:                    'D' : np.random.randn(8)})
+dfff
+	A	B	C		D
+0	foo	one	-1.496465	-0.621430
+1	bar	one	1.603895	-0.036260
+2	foo	two	-1.136152	-0.067107
+3	bar	three	-0.826539	0.455535
+4	foo	two	-0.272897	0.940286
+5	bar	two	0.242522	1.040530
+6	foo	one	1.416120	-0.570500
+7	foo	three	1.969638	0.051856
+dfff.groupby('A').sum()    	#通过将A列的数据分组，然后对分组后的数据每列求和
+
+	C		D
+A		
+bar	1.019878	1.459805
+foo	0.480244	-0.266894
+
+dfff.groupby(['A','B']).sum()     #先通过'A'列分组，再通过'B'列再细分组，然后再分组分列求和
+		C	D
+A	B		
+bar	one	1.603895	-0.036260
+	three	-0.826539	0.455535
+	two	0.242522	1.040530
+foo	one	-0.080345	-1.191930
+	three	1.969638	0.051856
+	two	-1.409049	0.873179
+
+				### pandas.DataFrame.assign ###
+DataFrame.assign(**kwargs)
+将新列分配给DataFrame，返回一个新对象(副本)，并将新列添加到原始列中。重新分配的现有列将被覆盖。
+参数：			kwargs: 关键字-值对
+			关键词是列名。如果值是可调用的，则在DataFrame上计算它们并将其分配给新列。
+			可调用程序不能更改输入DataFrame(尽管panda不检查它)。
+			如果这些值是不可调用的(例如，一个系列、标量或数组)，则简单地分配它们。
+返回：			df: DataFrame
+			除了所有现有的列之外，还有一个新的DataFrame的新列。
+
+其中值是可调用的，在df上求值:
+ddff = pd.DataFrame({'A':range(1,11),'B':np.random.randn(10)})
+ddff
+	A	B
+0	1	0.681569
+1	2	-1.643572
+2	3	-1.198609
+3	4	-0.148003
+4	5	0.932165
+5	6	-1.558001
+6	7	1.976086
+7	8	2.010083
+8	9	1.047775
+9	10	-0.046308
+ddff.assign(ln_A = lambda x:x.A**2)
+	A	B		ln_A
+0	1	0.681569	1
+1	2	-1.643572	4
+2	3	-1.198609	9
+3	4	-0.148003	16
+4	5	0.932165	25
+5	6	-1.558001	36
+6	7	1.976086	49
+7	8	2.010083	64
+8	9	1.047775	81
+9	10	-0.046308	100
+
+已存在且已插入的值:
+newcol = ddff.A/2
+newcol
+0    0.5
+1    1.0
+2    1.5
+3    2.0
+4    2.5
+5    3.0
+6    3.5
+7    4.0
+8    4.5
+9    5.0
+Name: A, dtype: float64
+ddff.assign(lnn_A = newcol)
+	A	B		lnn_A
+0	1	0.681569	0.5
+1	2	-1.643572	1.0
+2	3	-1.198609	1.5
+3	4	-0.148003	2.0
+4	5	0.932165	2.5
+5	6	-1.558001	3.0
+6	7	1.976086	3.5
+7	8	2.010083	4.0
+8	9	1.047775	4.5
+9	10	-0.046308	5.0
+
+关键字参数相互依赖的位置:
+ddf = pd.DataFrame({'A':[1,2,3]})
+ddf
+	A
+0	1
+1	2
+2	3
+ddf.assign(B = ddf.A,C = lambda x:x['A']+x['B'])
+	A	B	C
+0	1	1	2
+1	2	2	4
+2	3	3	6
+
+
+				### pandas.DataFrame.fillna ###
+pandas.DataFrame.fillna
+DataFrame.fillna(value=None, method=None, axis=None, inplace=False, limit=None, downcast=None, **kwargs)
+使用指定的方法填充NA/NaN值
+参数：			value:标量、字典、Series或DataFrame
+				用来填充空格的值(例如0)，也可以用dict/Series/DataFrame值来指定每个索引(一					个Series)或列(一个DataFrame)使用哪个值。(未填入dict/Series/DataFrame中的值				)。这个值不能是一个列表。
+			method: {‘backfill’, ‘bfill’, ‘pad’, ‘ffill’, None}, default None
+				方法:将最近的有效观测值推广到下一个有效的观测值/ bfill:使用下一个有效观测				值来填补空白
+			axis: {0 or 'index',1 or 'columns'}
+			inplace: 布尔，默认为 False
+				如果为真，在原数据上填写。注意:这将修改这个对象上的任何其他视图(例如				DataFrame中的列的无拷贝切片)。
+			limit: int,默认为 None
+				如果指定了方法，这就是要向前/向后填充的连续NaN值的最大数目。
+				换句话说，如果有一个间隔超过这个连续NaNs的数量，它将只会被部分填充。
+				如果没有指定方法，这就是沿整个轴填充NaNs的最大条目数。
+				如果不是零，则必须大于0。
+			downcast: dict,默认为 None
+				一个item->dtype(如果可能的话)，或者字符串“infer”(推断)，
+				它将尝试向下转换到一个合适的相等类型(例如，float64到int64
+返回：			填充了的：DataFrame
+	
+将所有NaN元素替换为0。
+df = pd.DataFrame([[np.nan, 2, np.nan, 0],
+...                    [3, 4, np.nan, 1],
+...                    [np.nan, np.nan, np.nan, 5],
+...                    [np.nan, 3, np.nan, 4]],
+...                    columns=list('ABCD'))
+df
+	A	B	C	D
+0	NaN	2.0	NaN	0
+1	3.0	4.0	NaN	1
+2	NaN	NaN	NaN	5
+3	NaN	3.0	NaN	4
+df.fillna(0)
+
+	A	B	C	D
+0	0.0	2.0	0.0	0
+1	3.0	4.0	0.0	1
+2	0.0	0.0	0.0	5
+3	0.0	3.0	0.0	4
+我们还可以向前或向后传播非空值。
+df.fillna(method = 'ffill')
+	A	B	C	D
+0	NaN	2.0	NaN	0
+1	3.0	4.0	NaN	1
+2	3.0	4.0	NaN	5
+3	3.0	3.0	NaN	4
+将列“A”、“B”、“C”和“D”中的所有NaN元素分别替换为0、1、2和3。
+df.fillna(value = values)
+	A	B	C	D
+0	0.0	2.0	2.0	0
+1	3.0	4.0	2.0	1
+2	0.0	1.0	2.0	5
+3	0.0	3.0	2.0	4
+只替换第一个NaN元素。
+df.fillna(value=values, limit=1)
+	A	B	C	D
+0	0.0	2.0	2.0	0
+1	3.0	4.0	NaN	1
+2	NaN	1.0	NaN	5
+3	NaN	3.0	NaN	4
+
+	
+				### pandas.DataFrame.dropna ###
+DataFrame.dropna(axis=0, how='any', thresh=None, subset=None, inplace=False)
+删除缺失值。
+参数：			axis : {0 or ‘index’, 1 or ‘columns’}, default 0
+				确定是否删除包含缺失值的行或列。
+				0, or ‘index’ :删除包含缺失值的行。
+				1, or ‘columns’ : 删除包含缺失值的列。			
+			how : {‘any’, ‘all’}, default ‘any’
+				当至少有一个NA或所有NA时，确定行或列是否从DataFrame中删除。f
+				‘any’ : 如果存在任何NA值，删除该行或列。
+				‘all’ :如果所有值都是NA，则删除该行或列。
+			thresh: int,可选
+				需要很多非na值。
+			subset: array-like,可选
+				要考虑的其他轴上的标签，例如，如果要删除行，这些将是要包含的列的列表。
+			inplace: 布尔，默认为 False
+				如果为真，则原地操作，不返回任何值。
+返回：			DataFrame
+			从其中删除NA条目的DataFrame。
+删除至少缺少一个元素的行。
+df = pd.DataFrame({"name": ['Alfred', 'Batman', 'Catwoman'],
+...                    "toy": [np.nan, 'Batmobile', 'Bullwhip'],
+...                    "born": [pd.NaT, pd.Timestamp("1940-04-25"),
+...                             pd.NaT]})
+df
+	name		toy		born
+0	Alfred		NaN		NaT
+1	Batman		Batmobile	1940-04-25
+2	Catwoman	Bullwhip	NaT
+df.dropna()
+	name	toy		born
+1	Batman	Batmobile	1940-04-25
+删除至少缺少一个元素的列。
+df.dropna(axis='columns')
+	name
+0	Alfred
+1	Batman
+2	Catwoman
+删除所有元素都不存在的行。
+df.dropna(how='all')
+	name		toy		born
+0	Alfred		NaN		NaT
+1	Batman		Batmobile	1940-04-25
+2	Catwoman	Bullwhip	NaT
+只保留至少有两个非na值的行。
+df.dropna(thresh = 2)
+	name		toy		born
+1	Batman		Batmobile	1940-04-25
+2	Catwoman	Bullwhip	NaT	
+定义在哪个列中查找丢失的值。
+df.dropna(subset = ['name','born'])
+	name	toy		born
+1	Batman	Batmobile	1940-04-25
+将具有有效条目的DataFrame保持在同一个变量中。
+df.dropna(inplace = True)
+df
+	name	toy		born
+1	Batman	Batmobile	1940-04-25
+
+
+				### pandas.isna ###
+pandas.isna(obj)
+检测类数组(array-like)对象的缺失值。
+这个函数接受一个标量或类数组对象，并指示值是否丢失(数值数组中的NaN、对象数组中的None或NaN、datetimelike中的NaT)。
+参数：		obj: 标量 或 array-like
+			对象以检查空值或缺失值。
+返回：		bool或bool的array-like
+			对于标量输入，返回一个标量布尔值。对于数组输入，返回一个布尔值数组，指示每个对应的元素是否丢失。
+
+#标量参数(包括字符串)导致标量布尔值。
+pd.isna('dog')
+False
+pd.isna(np.nan)
+True
+
+#ndarrays会产生一种布尔的ndarray。
+array1 = np.array([[1,np.nan,3],[4,5,np.nan]])
+array1
+array([[ 1., nan,  3.],
+       [ 4.,  5., nan]])
+pd.isna(array1)
+array([[False,  True, False],
+       [False, False,  True]]
+
+#对于索引，返回布尔值的ndarray。
+index1 = pd.DatetimeIndex(['2017-07-05','2017-07-06',None,'2017-07-08'])
+index1
+DatetimeIndex(['2017-07-05', '2017-07-06', 'NaT', '2017-07-08'], dtype='datetime64[ns]', freq=None)
+pd.isna(index1)
+array([False, False,  True, False])
+
+#对于Series和DataFrame，返回相同的类型，包含布尔值。
+df1 = pd.DataFrame([['ant','bee','cat'],['dog',None,'fly']])
+df1
+	0	1	2
+0	ant	bee	cat
+1	dog	None	fly	
+pd.isna(df1)
+	0	1	2
+0	False	False	False
+1	False	True	False
+pd.isna(df1[1])
+0    False
+1     True
+Name: 1, dtype: bool
+
+
+				### pandas.concat ###		
+pandas.concat(objs,axis=0,join='outer',join_axes=None,ignore_index=False,keys=None,
+		levels=None,names=None,verify_integrity=False,sort=None,copy=True)
+沿特定轴连接pandas对象，沿其他轴使用可选的设置逻辑。
+也可以在连接轴上添加一层分层索引，如果标签在传递的轴编号上相同(或重叠)，这可能很有用。
+参数：		objs: Series,DataFrame或panel对象的序列或映射
+		如果传递了dict，则排序的键将用作keys参数，除非它被传递，在这种情况下
+		将选择值。任何None对象都将以静默方式删除，除非它们都是None，在这种情况下将
+		引发ValueError
+		axis: {0/'index',1/'columns'},默认为0
+		轴连接起来
+		join: {'inner','outer'},默认'outer'
+			如何处理其他轴上的索引
+		join_axes: 索引对象列表
+			用于其他n-1轴的特定索引，而不是执行内部/外部设置逻辑
+		ignore_index: 布尔，默认为False
+			如果为True，请不要使用串联轴上的索引值。生成的轴将标记为0，...，n-1。
+			如果要连接并置轴没有有意义的索引信息的对象，这将非常有用。
+			请注意：在连接中仍然遵循其他轴上的索引值。
+		keys: 序列，默认无
+			如果传递了多个级别，则应包含元组。使用传递的键作为最外层来构造层次索引
+		level: 序列列表，默认为无
+			用于构造MultiIndex的特定级别(唯一值)。否则，他们将从键中推断出来
+		names: list，默认无
+			生成的分层索引中的级别的名称
+		verify_integrity: 布尔，默认为False
+			检查新的连锁轴是否包含重复项。相对于实际数据连接，这可能非常昂贵。
+		sort: 布尔值，默认无
+			如果在连接为‘outer’时尚未对齐，则对非连接轴进行排序。
+			不推荐使用当前的排序默认值，未来版本的pandas将更改为not_sorting
+			明确地传递sort=True警告并排序，明确地通过sort=False沉默警告而不是排序
+			当join='inner'已经保留非连接轴的顺序时，这没有效果
+		copy: 布尔，默认为True
+			如果为False，则不要不必要地复制数据
+返回：		连接了的：对象，objs的类型
+			当连接Series索引(axis=0)时，将返回一个Series，当objs包含至少一个DataFrame时，
+			返回一个DataFrame，当沿着列(axis = 1)连接时,将返回DataFrame。
+Notes：         keys,levels,names参数都是可选的。
+
+#结合两个系列。
+s1 = pd.Series(['a','b'])
+s2 = pd.Series(['c','d'])
+pd.concat([s1,s2])
+0    a
+1    b
+0    c
+1    d
+dtype: object
+
+#清除现有索引并通过将ignore index选项设置为True在结果中重置它。
+pd.concat([s1,s2],ignore_index = True)
+0    a
+1    b
+2    c
+3    d
+dtype: object
+
+#使用键选项在数据的最外层添加层次索引。
+cc = pd.concat([s1,s2],keys = ['s1','s2',])
+cc
+s1  0    a
+    1    b
+s2  0    c
+    1    d
+dtype: object
+
+#用names选项标记创建的索引键。
+pd.concat([s1,s2],keys = ['s1','s2'],names=['Series name','Row ID'])
+Series name  Row ID
+s1           0         a
+             1         b
+s2           0         c
+             1         d
+dtype: object
+
+#将两个具有相同列的DataFrame对象组合起来。
+df1 = pd.DataFrame([['a',1],['b',2]],columns = ['letter','number'])
+df1
+	letter	number
+0	a	1
+1	b	2
+df2 = pd.DataFrame([['c',3],['d',4]],columns = ['letter','number'])
+df2
+	letter	number
+0	c	3
+1	d	4
+pd.concat([df1,df2])
+	letter	number
+0	a	1
+1	b	2
+0	c	3
+1	d	4
+		
+#将DataFrame对象与重叠列组合起来并返回所有内容。
+#交集之外的列将被NaN值填充。
+df3 = pd.DataFrame([['c',3,'cat'],['d',4,'dog']],columns=['letter','number','animal'])
+df3
+	letter	number	animal
+0	c	3	cat
+1	d	4	dog
+pd.concat([df1,df3])
+	animal	letter	number
+0	NaN	a	1
+1	NaN	b	2
+0	cat	c	3
+1	dog	d	4
+
+#将具有重叠列的DataFrame对象组合起来，
+#只返回那些通过将inner传递给join关键字参数而共享的对象。
+pd.concat([df1,df3],join='inner')
+	letter	number
+0	a	1
+1	b	2
+0	c	3
+1	d	4
+
+#通过传入axis=1，沿着x轴水平组合DataFrame对象。
+df4 = pd.DataFrame([['bird','polly'],['monkey','george']],
+                  columns = ['animal','name'])
+df4
+	animal	name
+0	bird	polly
+1	monkey	george
+pd.concat([df1,df4],axis=1)
+	letter	number	animal	name
+0	a	1	bird	polly
+1	b	2	monkey	george
+
+#防止结果包含带有验证完整性选项的重复索引值。
+df5 = pd.DataFrame([1],index=['a'])
+df5
+	0
+a	1
+df6 = pd.DataFrame([2],index=['a'])
+df6
+	0
+a	2
+pd.concat([df5,df6],verify_integrity=True)
+ValueError: Indexes have overlapping values: Index(['a'], dtype='object')
+
+
+				### pandas.Series.mask ###
+Series.mask(cond,other=nan,inplace=False,axis=None,level=None,errors='raise',
+		try_cast=False,raise_on_error=None)
+返回与self相同形状的对象，其对应的条目来自self，其中cond为False，否则来自other。
+参数：
+		cond：boolean NDFrame，类似数组或可调用
+			如果cond为False，请保留原始值。
+			如果为True，则替换为其他的相应值。
+			如果cond是可调用的，它将在NDFrame上计算，并应返回布尔NDFrame或数组。
+			callable不能更改输入NDFrame（尽管pandas不会检查它）。
+			版本0.18.1中的新增内容：可调用的可用作cond。
+		other：标量，NDFrame或可调用
+			cond为True的条目将替换为其他条目的相应值。
+			如果other是可调用的，则它在NDFrame上计算并应返回标量或NDFrame。
+			callable不能更改输入NDFrame（尽管pandas不会检查它）。
+			版本0.18.1中的新增内容：可调用的可用作其他版本。
+		inplace：布尔值，默认为False
+		是否对数据执行操作
+		axis ： 如果需要，对齐轴，默认为None
+		level ： 如果需要，对齐级别，默认为None
+		errors：str，{'raise'，'ignore'}，默认'raise'
+			raise ：允许引发异常
+			ignore：抑制异常。错误返回原始对象
+			请注意，目前此参数不会影响结果，并始终强制转换为合适的dtype。
+		try_cast：boolean，默认为False
+			尝试将结果转换回输入类型（如果可能），
+		raise_on_error：布尔值，默认为True
+			是否引发无效数据类型（例如，尝试在字符串上的位置）
+
+			从版本0.21.0开始不推荐使用。
+返回：		wh: 与调用者类型相同
+Notes：
+	mask方法是if-then习语的一种应用。对于调用DataFrame中的每个元素，如果cond为False，则使用该元素;否则使用DataFrame other中的相应元素。
+	DataFrame.where()的签名与numpy.where()不同。约df1.where(m,df2)等于np.where(m,df1,df2)。
+	
+s = pd.Series(range(5))
+s>0			#s中大于0的布尔值
+0    False
+1     True
+2     True
+3     True
+4     True
+dtype: bool
+
+s.where(s>0)		#大于0还是数据本身，不满足的话用NaN填充
+0    NaN
+1    1.0
+2    2.0
+3    3.0
+4    4.0
+dtype: float64
+
+s.mask(s>0)		#满足条件用NaN填充，不满足的话还是数据本身
+0    0.0
+1    NaN
+2    NaN
+3    NaN
+4    NaN
+dtype: float64
+
+s.where(s>1,10)		#大于1的话还是数据本身，不满足的话用10填充
+0    10
+1    10
+2     2
+3     3
+4     4
+dtype: int64
+
+s.mask(s>1,10)		#大于1的话用10填充，不满足的话还是数据本身
+0     0
+1     1
+2    10
+3    10
+4    10
+dtype: int64
+
+df = pd.DataFrame(np.arange(10).reshape(-1,2),columns=['A','B'])
+m = df%3 == 0		#DataFrame除以3余数为0的布尔值赋值为变量m
+m
+	A	B
+0	True	False
+1	False	True
+2	False	False
+3	True	False
+4	False	True
+
+df.where(m,-df)		#满足m条件的话，还是数据本身，不满足用数据的相反数替换
+	A	B
+0	0	-1
+1	-2	3
+2	-4	-5
+3	6	-7
+4	-8	9
+
+df.where(m,-df) == np.where(m,df,-df)	#使用DataFrame.where()方法和numpy.where()方法结果一样
+	A	B
+0	True	True
+1	True	True
+2	True	True
+3	True	True
+4	True	True
+
+df.where(m,-df) == df.mask(~m,-df)	#where和mask的用法正好相反
+	A	B
+0	True	True
+1	True	True
+2	True	True
+3	True	True
+4	True	True
+
+
+				### pandas.Series.append ###
+Series.append(to_append, ignore_index=False, verify_integrity=False)
+连接两个或多个Series。
+参数：		to_append: Series或Series的列表或元组；
+    		ignore_index: 布尔，默认为False，如果为True，不要使用索引标签；
+		verify_integrity: 布尔，默认为False，如果为True，则在创建具有重复项的索引时引发异常；
+返回：		添加后的：Series；
+
+Notes：迭代地附加到Series可能比单个连接更加计算密集。更好的解决方案是将值附加到列表，然后将列表与原始Series一次连接。
+import pandas as pd
+s1 = pd.Series([1,2,3])
+s2 = pd.Series([4,5,6])
+s3 = pd.Series([4,5,6],index = [3,4,5])
+s1.append(s2)
+0    1
+1    2
+2    3
+0    4
+1    5
+2    6
+dtype: int64
+s1.append(s3)
+0    1
+1    2
+2    3
+3    4
+4    5
+5    6
+dtype: int64
+#将ignore_index设置为True:
+s1.append(s2,ignore_index=True)
+0    1
+1    2
+2    3
+3    4
+4    5
+5    6
+dtype: int64
+#将verify_integrity设置为True:
+s1.append(s2,verify_integrity = True)
+ValueError: Indexes have overlapping values: Int64Index([0, 1, 2], dtype='int64')
+
+
+				### pandas.Series.drop_duplicates ###
+pandas.Series.drop_duplicates(keep='first',inplace=False)
+返回删除重复值的Series。
+参数：		keep:{'first','last',False},默认 'first'
+		'first':删除重复项，排除第一次出现的；
+		'last': 删除重复项，排除最后一次出现的；
+		False: 删除所有重复项；
+		inplace: 布尔，默认为False；
+		如果为True，则执行原地操作并返回None；
+返回：		删除了重复数据的：Series
+
+#生成包含重复条目的Series
+s = pd.Series(['lama','cow','lama','beetle','lama','hippo'],
+             name = 'animal')
+s
+0      lama
+1       cow
+2      lama
+3    beetle
+4      lama
+5     hippo
+Name: animal, dtype: object
+
+#使用'keep'参数，可以更改重复值的选择行为。值'first'保持每组重复条目的第一次出现，
+#'keep'的默认值值'first'
+s.drop_duplicates()
+0      lama
+1       cow
+3    beetle
+5     hippo
+Name: animal, dtype: object
+
+#参数'keep'的'last'保留每组重复条目的最后一次出现
+s.drop_duplicates(keep='last')
+1       cow
+3    beetle
+4      lama
+5     hippo
+Name: animal, dtype: object
+
+#False参数'keep'的值会丢弃所有重复条目集。
+#设置'inplace'的值为True执行原地操作并返回None。
+s.drop_duplicates(keep = False,inplace = True)
+s
+1       cow
+3    beetle
+5     hippo
+Name: animal, dtype: object
+
+
+				### pandas.Series.unique ###
+Series.unique()
+返回Series对象的唯一值。
+按外观顺序返回单元。基于哈希表的唯一，因此不排序。
+返回：		数组 或 Categorical
+		作为NumPy数组返回惟一值。对于类别数据类型，作为类别返回。
+
+pd.Series([2,1,3,3],name = 'A').unique()    #返回一个数组(array)
+array([2, 1, 3], dtype=int64)
+
+pd.Series([pd.Timestamp('2016-01-01') for _ in range(3)]).unique()
+array(['2016-01-01T00:00:00.000000000'], dtype='datetime64[ns]')
+
+pd.Series([pd.Timestamp('2016-01-01',tz='US/Eastern') for _ in range(3)]).unique()
+array([Timestamp('2016-01-01 00:00:00-0500', tz='US/Eastern')],
+      dtype=object)
+
+#无序的范畴将返回类别的出现顺序。
+pd.Series(pd.Categorical(list('baabc'))).unique()
+[b, a, c]
+Categories (3, object): [b, a, c]
+
+#有序分类保留了类别排序。
+pd.Series(pd.Categorical(list('baabc'),categories = list('abc'),ordered=True)).unique()
+[b, a, c]
+Categories (3, object): [a < b < c]
+
+
+				### pandas.Series.add ###
+Series.add(other,level = None,fill_value = None,axis = 0)
+添加Series和其它元素(二元运算符添加)
+相当于Series+other,但支持将fill_value替换为其中一个输入中的缺失数据。
+参数：		other: Series 或 标量值
+		fill_value: None 或 浮点值，默认为None(NaN)
+		在计算之前使用此值填充现有缺失（NaN）值以及成功进行Series对齐所需的任何新元素。
+		如果缺少相应Series位置中的数据，则结果将丢失
+		level: int 或 name
+		跨级别广播，匹配传递的MultiIndex级别的索引值
+返回：		result：Series
+
+a = pd.Series([1,1,1,np.nan],index = ['a','b','c','d'])
+a
+a    1.0
+b    1.0
+c    1.0
+d    NaN
+dtype: float64
+b = pd.Series([1,np.nan,1,np.nan],index = ['a','b','d','e'])
+b
+a    1.0
+b    NaN
+d    1.0
+e    NaN
+dtype: float64
+a.add(b,fill_value = 0)
+a    2.0
+b    1.0
+c    1.0
+d    1.0
+e    NaN
+dtype: float64
