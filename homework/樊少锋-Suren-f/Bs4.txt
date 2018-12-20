@@ -1,0 +1,9 @@
+bs4: 	find:结果是bs4.element.Tag 操作类似于字典 
+
+	find_all:结果是(class<'bs4.element.ResultSet'>) 类似于list
+
+	select:传的参数是选择器,返回的是一个list,list里面的元素也是bs4.element.Tag类
+
+	select_one:
+
+	strip: 去边    # print(soup.find('h1').text.strip())

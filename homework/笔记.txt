@@ -1,0 +1,13 @@
+plt.figure()-------自定义画布大小
+plt.xlim(0,1000) -------设置x轴刻度范围，从0~1000
+plt.ylim(0,20)------设置y轴刻度的范围，从0~20
+plt.title()----为画出的图添加标题
+ax = plt.gca()#获取轴
+	ax.spines['top'].set_color('None')# 去掉上边的边框
+	ax.spines['left'].set_position(('data',0.4))#移动y轴的位置到x轴的0.4位置
+	ax.spines['left'].set_position('zero')#移动y轴的位置到x轴的0位置
+	ax.spines['bottom'].set_position('center')#移动图表底部x轴的位置到y轴的中心位置
+ax.grid()-----添加网格(如果光要y轴的网格线加参数axis = ‘y’)
+ax.set_axisbelow(True)----将网格线放在图像下边
+plt.bar(X,Y,bottom = ,facecolor='#9999ff',edgecolor='black')----画条形图，参数bottom：设置以多少数值为为底，参数facecolor是设置条形体颜色，参数edgecolor是设置条形图边框的颜色,
+plt.legend(loc = ，ncol =  ，bbox_to_anchor = )---参数loc图例所有figure位置，bbox_to_anchor指定图例在轴的位置，ncol将图像注释变成一行

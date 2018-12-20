@@ -1,0 +1,13 @@
+[
+{'c':'计算机/互联网/通信/电子','e':'Computer,Internet,Telecom,Electronics','nav':'01','category':['01','37','38','31','39','32','40','02','35']},
+{'c':'会计/金融/银行/保险','e':'Accounting,Finance,Banking,Insurance','nav':'41','category':['41','03','42','43','62']},
+{'c':'贸易/消费/制造/营运','e':'Trade,Sales,Manufacturing,Operations','nav':'04','category':['04','22','05','06','44','60','45','14','33']},
+{'c':'制药/医疗','e':'Pharmaceuticals,Healthcare','nav':'08','category':['08','46','47']},
+{'c':'广告/媒体','e':'Advertising,Media Related','nav':'12','category':['12','48','49','13','15']},
+{'c':'房地产/建筑','e':'Real Estates Related','nav':'26','category':['26','09','50','51']},
+{'c':'专业服务/教育/培训','e':'Professional Services,Education,Training','nav':'34','category':['34','07','59','52','18','23','24','63']},
+{'c':'服务业','e':'Customer Services','nav':'11','category':['11','53','17','54','27']},
+{'c':'物流/运输','e':'Logistics,Transportation','nav':'21','category':['21','55']},
+{'c':'能源/原材料','e':'Utilities and Raw Materials Related','nav':'19','category':['19','16','36','61','56']},
+{'c':'政府/非营利组织/其他','e':'Government,Non Profit,Others','nav':'28','category':['28','57','20','29','58']}
+]

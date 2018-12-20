@@ -1,0 +1,23 @@
+conda create -n py37 python=3.7 // 创建一个名为py37的环境并指定python版本为3.7
+
+conda env list  #列出conda管理的所有环境
+
+conda list  #列出当前环境的所有包
+
+conda install requests #安装requests包
+
+conda remove requests #卸载requets包
+
+conda remove -n py37 --all   #删除py37环境及下属所有包
+
+conda update requests #更新requests包
+
+conda activate name   #激活py37环境
+
+conda deactivate     #失活环境
+
+pip freeze > requirement.txt
+
+
+  #将写入有安装版本的txt文件导入
+pip install -r requirement.txt  #安装txt文件中所有的安装包

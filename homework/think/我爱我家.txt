@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>太原二手房网_太原二手房出售_太原个人二手房出售_太原我爱我家</title>
+    <meta name="Keywords" content="太原二手房网,太原二手房出售,太原个人二手房出售">
+    <meta name="Description" content="太原二手房网提供太原二手房价格,太原二手房出售信息,太原二手房个人房源出售价格,是靠谱的太原二手房出售网站,查找太原二手房出售信息就上太原我爱我家官网.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <meta name="mobile-agent" content="format=xhtml; url=https://m.5i5j.com/ty/ershoufang/index">
+        <meta name="mobile-agent" content="format=html5; url=https://m.5i5j.com/ty/ershoufang/index">
+        <script>
+            if ((navigator.userAgent.match(/(iPhone|iPod|Android|iOS|iPad)/i)))
+            {
+                window.location="https://m.5i5j.com/ty/ershoufang/index";
+            }
+        </script>
+        
+    <meta charset="UTF-8">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-103163281-9', 'auto');
+        ga('create', 'UA-103163281-15', 'auto','clientTracker');
+        ga('send', 'pageview');
+        var baseUrl = 'https://res.5i5j.com';
+    </script>
+    <link href="https://res.5i5j.com/pc/common/basic.css?9554bc0d239d8ce4924ea23c7a200925" rel="stylesheet">
+<link href="https://res.5i5j.com/pc/sale/sale.css?9554bc0d239d8ce4924ea23c7a200925" rel="stylesheet">
+<link href="https://res.5i5j.com/pc/im/css/xxSty.css?9554bc0d239d8ce4924ea23c7a200925" rel="stylesheet">
+<script src="https://res.5i5j.com/pc/common/image-error.js?494ea7671fd6d485f5187bd85bd4a380"></script>    </head>
+    <body>
+                    <!-- 导航 start -->
+<div class="top-bar-box">
+    <div class="main top-bar">
+        <div class="top-logo"><a href="/" class="logo-img">我爱我家</a></div>
+		<div class="top-city"><i class="icon-city"></i>太原</div>
+        <input type="hidden" id="searchType" value="sale">
+                <div class="top-city-menu clear">
+            <span class="city-arrow"></span>
+            <ul class="fl">
+                                <li>
+                    <span class="zm fl">B</span>
+                    					<p class="city fl">
+                        <a href="https://bj.5i5j.com/" target="_blank">北京</a>
+					</p>
+                                    </li>
+                                <li>
+                    <span class="zm fl">C</span>
+                    					<p class="city fl">
+                        <a href="https://cd.5i5j.com/" target="_blank">成都</a>
+					</p>
+                    					<p class="city fl">
+                        <a href="https://cs.5i5j.com/" target="_blank">长沙</a>
+					</p>
+                                    </li>
+                                <li>
+                    <span class="zm fl">H</span>
+                    					<p class="city fl">
+                        <a href="https://hz.5i5j.com/" target="_blank">杭州</a>
+					</p>
+                                    </li>
+                                <li>
+                    <span class="zm fl">N</span>
+                    					<p class="city fl">
+                        <a href="https://nj.5i5j.com/" target="_blank">南京</a>
+					</p>
+                    					<p class="city fl">
+                        <a href="https://nn.5i5j.com/" target="_blank">南宁</a>
+					</p>
+                                    </li>
+                                <li>
+                    <span class="zm fl">S</span>
+                    					<p class="city fl">
+                        <a href="https://sh.5i5j.com/" target="_blank">上海</a>
+					</p>
+                    					<p class="city fl">
+                        <a href="https://sz.5i5j.com/" target="_blank">苏州</a>
+					</p>
+                                    </li>
+                                <li>
+                    <span class="zm fl">T</span>
+                    					<p class="city fl">
+                        <a href="https://tj.5i5j.com/" target="_blank">天津</a>
+					</p>
+                    					<p class="city fl">
+                        <a href="https://ty.5i5j.com/" target="_blank">太原</a>
+					</p>
+                                    </li>
+                                <li>
+                    <span class="zm fl">W</span>
+                    					<p class="city fl">
+                        <a href="https://wh.5i5j.com/" target="_blank">武汉</a>
+					</p>
+                    					<p class="city fl">
+                        <a href="https://wx.5i5j.com/" target="_blank">无锡</a>
+					</p>
+                                    </li>
+                                <li>
+                    <span class="zm fl">Z</span>
+                    					<p class="city fl">
+                        <a href="https://zz.5i5j.com/" target="_blank">郑州</a>
+					</p>
+                                    </li>
+                            </ul>
+        </div>
+                <div class="top-login" id="userlogin">
+                            <a href="/reglogin/index?preUrl=https%3A%2F%2Fty.5i5j.com%2Fershoufang%2F" target="" class="log" rel="nofollow">登录</a>
+                <a href="http://passport.5i5j.com:80/passport/register?service=https://ty.5i5j.com%2Freglogin%2Findex?preUrl=https%3A%2F%2Fty.5i5j.com%2Fershoufang%2F&status=1&city=ty" target="_blank" rel="nofollow">注册</a>
+                    </div>
+                <ul class="top-nav">
+                                            <li class="cur">
+                    <a href="/ershoufang/"  style="" onmousedown="_trackData.push(['addaction','PC_TY_首页','二手房按钮']);ga('send','event','PC_TY_首页','二手房按钮','PC_TY_首页_二手房按钮');">二手房                    </a>
+                </li>
+                                            <li >
+                    <a href="/zufang/" target="_self" style="" onmousedown="_trackData.push(['addaction','PC_TY_首页','租房按钮']);ga('send','event','PC_TY_首页','租房按钮','PC_TY_首页_租房按钮');">租房                    </a>
+                </li>
+                                            <li >
+                    <a href="https://ty.5i5j.com/zufang/w3/" target="_self" style="" onmousedown="">相寓                    </a>
+                </li>
+                                            <li >
+                    <a href="https://fang.5i5j.com/ty/" target="_blank" style="" onmousedown="_trackData.push(['addaction','PC_TY_首页','租房按钮']);ga('send','event','PC_TY_首页','开始找房按钮','PC_TY_首页_开始找房按钮');">新房                    </a>
+                </li>
+                                            <li >
+                    <a href="http://haiwai.5i5j.com/" target="_blank" style="" onmousedown="">海外                    </a>
+                </li>
+                                            <li >
+                    <a href="/xiaoqu/" target="_self" style="" onmousedown="_trackData.push(['addaction','PC_TY_首页','小区按钮']);ga('send','event','PC_TY_首页','小区按钮','PC_TY_首页_小区按钮');">小区                    </a>
+                </li>
+                                            <li >
+                    <a href="/jingjiren/" target="_self" style="" onmousedown="_trackData.push(['addaction','PC_TY_首页','经纪人按钮']);ga('send','event','PC_TY_首页','经纪人按钮','PC_TY_首页_经纪人按钮');">经纪人                    </a>
+                </li>
+                                            <li >
+                    <a href="/map/" target="_self" style="" onmousedown="">地图                    </a>
+                </li>
+                                            <li >
+                    <a href="/zhishi/" target="_self" style="" onmousedown="_trackData.push(['addaction','PC_TY_首页','知识按钮']);ga('send','event','PC_TY_首页','知识按钮','PC_TY_首页_知识按钮');">知识                    </a>
+                </li>
+                                            <li >
+                    <a href="/fangjia/" target="_self" style="" onmousedown="">房价                    </a>
+                </li>
+                                            <li >
+                    <a href="/solds" target="_blank" style="" onmousedown="">查成交                    </a>
+                </li>
+                    </ul>
+            </div>
+</div>
+
+
+
+<script>
+    var _trackData = _trackData || [];	//全局变量，一定不要放到一个function里面
+    var _trackDataType = 'web';
+</script>
+
+<script>
+    //易分析
+    var isLogin = '0';
+    var register = '';
+    var userId = '';
+    var userName = '';
+    var domainUrl = 'ty.5i5j.com';
+    var cityName = "ty";
+
+    //登陆上报
+    if(isLogin!='0'){
+        _trackData.push(["userset", 'loginregis', 'login']);
+        _trackData.push(["userset", 'userid',userId]);
+        _trackData.push(["userset", 'username',userName]);
+
+        //登陆成功事件
+        cityName = cityName.toUpperCase();
+        _trackData.push(['addaction','PC_'+cityName+'_登录页','登录成功']);
+    }
+
+    function ajaxLogin(userName){
+       $("#userlogin").html('<a href="/user/index" class="log" rel="nofollow">'+userName+'</a>' +
+       '<a href="/reglogin/logout" rel="nofollow">退出</a>');
+    }
+</script>
+<!-- 导航 end -->
+<!-- 当前路径 start -->
+<div class="cur-path-box">
+	<div class="main clear">
+		<div class="cur-path">
+            <!--breadcrumb-->
+        <a href="/">我爱我家太原</a>
+                    <span>&gt;</span><a>太原二手房</a>
+            		</div>
+        <!--
+		<div class="share-guanzhu">
+			<a href="javascript:;" class="share"></a>
+			<a href="javascript:;" class="guanzhu"></a>
+		</div>
+        -->
+				<div class="search-box add-width">
+			<div class="search-inp">
+                                <input id="ershoufang" type="text" class="inp" placeholder="区域、商圈、小区应有尽有" value="" autocomplete="off" maxlength="50"/>
+				<button class="btn-search"><i class="icon-search"></i></button>
+			</div>
+			<div class="search-menu hide" id="saleSearch">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 当前路径 end -->
+
+<!-- 普通选房\智能选房Tab切换 -->
+<div class="pxTab">
+    <div class="hreFbox">
+<!--        <div class="hreF">
+            <a class="aCur" href="/ershoufang/">在售</a><a target="_blank" href="/xiaoqu">小区</a><a target="_blank" href="/map" class="noBor" onmousedown="_trackData.push(['addaction','PC_TY_二手列表页','地图找房按钮']);ga('send','event','PC_TY_二手列表页','地图找房按钮','PC_TY_二手列表页_地图找房按钮');">地图找房</a>
+        </div>-->
+    </div>
+	<ul class="menusTab">
+                <li class="cur01 cur"><a href="/ershoufang/">条件筛选</a></li>
+                        <li class="cur02"><a href="/smart/ershoufang">选房卡</a></li>
+            </ul>
+    <!-- select start -->
+    <div class="pxMain">
+        <div class="pxMain_con block" >
+            <ul class="tiaoBox">
+	<li>
+        		<h2 class="tTit" title='太原二手房出售'>位置</h2>
+		<div class="tCon">
+			<dl class="adrMenu">
+				<dd class="curDd"><a href="/ershoufang">区域</a></dd>
+                			</dl>
+		</div>
+		<div style="clear:both"></div>
+		<div class="adrCon">
+			<div class="quyu block">
+									<ul class="new_di_tab sTab">
+						<a href="/ershoufang/" title="太原二手房">
+							<li class="new_di_tab_cur">全部<span class="new_icon"></span></li>
+						</a>
+													<a href="/ershoufang/yingzequ/" title="太原迎泽区二手房">
+								<li class="">迎泽区<span class="new_icon"></span></li>
+							</a>
+													<a href="/ershoufang/xiaodianqu/" title="太原小店区二手房">
+								<li class="">小店区<span class="new_icon"></span></li>
+							</a>
+													<a href="/ershoufang/xinghualingqu/" title="太原杏花岭区二手房">
+								<li class="">杏花岭区<span class="new_icon"></span></li>
+							</a>
+													<a href="/ershoufang/wanbailinqu/" title="太原万柏林区二手房">
+								<li class="">万柏林区<span class="new_icon"></span></li>
+							</a>
+													<a href="/ershoufang/jiancaopingqu/" title="太原尖草坪区二手房">
+								<li class="">尖草坪区<span class="new_icon"></span></li>
+							</a>
+													<a href="/ershoufang/jinyuanqu/" title="太原晋源区二手房">
+								<li class="">晋源区<span class="new_icon"></span></li>
+							</a>
+											</ul>
+											</div>
+			<div class="ditie">
+				<ul class="new_di_tab dTab">
+									</ul>
+							</div>
+		</div>
+        	</li>
+			<li>
+			<h2 class="tTit" title='太原二手房价格'>总价</h2>
+			<div class="tCon">
+										<a href="/ershoufang/p1/" rel="nofollow"><span class="inputSty "></span>50万以下</a>
+											<a href="/ershoufang/p2/" rel="nofollow"><span class="inputSty "></span>50-80万</a>
+											<a href="/ershoufang/p3/" rel="nofollow"><span class="inputSty "></span>80-100万</a>
+											<a href="/ershoufang/p4/" rel="nofollow"><span class="inputSty "></span>100-120万</a>
+											<a href="/ershoufang/p5/" rel="nofollow"><span class="inputSty "></span>120-150万</a>
+											<a href="/ershoufang/p6/" rel="nofollow"><span class="inputSty "></span>150-200万</a>
+											<a href="/ershoufang/p7/" rel="nofollow"><span class="inputSty "></span>200-300万</a>
+											<a href="/ershoufang/p8/" rel="nofollow"><span class="inputSty "></span>300万以上</a>
+									<div class="iTxt">
+					<input id="priceLow" type="text" maxlength="8"> ~ <input id="priceTop" type="text" maxlength="8">
+					<span id="priceUnit"></span><input class="btnQ" type="button" value="确定" onclick="customPrice();">
+				</div>
+			</div>
+		</li>
+				<li>
+			<h2 class="tTit" title='太原二手房面积'>面积</h2>
+			<div class="tCon">
+										<a href="/ershoufang/a1/" rel="nofollow"><span class="inputSty "></span>50㎡以下</a>
+											<a href="/ershoufang/a2/" rel="nofollow"><span class="inputSty "></span>50-70㎡</a>
+											<a href="/ershoufang/a3/" rel="nofollow"><span class="inputSty "></span>70-90㎡</a>
+											<a href="/ershoufang/a4/" rel="nofollow"><span class="inputSty "></span>90-110㎡</a>
+											<a href="/ershoufang/a5/" rel="nofollow"><span class="inputSty "></span>110-130㎡</a>
+											<a href="/ershoufang/a6/" rel="nofollow"><span class="inputSty "></span>130-150㎡</a>
+											<a href="/ershoufang/a7/" rel="nofollow"><span class="inputSty "></span>150-200㎡</a>
+											<a href="/ershoufang/a8/" rel="nofollow"><span class="inputSty "></span>200㎡以上</a>
+									<div class="iTxt">
+					<input id="areaLow" type="text" maxlength="8"> ~ <input id="areaTop" type="text" maxlength="8">
+					<span id="areaUnit"></span><input class="btnQ" type="button" value="确定" onclick="customArea();">
+				</div>
+			</div>
+		</li>
+				<li>
+			<h2 class="tTit" title='太原二手房户型'>户型</h2>
+			<div class="tCon">
+				                    				                    					<a href="/ershoufang/r1/" rel="nofollow"><span class="inputSty "></span>一室</a>
+                    				                    					<a href="/ershoufang/r2/" rel="nofollow"><span class="inputSty "></span>二室</a>
+                    				                    					<a href="/ershoufang/r3/" rel="nofollow"><span class="inputSty "></span>三室</a>
+                    				                    					<a href="/ershoufang/r4/" rel="nofollow"><span class="inputSty "></span>四室</a>
+                    				                    					<a href="/ershoufang/r5/" rel="nofollow"><span class="inputSty "></span>五室</a>
+                    				                    					<a href="/ershoufang/r9/" rel="nofollow"><span class="inputSty "></span>五室以上</a>
+                    							</div>
+		</li>
+				<li>
+			<h2 class="tTit" title='太原二手房用途'>用途</h2>
+			<div class="tCon">
+									<a href="/ershoufang/q1/" rel="nofollow"><span class="inputSty "></span>普通住宅</a>
+									<a href="/ershoufang/q3/" rel="nofollow"><span class="inputSty "></span>别墅</a>
+									<a href="/ershoufang/q4/" rel="nofollow"><span class="inputSty "></span>其它</a>
+							</div>
+		</li>
+		<li>
+		<div class="moreCon hide">
+			<ul>
+							<li>
+					<h2 class="tTit" title='太原二手房楼层'>楼层</h2>
+					<div class="tCon">
+													<a href="/ershoufang/c998/" rel="nofollow"><span class="inputSty "></span>底层</a>
+													<a href="/ershoufang/c1/" rel="nofollow"><span class="inputSty "></span>低楼层</a>
+													<a href="/ershoufang/c2/" rel="nofollow"><span class="inputSty "></span>中楼层</a>
+													<a href="/ershoufang/c3/" rel="nofollow"><span class="inputSty "></span>高楼层</a>
+													<a href="/ershoufang/c999/" rel="nofollow"><span class="inputSty "></span>顶层</a>
+											</div>
+				</li>
+										<li>
+					<h2 class="tTit" title='太原二手房朝向'>朝向</h2>
+					<div class="tCon">
+													<a href="/ershoufang/f5/" rel="nofollow"><span class="inputSty "></span>南北</a>
+													<a href="/ershoufang/f3/" rel="nofollow"><span class="inputSty "></span>南</a>
+													<a href="/ershoufang/f1/" rel="nofollow"><span class="inputSty "></span>东</a>
+													<a href="/ershoufang/f2/" rel="nofollow"><span class="inputSty "></span>西</a>
+													<a href="/ershoufang/f4/" rel="nofollow"><span class="inputSty "></span>北</a>
+											</div>
+				</li>
+										<li>
+					<h2 class="tTit" title='太原二手房楼龄'>楼龄</h2>
+					<div class="tCon">
+													<a href="/ershoufang/y1/" rel="nofollow"><span class="inputSty "></span>5年以内</a>
+													<a href="/ershoufang/y2/" rel="nofollow"><span class="inputSty "></span>10年以内</a>
+													<a href="/ershoufang/y3/" rel="nofollow"><span class="inputSty "></span>15年以内</a>
+													<a href="/ershoufang/y4/" rel="nofollow"><span class="inputSty "></span>20年以内</a>
+													<a href="/ershoufang/y5/" rel="nofollow"><span class="inputSty "></span>20年以上</a>
+											</div>
+				</li>
+																<li>
+					<h2 class="tTit" title='太原二手房装修'>装修</h2>
+					<div class="tCon">
+													<a href="/ershoufang/z3/" rel="nofollow"><span class="inputSty "></span>精装修</a>
+													<a href="/ershoufang/z2/" rel="nofollow"><span class="inputSty "></span>普通装修</a>
+													<a href="/ershoufang/z1/" rel="nofollow"><span class="inputSty "></span>毛坯房</a>
+											</div>
+				</li>
+										<li>
+					<h2 class="tTit" title='太原二手房特色'>标签</h2>
+					<div class="tCon">
+													<a href="/ershoufang/t4/" rel="nofollow"><span class="inputSty "></span>随时看</a>
+													<a href="/ershoufang/t8/" rel="nofollow"><span class="inputSty "></span>满二年</a>
+													<a href="/ershoufang/t16/" rel="nofollow"><span class="inputSty "></span>满五年</a>
+													<a href="/ershoufang/t32/" rel="nofollow"><span class="inputSty "></span>近公园</a>
+													<a href="/ershoufang/t64/" rel="nofollow"><span class="inputSty "></span>复式</a>
+													<a href="/ershoufang/t128/" rel="nofollow"><span class="inputSty "></span>跃层</a>
+													<a href="/ershoufang/t256/" rel="nofollow"><span class="inputSty "></span>loft</a>
+													<a href="/ershoufang/t512/" rel="nofollow"><span class="inputSty "></span>单位房</a>
+											</div>
+				</li>
+						</ul>
+		</div>
+	</li>
+	<li>
+		<div class="moreBtn">
+            			<em class="bor1"></em>
+			<em class="bor2"></em>
+			<span>更多<i class="mBg"></i></span>
+            		</div>
+	</li>
+	<li class="tj">
+		<h2 class="tTit" title='太原二手房条件'>条件</h2>
+		<div class="tCon">
+						<div class="btn-box">
+				<em class="bcBtn" onclick="saveCondition();"><i></i>保存</em>
+                                    <em class="qkBtn" onclick="cleanSelect();"><i></i>清空</em>
+                
+            </div>
+		</div>
+	</li>
+</ul>
+<script>
+	var saveconditions = "";
+	var saveconditionsurl = "ershoufang/";
+	var type = "2";
+</script>
+        </div>
+ </div>
+</div>
+<!-- 普通选房\智能选房Tab切换 End-->
+
+<div class="pListBox mar">
+<!-- 普通选房小图列表 -->
+    <div class="lfBox lf">
+	    <dl class="pxTit">
+            <a href="/ershoufang/"><dd class="current">默认排序</dd></a>
+            <a href="/ershoufang/o3/"><dd >总价<i ></i></dd></a>
+            <a href="/ershoufang/o1/"><dd >单价<i ></i></dd></a>
+            <a href="/ershoufang/o5/"><dd >面积<i ></i></dd></a>
+            <a href="/ershoufang/o8/"><dd >最新发布<i ></i></dd></a>
+            <dd class="last_dd">		        
+			<a href="javascript:void(0);" class="moshi-cur"><span class="xiao">小图</span></a>
+		        <a href="?images" class=""><span class="da">大图</span></a>
+            </dd>
+        </dl>
+        <div class="total-box noBor">共找到<span>6715</span>套房源</div>
+        <!-- 经纪人展位-->	
+                <!-- 经纪人展位 End-->		       
+        <div class="list-con-box">
+                            <!-- houses_list start-->
+                <ul class="pList">        <li>
+            <div class="listImg" onmousedown="_trackData.push(['addaction','PC_ty_二手房列表页','房源位置1']);"><a href="/ershoufang/42025833.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" onerror="houseimgerror(this,1)" src="https://image16.5i5j.com/erp/house/4202/42025833/shinei/nhdmjgeke5c46bfa.jpg_P7.jpg" title="重机宿舍 大红本浇筑房 简单装修 中间楼层 可贷款" alt="重机宿舍 大红本浇筑房 简单装修 中间楼层 可贷款">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/42025833.html" target="_blank"  onmousedown="_trackData.push(['addaction','PC_ty_二手房列表页','房源位置1']);">重机宿舍 大红本浇筑房 简单装修 中间楼层 可贷款</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室1厅1卫·66  平米  ·  南  ·  中楼层/6层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/288415.html" target="_blank">重机 康乐巷重机宿舍</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>0  人关注 · 近30天带看  39  次  ·  2018-11-27发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>78</strong>万</p>
+                        <p>单价11818元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>满五年</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown="_trackData.push(['addaction','PC_ty_二手房列表页','房源位置2']);"><a href="/ershoufang/41895348.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" onerror="houseimgerror(this,1)" src="https://image18.5i5j.com/erp/house/4189/41895348/shinei/plkomdfebe292869.jpg_P7.jpg" title="全南户型 位置好 采光无遮挡 价格实惠出行方便可商量" alt="全南户型 位置好 采光无遮挡 价格实惠出行方便可商量">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41895348.html" target="_blank"  onmousedown="_trackData.push(['addaction','PC_ty_二手房列表页','房源位置2']);">全南户型 位置好 采光无遮挡 价格实惠出行方便可商量</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室2厅1卫·66.79  平米  ·  南  ·  高楼层/6层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/377015.html" target="_blank">敦化坊 晋安西街美好家园(CBS4)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>3  人关注 · 近30天带看  23  次  ·  2018-11-04发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>68</strong>万</p>
+                        <p>单价10181元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown="_trackData.push(['addaction','PC_ty_二手房列表页','房源位置3']);"><a href="/ershoufang/41876673.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" onerror="houseimgerror(this,1)" src="https://image17.5i5j.com/erp/house/4187/41876673/shinei/bojhpdii69dc4067.jpg_P7.jpg" title="中间楼层三层南北三局" alt="中间楼层三层南北三局">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41876673.html" target="_blank"  onmousedown="_trackData.push(['addaction','PC_ty_二手房列表页','房源位置3']);">中间楼层三层南北三局</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室1厅1卫·85.65  平米  ·  南北  ·  中楼层/6层  ·  中装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/437987.html" target="_blank">桃园北路 桃园四巷水利设计院宿舍(CBS17)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>2  人关注 · 近30天带看  40  次  ·  2018-11-02发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>107</strong>万</p>
+                        <p>单价12493元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>满五年</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41871065.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" onerror="houseimgerror(this,1)" src="https://image16.5i5j.com/erp/house/4187/41871065/shinei/lghbjdek7381b0d4.jpg_P7.jpg" title="府西街新建路羊市街奶生堂机械进出口宿舍大红本南北通透中间层" alt="府西街新建路羊市街奶生堂机械进出口宿舍大红本南北通透中间层">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41871065.html" target="_blank"  onmousedown="">府西街新建路羊市街奶生堂机械进出口宿舍大红本南北通透中间层</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室2厅1卫·88.73  平米  ·  南北  ·  低楼层/7层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/376922.html" target="_blank">解放路 奶生堂机械进出口宿舍(CBS4)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>1  人关注 · 近30天带看  48  次  ·  2018-11-05发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>103</strong>万</p>
+                        <p>单价11608元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>近公园</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41824576.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" onerror="houseimgerror(this,1)" src="https://image17.5i5j.com/erp/house/4182/41824576/shinei/kdmhmefe7890d16e.jpg_P7.jpg" title="水西门、海边街燃料宿舍、大红本、南北通透好格局、价格可刀诚卖" alt="水西门、海边街燃料宿舍、大红本、南北通透好格局、价格可刀诚卖">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41824576.html" target="_blank"  onmousedown="">水西门、海边街燃料宿舍、大红本、南北通透好格局、价格可刀诚卖</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室1厅1卫·66.19  平米  ·  南北  ·  中楼层/6层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/390055.html" target="_blank">庙前 海边街燃料厂宿舍(CBS7)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>2  人关注 · 近30天带看  34  次  ·  2018-11-05发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>78</strong>万</p>
+                        <p>单价11784元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>近公园</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41784461.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image17.5i5j.com/erp/house/4178/41784461/shinei/fcfbkkai31ee278c.jpg_P7.jpg" title="双塔寺双塔北路永祚西街8号院南北通透大红本" alt="双塔寺双塔北路永祚西街8号院南北通透大红本" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41784461.html" target="_blank"  onmousedown="">双塔寺双塔北路永祚西街8号院南北通透大红本</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室1厅1卫·59.23  平米  ·  南北  ·  中楼层/6层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/386106.html" target="_blank">朝阳街 永祚西街8号院(CBS6)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>1  人关注 · 近30天带看  35  次  ·  2018-10-22发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>70</strong>万</p>
+                        <p>单价11818元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>满五年</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41779040.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image16.5i5j.com/erp/house/4177/41779040/shinei/mcceogdm31567593.jpg_P7.jpg" title="建设路东中环五龙口五龙花园新高层电梯房大红本满五" alt="建设路东中环五龙口五龙花园新高层电梯房大红本满五" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41779040.html" target="_blank"  onmousedown="">建设路东中环五龙口五龙花园新高层电梯房大红本满五</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室1厅1卫·94  平米  ·  南北  ·  顶层/28层  ·  精装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/358520.html" target="_blank">五龙口 五龙口五龙花园北区(CBS)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>1  人关注 · 近30天带看  28  次  ·  2018-10-24发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>98</strong>万</p>
+                        <p>单价10426元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>近公园</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41497943.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image17.5i5j.com/erp/house/4149/41497943/shinei/nogbklpm7a26c8af.jpg_P7.jpg" title="对口五一路 二院周边 精英家园 电梯房 南北通透" alt="对口五一路 二院周边 精英家园 电梯房 南北通透" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41497943.html" target="_blank"  onmousedown="">对口五一路 二院周边 精英家园 电梯房 南北通透</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室2厅1卫·108.74  平米  ·  南北  ·  中楼层/18层  ·  中装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/358661.html" target="_blank">新道街 五一路精英家园(CBS)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>3  人关注 · 近30天带看  22  次  ·  2018-09-12发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>145</strong>万</p>
+                        <p>单价13335元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>跃层</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41384018.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image16.5i5j.com/erp/house/4138/41384018/shinei/jlmeiani3686c52f.jpg_P7.jpg" title="紧邻柳巷，小区环境优越，管理治安严谨，紧挨公园" alt="紧邻柳巷，小区环境优越，管理治安严谨，紧挨公园" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41384018.html" target="_blank"  onmousedown="">紧邻柳巷，小区环境优越，管理治安严谨，紧挨公园</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室1厅1卫·61.13  平米  ·  南北  ·  顶层/6层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/376991.html" target="_blank">解放路 开化寺联通宿舍(CBS4)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>2  人关注 · 近30天带看  26  次  ·  2018-09-01发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>68</strong>万</p>
+                        <p>单价11124元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>近公园</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41211689.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image16.5i5j.com/erp/house/4121/41211689/shinei/pdmoojiaacd6e9b4.jpg_P7.jpg" title="全明户型 精装南北对口实验 看房方便 房东诚心卖 可按揭" alt="全明户型 精装南北对口实验 看房方便 房东诚心卖 可按揭" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41211689.html" target="_blank"  onmousedown="">全明户型 精装南北对口实验 看房方便 房东诚心卖 可按揭</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室2厅2卫·134.96  平米  ·  南北  ·  低楼层/11层  ·  精装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/358291.html" target="_blank">千峰南路 千峰南路大唐四季花园(CBS)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>5  人关注 · 近30天带看  35  次  ·  2018-08-04发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>155</strong>万</p>
+                        <p>单价11485元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满二年</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41191199.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image17.5i5j.com/erp/house/4119/41191199/shinei/fdkdlopb900919db.jpg_P7.jpg" title="山佑巷 进山宿舍大红本南北通透三居 看房方便" alt="山佑巷 进山宿舍大红本南北通透三居 看房方便" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41191199.html" target="_blank"  onmousedown="">山佑巷 进山宿舍大红本南北通透三居 看房方便</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室1厅1卫·81  平米  ·  南西北  ·  中楼层/6层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/377045.html" target="_blank">上马街 山佑巷进山中学宿舍(CBS4)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>1  人关注 · 近30天带看  22  次  ·  2018-08-02发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>85</strong>万</p>
+                        <p>单价10494元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>复式</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/40929976.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image18.5i5j.com/erp/house/4092/40929976/shinei/bckgleli8c69d9ba.jpg_P7.jpg" title="老军营林业厅南北通透大红本可贷款" alt="老军营林业厅南北通透大红本可贷款" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/40929976.html" target="_blank"  onmousedown="">老军营林业厅南北通透大红本可贷款</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室1厅1卫·91.51  平米  ·  南北  ·  底层/6层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/368182.html" target="_blank">老军营 老军营林业厅北院(CBS2)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>1  人关注 · 近30天带看  23  次  ·  2018-06-27发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>155</strong>万</p>
+                        <p>单价16938元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满二年</span><span>近公园</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/40041814.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image18.5i5j.com/erp/house/4004/40041814/shinei/ebfoiomm314912bf.jpg_P7.jpg" title="解放路开化寺晋福小区3室1厅高层框架大红本价格低" alt="解放路开化寺晋福小区3室1厅高层框架大红本价格低" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/40041814.html" target="_blank"  onmousedown="">解放路开化寺晋福小区3室1厅高层框架大红本价格低</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室1厅1卫·104.82  平米  ·  东北  ·  高楼层/11层  ·  中装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/386171.html" target="_blank">柳巷 柴市巷晋福小区(CBS6)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>3  人关注 · 近30天带看  54  次  ·  2018-10-20发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>108</strong>万</p>
+                        <p>单价10303元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满二年</span><span>近公园</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41903309.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image16.5i5j.com/erp/house/4190/41903309/shinei/mmpkkppb8eaddfe4.jpg_P7.jpg" title="晋阳街坞城路山毛小区，近公园，大阳台，采光好" alt="晋阳街坞城路山毛小区，近公园，大阳台，采光好" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41903309.html" target="_blank"  onmousedown="">晋阳街坞城路山毛小区，近公园，大阳台，采光好</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室2厅1卫·62  平米  ·  南  ·  底层/6层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/368156.html" target="_blank">晋阳街 太榆路山毛宿舍(CBS2)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>0  人关注 · 近30天带看  32  次  ·  2018-11-06发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>76</strong>万</p>
+                        <p>单价12258元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>满二年</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41858159.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image16.5i5j.com/erp/house/4185/41858159/shinei/ognmojbi8ba06ca0.jpg_P7.jpg" title="胜利东街富力城 交通便利 配套齐全 精装两居室 全阳户型！" alt="胜利东街富力城 交通便利 配套齐全 精装两居室 全阳户型！" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41858159.html" target="_blank"  onmousedown="">胜利东街富力城 交通便利 配套齐全 精装两居室 全阳户型！</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室2厅1卫·88.92  平米  ·  南  ·  低楼层/28层  ·  精装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/358644.html" target="_blank">富力城 富力东街富力城(CBS)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>0  人关注 · 近30天带看  26  次  ·  2018-10-29发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>113</strong>万</p>
+                        <p>单价12708元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满二年</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/37362101.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image18.5i5j.com/erp/house/3736/37362101/shinei/npkofcmbdd91da89.jpg_P7.jpg" title="长风西街万科金域 大红本 精装南北通透 不挡光 采光好" alt="长风西街万科金域 大红本 精装南北通透 不挡光 采光好" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/37362101.html" target="_blank"  onmousedown="">长风西街万科金域 大红本 精装南北通透 不挡光 采光好</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室1厅1卫·91.33  平米  ·  南北  ·  低楼层/33层  ·  精装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/358570.html" target="_blank">义井 长风西街万科金域国际(CBS)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>18  人关注 · 近30天带看  17  次  ·  2017-11-04发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>135</strong>万</p>
+                        <p>单价14782元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满二年</span><span>近公园</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41789306.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image17.5i5j.com/erp/house/4178/41789306/shinei/mgekojam36c897b9.jpg_P7.jpg" title="广场附近迎泽大街客运段宿舍三居室南北通透拎包入住" alt="广场附近迎泽大街客运段宿舍三居室南北通透拎包入住" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41789306.html" target="_blank"  onmousedown="">广场附近迎泽大街客运段宿舍三居室南北通透拎包入住</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室1厅1卫·55.21  平米  ·  南北  ·  低楼层/5层  ·  中装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/386099.html" target="_blank">桥东街 迎泽南街铁路宿舍(CBS6)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>3  人关注 · 近30天带看  30  次  ·  2018-10-24发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>60</strong>万</p>
+                        <p>单价10868元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满二年</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/32518851.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image16.5i5j.com/erp/house/3251/32518851/shinei/ccelknej3803c548.jpg_P7.jpg" title="迎泽大街 柳巷 文赢公寓电梯房 近公园 采光好位置便利" alt="迎泽大街 柳巷 文赢公寓电梯房 近公园 采光好位置便利" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/32518851.html" target="_blank"  onmousedown="">迎泽大街 柳巷 文赢公寓电梯房 近公园 采光好位置便利</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室1厅1卫·74.31  平米  ·  西北  ·  低楼层/23层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/376969.html" target="_blank">柳巷 开化寺街文赢公寓(CBS4)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>2  人关注 · 近30天带看  15  次  ·  2018-10-23发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>83</strong>万</p>
+                        <p>单价11169元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>近公园</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41981166.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image18.5i5j.com/erp/house/4198/41981166/shinei/cphmabkbc12f2a96.jpg_P7.jpg" title="五一广场园林化小区南北通透三室两厅一卫中间层" alt="五一广场园林化小区南北通透三室两厅一卫中间层" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41981166.html" target="_blank"  onmousedown="">五一广场园林化小区南北通透三室两厅一卫中间层</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室2厅1卫·95.87  平米  ·  南北  ·  中楼层/6层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/358430.html" target="_blank">桥东街 桥东街小区G区(CBS)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>1  人关注 · 近30天带看  20  次  ·  2018-11-22发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>128</strong>万</p>
+                        <p>单价13351元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41993175.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image16.5i5j.com/erp/house/4199/41993175/shinei/plnphmme06c5c7e9.jpg_P7.jpg" title="南海东街、财政厅宿舍、南北通透、中间层、有小区能停车，诚卖" alt="南海东街、财政厅宿舍、南北通透、中间层、有小区能停车，诚卖" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41993175.html" target="_blank"  onmousedown="">南海东街、财政厅宿舍、南北通透、中间层、有小区能停车，诚卖</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室1厅1卫·77.65  平米  ·  南北  ·  低楼层/6层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/368046.html" target="_blank">南海街 南海东街财政厅宿舍(CBS2)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>0  人关注 · 近30天带看  42  次  ·  2018-12-02发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>89</strong>万</p>
+                        <p>单价11462元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41978909.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image18.5i5j.com/erp/house/4197/41978909/shinei/fadmkflmc16c1f2b.jpg_P7.jpg" title="对口太师一  附 小，精装修，可做门面，房业主诚心出售。" alt="对口太师一  附 小，精装修，可做门面，房业主诚心出售。" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41978909.html" target="_blank"  onmousedown="">对口太师一  附 小，精装修，可做门面，房业主诚心出售。</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室1厅1卫·73.68  平米  ·  南北  ·  底层/6层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/358636.html" target="_blank">省公安厅 上官巷省公安厅南苑(CBS)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>0  人关注 · 近30天带看  20  次  ·  2018-11-23发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>112</strong>万</p>
+                        <p>单价15201元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/42036594.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image16.5i5j.com/erp/house/4203/42036594/shinei/kpepbgch0ccce4c0.jpg_P7.jpg" title="大红本在手看房方便精装修采光无遮挡交通便利" alt="大红本在手看房方便精装修采光无遮挡交通便利" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/42036594.html" target="_blank"  onmousedown="">大红本在手看房方便精装修采光无遮挡交通便利</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室1厅1卫·62.57  平米  ·  南  ·  底层/6层  ·  中装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/358500.html" target="_blank"> 新南一区临时小区</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>1  人关注 · 近30天带看  21  次  ·  2018-11-28发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>76</strong>万</p>
+                        <p>单价12146元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>满五年</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41956520.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image16.5i5j.com/erp/house/4195/41956520/shinei/cfodlodbd6255420.jpg_P7.jpg" title="大东关新源里铁路宿舍，大红本可按揭，交通便利出行方便" alt="大东关新源里铁路宿舍，大红本可按揭，交通便利出行方便" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41956520.html" target="_blank"  onmousedown="">大东关新源里铁路宿舍，大红本可按揭，交通便利出行方便</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室1厅1卫·63.08  平米  ·  南北  ·  顶层/5层  ·  精装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/372180.html" target="_blank">大东关 大东关新源里小区(CBS3)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>2  人关注 · 近30天带看  19  次  ·  2018-11-14发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>64</strong>万</p>
+                        <p>单价10146元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>满五年</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41912711.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image17.5i5j.com/erp/house/4191/41912711/shinei/dchbollhb63a50be.jpg_P7.jpg" title="此房有钥匙房东诚心出售南北通透" alt="此房有钥匙房东诚心出售南北通透" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41912711.html" target="_blank"  onmousedown="">此房有钥匙房东诚心出售南北通透</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室1厅1卫·66.59  平米  ·  南北  ·  顶层/6层  ·  中装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/368182.html" target="_blank">老军营 老军营林业厅北院(CBS2)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>2  人关注 · 近30天带看  18  次  ·  2018-11-16发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>110</strong>万</p>
+                        <p>单价16519元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>近公园</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41895789.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image17.5i5j.com/erp/house/4189/41895789/shinei/nadfmnln8bce8e27.jpg_P7.jpg" title="胜利街解放路口，南北2层小三局，大红本" alt="胜利街解放路口，南北2层小三局，大红本" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41895789.html" target="_blank"  onmousedown="">胜利街解放路口，南北2层小三局，大红本</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室1厅2卫·75.74  平米  ·  南北  ·  低楼层/6层  ·  中装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/393470.html" target="_blank">胜利街 胜利西街电建宿舍(CBS8)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>3  人关注 · 近30天带看  13  次  ·  2018-11-05发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>76.5</strong>万</p>
+                        <p>单价10100元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>满五年</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41792657.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image17.5i5j.com/erp/house/4179/41792657/shinei/dbgnjkkm31e8847b.jpg_P7.jpg" title="五一广场 迎泽大街 面粉厂宿舍大红本南北通透 中间楼层" alt="五一广场 迎泽大街 面粉厂宿舍大红本南北通透 中间楼层" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41792657.html" target="_blank"  onmousedown="">五一广场 迎泽大街 面粉厂宿舍大红本南北通透 中间楼层</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室2厅1卫·103.9  平米  ·  南北  ·  中楼层/6层  ·  精装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/372107.html" target="_blank">并州东西街 东岗巷面粉厂宿舍(CBS3)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>5  人关注 · 近30天带看  16  次  ·  2018-10-27发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>115</strong>万</p>
+                        <p>单价11068元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>近公园</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41773920.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image18.5i5j.com/erp/house/4177/41773920/shinei/ldgcfhbd4e5a70da.jpg_P7.jpg" title="和平北路和平苑，南北通透，二层，带地下室随时看房" alt="和平北路和平苑，南北通透，二层，带地下室随时看房" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41773920.html" target="_blank"  onmousedown="">和平北路和平苑，南北通透，二层，带地下室随时看房</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>2室1厅1卫·73.05  平米  ·  南北  ·  低楼层/6层  ·  简装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/368130.html" target="_blank">和平北路 和平北路和平苑小区(CBS2)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>1  人关注 · 近30天带看  21  次  ·  2018-10-20发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>80</strong>万</p>
+                        <p>单价10951元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41629980.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image18.5i5j.com/erp/house/4162/41629980/shinei/gnciaogjc371f72b.jpg_P7.jpg" title="恒大一期南北三居个卫，公摊小，本过五年，可贷款，有钥匙" alt="恒大一期南北三居个卫，公摊小，本过五年，可贷款，有钥匙" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41629980.html" target="_blank"  onmousedown="">恒大一期南北三居个卫，公摊小，本过五年，可贷款，有钥匙</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室2厅1卫·115  平米  ·  南北  ·  中楼层/11层  ·  精装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/358503.html" target="_blank">恒大绿洲 真武路恒大绿洲东区(CBS)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>6  人关注 · 近30天带看  23  次  ·  2018-10-01发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>162</strong>万</p>
+                        <p>单价14087元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>近公园</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41531196.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image17.5i5j.com/erp/house/4153/41531196/shinei/cfknhcec8cc222d5.jpg_P7.jpg" title="房东诚心出售亲贤北街化工宿舍大红本南北通透中等装修免-税" alt="房东诚心出售亲贤北街化工宿舍大红本南北通透中等装修免-税" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41531196.html" target="_blank"  onmousedown="">房东诚心出售亲贤北街化工宿舍大红本南北通透中等装修免-税</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室1厅1卫·91.4  平米  ·  南北  ·  顶层/6层  ·  中装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/397576.html" target="_blank">长治路 寇庄西路化工供销宿舍(CBS9)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>5  人关注 · 近30天带看  14  次  ·  2018-09-19发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>98</strong>万</p>
+                        <p>单价10722元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满五年</span><span>单位房</span></div>
+            </div>
+        </li>
+            <li>
+            <div class="listImg" onmousedown=""><a href="/ershoufang/41466351.html" target="_blank">
+                    <!--<img src="">-->
+                                            <img class="lazy" data-src="https://image17.5i5j.com/erp/house/4146/41466351/shinei/nlnfbidc530cd38d.jpg_P7.jpg" title="半坡南巷22号楼 大红本 南北通透 对口新建路分 校户型方正" alt="半坡南巷22号楼 大红本 南北通透 对口新建路分 校户型方正" data-onerror="houseimgerror(this,1)">
+                                    
+                                	<span class="icon3d"></span>
+                                                        	<span class="zhenxuan">甄选</span>
+                                        </a>
+                </div>
+            <div class="listCon">
+                <h3 class="listTit">
+                    <a href="/ershoufang/41466351.html" target="_blank"  onmousedown="">半坡南巷22号楼 大红本 南北通透 对口新建路分 校户型方正</a>
+                </h3>
+                <div class="listX">
+                    <!-- <p><i class="i_01"></i>4室2厅· 192.67平米· 南北 ·中层/11层 ·精装</p> -->
+                    <p><i class="i_01"></i>3室1厅1卫·98.2  平米  ·  南北  ·  顶层/5层  ·  精装</p>
+                    <p><i class="i_02"></i><a href="/xiaoqu/389999.html" target="_blank">半坡东西街 半坡南巷小区(CBS7)</a> <!-- · 地铁10号线 --></p>
+                    <p><i class="i_03"></i>10  人关注 · 近30天带看  34  次  ·  2018-09-09发布</p>
+                    <div class="jia">
+                        <p class="redC"><strong>95</strong>万</p>
+                        <p>单价9674元/m²</p>
+                    </div>
+                </div>
+                <div class="listTag"><span>随时看</span><span>满二年</span><span>近公园</span></div>
+            </div>
+        </li>
+    </ul>
+                <!-- houses_list End -->
+                    </div>
+        <!-- 页码 -->
+        <div class="pageBox">
+            <div class="pageHref lf"><a href="/">首页</a>&gt;&nbsp;&nbsp;<a href="/ershoufang">太原二手房</a>            </div>
+            <div class="pageSty rf"><a href="/ershoufang/n2/" class="cPage">下一页</a><a href="javascript:void(0);" class="">...</a><a href="/ershoufang/n3/" class="">3</a><a href="/ershoufang/n2/" class="">2</a><a href="javascript:void(0);" class="cur">1</a></div>        </div>
+        <!-- 页码 End-->
+    </div>
+<!-- 普通选房小图列表 End-->
+    <!--<div class=" rBox rf"><a href="/map" target="_blank"><img src="https://res.5i5j.com/pc/sale/images/rimg.jpg"></a></div>-->
+    <div class=" rBox rf">
+    	<a class="imgHref" href="/map" target="_blank"><img src="https://res.5i5j.com/pc/sale/images/rimg.jpg"><span>试试地图找房！</span></a>
+    	<ul class="list_code">
+    		<li class="code_tit">下载我爱我家App</li>
+    		<li><img src="https://res.5i5j.com/pc/common/images/code-app.png" alt="APP下载"></li>
+    		<li class="code_tis">扫描上方二维码,</li>
+    		<li class="code_tis">随时查看海量房源</li>
+    	</ul>
+    </div>
+</div>
+<!--新房推荐-->
+    <div class="new-box">
+        <div class="tag-now tag100">
+            <h2 class="titleinfo"><i></i>新房推荐</h2>
+            <div class="infocontent">
+                <ul class="zhbcont">
+                                        <li>
+                        <a href="https://fang.5i5j.com/ty/loupan/20069.html" target="_blank">
+                            <img class="lazy" data-src="https://fangimg.5i5j.com/estate/2018/08/29/OSS-df10643f-ccdd-4966-9e63-4b8e6e66fa1c.jpg?x-oss-process=image/resize,m_mfit,h_282,w_376" data-onerror="houseimgerror(this)" />
+                            <h4>聚瑞星城</h4>
+                            <p class="zbtit">
+                                <span>2居&nbsp;&nbsp;&nbsp;&nbsp;56-56㎡</span>
+                                <i>10500元/平米</i>
+                            </p>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://fang.5i5j.com/ty/loupan/21456.html" target="_blank">
+                            <img class="lazy" data-src="https://fangimg.5i5j.com/estate/2018/12/05/OSS-c2c3d0f2-8784-4386-a80e-6f2c310e0081.jpg?x-oss-process=image/resize,m_mfit,h_282,w_376" data-onerror="houseimgerror(this)" />
+                            <h4>山钢铭著</h4>
+                            <p class="zbtit">
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;87-137㎡</span>
+                                <i>售价 待定</i>
+                            </p>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://fang.5i5j.com/ty/loupan/21390.html" target="_blank">
+                            <img class="lazy" data-src="https://fangimg.5i5j.com/estate/2018/11/21/OSS-1932d175-86cc-4796-ab4e-e144acd76fa1.jpg?x-oss-process=image/resize,m_mfit,h_282,w_376" data-onerror="houseimgerror(this)" />
+                            <h4>太原红星天铂</h4>
+                            <p class="zbtit">
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;91-160㎡</span>
+                                <i>13000元/平米</i>
+                            </p>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://fang.5i5j.com/ty/loupan/21396.html" target="_blank">
+                            <img class="lazy" data-src="https://fangimg.5i5j.com/estate/2018/11/27/OSS-7d238277-22a1-415e-8c18-77a54d8edcbe.jpg?x-oss-process=image/resize,m_mfit,h_282,w_376" data-onerror="houseimgerror(this)" />
+                            <h4>恒大青运城</h4>
+                            <p class="zbtit">
+                                <span>2居/3居/4居&nbsp;&nbsp;&nbsp;&nbsp;91-178㎡</span>
+                                <i>售价 待定</i>
+                            </p>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://fang.5i5j.com/ty/loupan/21374.html" target="_blank">
+                            <img class="lazy" data-src="https://fangimg.5i5j.com/estate/2018/11/13/OSS-6fc61d0f-bbc7-47cd-a809-9ea0db238ee4.png?x-oss-process=image/resize,m_mfit,h_282,w_376" data-onerror="houseimgerror(this)" />
+                            <h4>保利西湖林语</h4>
+                            <p class="zbtit">
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;92-182㎡</span>
+                                <i>售价 待定</i>
+                            </p>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://fang.5i5j.com/ty/loupan/20020.html" target="_blank">
+                            <img class="lazy" data-src="https://fangimg.5i5j.com/estate/2017/11/16/OSS-45c8411d-8178-495e-9439-01587104a18d.jpg?x-oss-process=image/resize,m_mfit,h_282,w_376" data-onerror="houseimgerror(this)" />
+                            <h4>万科太原小镇</h4>
+                            <p class="zbtit">
+                                <span>2居/3居/4居&nbsp;&nbsp;&nbsp;&nbsp;85-170㎡</span>
+                                <i>7000元/平米</i>
+                            </p>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://fang.5i5j.com/ty/loupan/20192.html" target="_blank">
+                            <img class="lazy" data-src="https://fangimg.5i5j.com/estate/2017/12/12/OSS-020fbd7f-1d82-451d-931d-fbb02ce0e993.jpg?x-oss-process=image/resize,m_mfit,h_282,w_376" data-onerror="houseimgerror(this)" />
+                            <h4>碧桂园城市花园</h4>
+                            <p class="zbtit">
+                                <span>2居/3居/4居&nbsp;&nbsp;&nbsp;&nbsp;90-150㎡</span>
+                                <i>售价 待定</i>
+                            </p>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://fang.5i5j.com/ty/loupan/3022.html" target="_blank">
+                            <img class="lazy" data-src="https://fangimg.5i5j.com/estate/2018/11/20/OSS-b85a25d0-694f-4b40-a89e-690e91c55a44.jpg?x-oss-process=image/resize,m_mfit,h_282,w_376" data-onerror="houseimgerror(this)" />
+                            <h4>美地·新领寓</h4>
+                            <p class="zbtit">
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;40-76㎡</span>
+                                <i>12500元/平米</i>
+                            </p>
+                        </a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+<!-- right start-->
+<!-- 右侧条 start-->
+<div class="right-bar">
+    <ul class="r-bar-con">
+        <li class="bar-zhixuan">
+            <a href="javascript:;" class="r-bar-item"><i class="icon-bar1">智选</i></a>
+            <div class="layer">
+                <ul class="lay-tab-tit lay-zhx-tab clear">
+                    <li class="cur">二手房<span class="line"></span></li>
+                    <li>租房<span class="line"></span></li>
+                </ul>
+                <div>
+                    <div class="lay-zhx-con show">
+                        <!--智能选二手房卡片显示start-->
+                                                    <div class="r-no-house">
+                                <div class="pic"><img src="https://res.5i5j.com/pc/common/images/r-no-house.png" alt="无房源"></div>
+                                <div class="wz">
+                                    <p class="wz1">帮您精准、快速匹配出理想房源</p>
+                                    <p class="wz2">暂无选房卡</p>
+                                </div>
+                                <a href="/smart/ershoufang" target="_blank">开始选房</a>
+                            </div>
+                                                <!--智能选二手房卡片显示end-->
+
+                        <!--智能选二手房房源显示start-->
+                                                <a href="/smart/ershoufang" target="_blank" class="look-all" onmousedown="_trackData.push(['addaction','PC_TY_首页','右侧智选按钮']);ga('send','event','PC_TY_首页','右侧智选按钮','PC_TY_首页_右侧智选按钮');">更多选房卡</a>
+                        <!--智能选二手房房源显示end-->
+                    </div>
+
+                    <div class="lay-zhx-con hide">
+                        <!--智能选租房卡片显示start-->
+                                                    <div class="r-no-house">
+                                <div class="pic"><img src="https://res.5i5j.com/pc/common/images/r-no-house.png" alt="无房源"></div>
+                                <div class="wz">
+                                    <p class="wz1">帮您精准、快速匹配出理想房源</p>
+                                    <p class="wz2">暂无选房卡</p>
+                                </div>
+                                <a href="/smart/zufang" target="_blank">开始租房</a>
+                            </div>
+                                                <!--智能选租房卡片显示end-->
+
+                        <!--智能租房房源显示start-->
+                                                    <a href="/smart/zufang" target="_blank" class="look-all" onmousedown="_trackData.push(['addaction','PC_TY_首页','右侧智选按钮']);ga('send','event','PC_TY_首页','右侧智选按钮','PC_TY_首页_右侧智选按钮');">更多选房卡</a>
+                        <!--智能租房房源显示end-->
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="bar-guanzhu">
+			            <a href="/reglogin/index?preUrl=https%3A%2F%2Fty.5i5j.com%2Fershoufang%2F" class="r-bar-item "><i class="icon-bar3">关注></i></a>
+			        </li>
+                    <li class="bar-weituo bar-link">
+                <a href="/owner" target="_blank" class="r-bar-item"><i class="icon-bar10" onmousedown="_trackData.push(['addaction','PC_TY_小区列表页','委托卖房按钮']);ga('send','event','PC_TY_小区列表页','委托卖房按钮','PC_TY_小区列表页_委托卖房按钮');">委托</i></a>
+                <div class="layer"><a href="/owner" target="_blank">业主委托</a></div>
+            </li>
+                    <li class="bar-gongju bar-link">
+
+                        <a href="/tools/loan" target="_blank" class="r-bar-item"><i class="icon-bar4">工具</i></a>
+            <div class="layer"><a href="/tools/loan">购房工具</a></div>
+                    </li>
+        
+        <li class="bar-app">
+            <a href="javascript:void(0);" class="r-bar-item"><i class="icon-bar6">APP</i></a>
+            <div class="layer">
+                <a href="javascript:void(0);"><img src="https://res.5i5j.com/pc/common/images/code-app.png" alt="我爱我家APP" /></a>
+            </div>
+        </li>
+        
+        <li class="bar-fankui bar-link">
+            <a href="/user/feedback" target="_blank" class="r-bar-item"><i class="icon-bar7" onmousedown="_trackData.push(['addaction','PC_TY_首页','右侧反馈按钮']);ga('send','event','PC_TY_首页','右侧反馈按钮','PC_TY_首页_右侧反馈按钮');">反馈</i></a>
+            <div class="layer"><a href="/user/feedback" target="_blank">问题反馈</a></div>
+        </li>
+        <!-- 房屋估价 -->
+            </ul>
+    <div class="bar-back">
+        <a href="javascript:void(0);" class="r-bar-item"><i class="icon-bar9">返回顶部</i></a>
+        <div class="layer"></div>
+    </div>
+</div>
+<!-- 右侧条 end-->
+<!-- 在线客服 start -->
+<div class="mask-pop hide"></div>
+<div class="zxkf-pop hide">
+	<h2><i class="line"></i>联系客服</h2>
+		<div class="zxkf-con clear">
+		<div class="zxkf">
+			<i class="zxkf-icon"></i>
+			<p class="name">在线客服</p>
+			<p class="note">在线沟通，帮您解决所遇到的问题</p>
+			<p class="time work_time"></p>
+			<a href="javascript:void(0);" hrefs="/reglogin/index?preUrl=https%3A%2F%2Fty.5i5j.com%2Fershoufang%2F" class="zx-btn"
+                onmousedown="_trackData.push(['addaction','PC_TY_弹窗','立即咨询按钮']);	ga('send','event','PC_TY_弹窗','立即咨询按钮','PC_TY_弹窗_立即咨询按钮');"
+                >立即咨询</a>
+		</div>
+		<div class="rxdh">
+			<i class="rxdh-icon"></i>
+			<p class="name">4008-515-515</p>
+			<p class="note">拨打客服热线获得帮助</p>
+			<p class="time work_time"></p>
+		</div>
+		<a href="javascript:;" class="zxkf-close"></a>
+	</div>
+</div>
+<div class="fu-type hide">
+	<h2>服务类型<a href="javascript:;" class="type-close"></a></h2>
+	<p class="note">为了给您最优质的服务，请选择服务类型：</p>
+	<ul class="type-con clear">
+		<li class="cur">
+			<span class="kuang"></span>
+			<p>投诉建议</p>
+		</li>
+		<li>
+			<span class="kuang"></span>
+			<p>房屋租赁</p>
+		</li>
+		<li class="no-mar-r">
+			<span class="kuang"></span>
+			<p>房屋买卖</p>
+		</li>
+	</ul>
+	<a href="javascript:;" class="fwtj-btn" id="onlineService">提交</a>
+</div>
+<!-- 在线客服 end -->
+<script>
+	var onlinecityid = "6";
+	var userId = "";
+    var workName = "";
+    var workWeek = "";
+    var workAM = "";
+    var workPM = "";
+</script>
+<!--<script type="text/javascript" src="/pc/common/online.service.js?"></script>--><!-- right end-->
+<!-- bottom start -->
+<!--友情链接 start-->
+	<div class="ind-friend-link">
+		<div class="main">
+			<ul class="f-link-tab clear">
+									<li class="cur">友情链接<span class="line"></span></li>
+															<li>热门二手房<span
+								class="line"></span></li>
+												<li>热门租房<span
+								class="line"></span></li>
+												<li>热门小区<span
+								class="line"></span></li>
+												<li>热门新房<span
+								class="line"></span></li>
+												<li>热门房价<span
+								class="line"></span></li>
+												<li>热门房产网<span
+								class="line"></span></li>
+												<li>房产百科<span
+								class="line"></span></li>
+									</ul>
+			<div class="f-link-con">
+				<ul>						<li><a href="http://house.leju.com/ty/search/" target="_blank">太原买房</a></li>
+												<li><a href="http://www.ynfww.com/esf/l.html" target="_blank">昆明二手房</a></li>
+												<li><a href="https://xining.focus.cn/loupan/" target="_blank">西宁新楼盘</a></li>
+												<li><a href="http://ty.esf.loupan.com/" target="_blank">太原二手房</a></li>
+												<li><a href="http://www.omiaozu.com/gz/" target="_blank">广州写字楼出租</a></li>
+												<li><a href="https://ty.tobosu.com/anli/" target="_blank">太原装修设计案例</a></li>
+												<li><a href="http://zt.pchouse.com.cn/huayuan/" target="_blank">花园装修效果图</a></li>
+												<li><a href="http://www.juwai.com/twproperty/" target="_blank">台湾房产</a></li>
+												<li><a href="http://www.dofiny.com/" target="_blank">卫浴品牌</a></li>
+												<li><a href="http://www.chudian360.cn/" target="_blank">厨电十大品牌</a></li>
+												<li><a href="http://news.homekoo.com/jiqiao" target="_blank">装修技巧</a></li>
+												<li><a href="https://sy.daojia.com/yuesao/" target="_blank">沈阳月嫂价格</a></li>
+												<li><a href="https://lf.lianjia.com/xiaoqu/" target="_blank">廊坊小区房</a></li>
+												<li><a href="http://taiyuan.liebiao.com/ershoufang/" target="_blank">太原二手房网</a></li>
+												<li><a href="http://ty.anjuke.com/sale/" target="_blank">太原二手房网</a></li>
+												<li><a href="http://tuan.xcabc.com/city55" target="_blank">太原汽车团购</a></li>
+						</ul><ul class="hide" title="热门二手房"><li style="color:#fcb100">热门城市：</li>								<li><a href="https://bj.5i5j.com/ershoufang/" target="_blank">北京二手房</a></li>
+																<li><a href="https://cd.5i5j.com/ershoufang/" target="_blank">成都二手房</a></li>
+																<li><a href="https://cs.5i5j.com/ershoufang/" target="_blank">长沙二手房</a></li>
+																<li><a href="https://hz.5i5j.com/ershoufang/" target="_blank">杭州二手房</a></li>
+																<li><a href="https://nj.5i5j.com/ershoufang/" target="_blank">南京二手房</a></li>
+																<li><a href="https://nn.5i5j.com/ershoufang/" target="_blank">南宁二手房</a></li>
+																<li><a href="https://sh.5i5j.com/ershoufang/" target="_blank">上海二手房</a></li>
+																<li><a href="https://sz.5i5j.com/ershoufang/" target="_blank">苏州二手房</a></li>
+																<li><a href="https://tj.5i5j.com/ershoufang/" target="_blank">天津二手房</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/" target="_blank">太原二手房</a></li>
+																<li><a href="https://wh.5i5j.com/ershoufang/" target="_blank">武汉二手房</a></li>
+																<li><a href="https://wx.5i5j.com/ershoufang/" target="_blank">无锡二手房</a></li>
+																<li><a href="https://zz.5i5j.com/ershoufang/" target="_blank">郑州二手房</a></li>
+								<li class="clear" style="float: none;"></li><li style="color:#fcb100">热门搜索：</li>								<li><a href="https://ty.5i5j.com/ershoufang/yingzequ/" target="_blank">迎泽二手房</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/xinghualingqu/" target="_blank">杏花岭二手房</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/jinyuanqu/" target="_blank">晋源二手房</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/xiaodianqu/" target="_blank">小店二手房</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/jiancaopingqu/" target="_blank">尖草坪二手房</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/wanbailinqu/" target="_blank">万柏林二手房</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/zhongji/" target="_blank">重机二手房网</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/zuofenjie/" target="_blank">漪汾街二手房网</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/zuofengongyuan/" target="_blank">漪汾公园二手房网</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/qianfengbeilu/" target="_blank">千峰北路二手房网</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/xikuangjie/" target="_blank">西矿街二手房网</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/qianbeitun/" target="_blank">前北屯二手房网</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/hepingbeilu/" target="_blank">和平北路二手房网</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/gongyuanlu/" target="_blank">公园路二手房网</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/ligongda/" target="_blank">理工大二手房网</a></li>
+																<li><a href="https://ty.5i5j.com/ershoufang/zhongyixueyuan/" target="_blank">中医学院二手房网</a></li>
+								</ul><ul class="hide" title="热门租房">								<li><a href="https://ty.5i5j.com/zufang/yingzequ/" target="_blank">迎泽租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/xinghualingqu/" target="_blank">杏花岭租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/jinyuanqu/" target="_blank">晋源租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/xiaodianqu/" target="_blank">小店租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/jiancaopingqu/" target="_blank">尖草坪租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/wanbailinqu/" target="_blank">万柏林租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/zhongji/" target="_blank">重机租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/zuofenjie/" target="_blank">漪汾街租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/zuofengongyuan/" target="_blank">漪汾公园租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/qianfengbeilu/" target="_blank">千峰北路租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/xikuangjie/" target="_blank">西矿街租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/qianbeitun/" target="_blank">前北屯租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/hepingbeilu/" target="_blank">和平北路租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/gongyuanlu/" target="_blank">公园路租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/ligongda/" target="_blank">理工大租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/zhongyixueyuan/" target="_blank">中医学院租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/hepinggongyuan/" target="_blank">和平公园租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/changfengshangwuqu/" target="_blank">长风商务区租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/nongzhanguan/" target="_blank">农展馆租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/xishan/" target="_blank">西山租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/hepingnanlu/" target="_blank">和平南路租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/qianfengnanlu/" target="_blank">千峰南路租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/xiayuan/" target="_blank">下元租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/binhexilu/" target="_blank">滨河西路租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/dongshe/" target="_blank">东社租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/xikezhan/" target="_blank">西客站租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/zuofen/" target="_blank">漪汾租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/yingzexidajie/" target="_blank">迎泽西大街租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/beiying/" target="_blank">北营租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/changzhilu/" target="_blank">长治路租房</a></li>
+																<li><a href="https://ty.5i5j.com/zufang/wangfujing/" target="_blank">王府井租房</a></li>
+								</ul><ul class="hide" title="热门小区">								<li><a href="https://ty.5i5j.com/xiaoqu/yingzequ/" target="_blank">迎泽小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/xinghualingqu/" target="_blank">杏花岭小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/jinyuanqu/" target="_blank">晋源小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/xiaodianqu/" target="_blank">小店小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/jiancaopingqu/" target="_blank">尖草坪小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/wanbailinqu/" target="_blank">万柏林小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/nongzhanguan/" target="_blank">农展馆小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/xishan/" target="_blank">西山小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/hepingnanlu/" target="_blank">和平南路小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/qianfengnanlu/" target="_blank">千峰南路小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/xiayuan/" target="_blank">下元小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/binhexilu/" target="_blank">滨河西路小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/dongshe/" target="_blank">东社小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/xikezhan/" target="_blank">西客站小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/zuofen/" target="_blank">漪汾小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/yingzexidajie/" target="_blank">迎泽西大街小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/beiying/" target="_blank">北营小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/changzhilu/" target="_blank">长治路小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/wangfujing/" target="_blank">王府井小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/pingyangluxiyixiang/" target="_blank">平阳路西一巷小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/jiannanchezhan/" target="_blank">建南车站小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/pingyangjingyuan/" target="_blank">平阳景苑小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/dongtaibao/" target="_blank">东太堡小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/banshanguoji/" target="_blank">半山国际小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/yucaixiaoxue/" target="_blank">育才小学小区</a></li>
+																<li><a href="https://ty.5i5j.com/xiaoqu/fendonglu/" target="_blank">汾东路小区</a></li>
+								</ul><ul class="hide" title="热门新房">								<li><a href="https://fang.5i5j.com/bj/" target="_blank">北京新房</a></li>
+																<li><a href="https://fang.5i5j.com/hz/" target="_blank">杭州新房</a></li>
+																<li><a href="https://fang.5i5j.com/nj/" target="_blank">南京新房</a></li>
+																<li><a href="https://fang.5i5j.com/sh/" target="_blank">上海新房</a></li>
+																<li><a href="https://fang.5i5j.com/sz/" target="_blank">苏州新房</a></li>
+																<li><a href="https://fang.5i5j.com/tj/" target="_blank">天津新房</a></li>
+								</ul><ul class="hide" title="热门房价">								<li><a href="https://ty.5i5j.com/fangjia/district_1130/" target="_blank">迎泽区房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/district_1131/" target="_blank">杏花岭区房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/district_1132/" target="_blank">晋源区房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/district_1133/" target="_blank">小店区房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/district_1134/" target="_blank">尖草坪区房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/district_1135/" target="_blank">万柏林区房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000642/" target="_blank">农展馆房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000643/" target="_blank">西山房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000646/" target="_blank">和平南路房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000647/" target="_blank">千峰南路房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000648/" target="_blank">下元房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000210/" target="_blank">滨河西路房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000212/" target="_blank">东社房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000216/" target="_blank">西客站房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000219/" target="_blank">漪汾房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000220/" target="_blank">迎泽西大街房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_60000001/" target="_blank">北营房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000091/" target="_blank">长治路房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000609/" target="_blank">王府井房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000610/" target="_blank">平阳路西一巷房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000612/" target="_blank">建南车站房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000614/" target="_blank">平阳景苑房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000615/" target="_blank">东太堡房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000617/" target="_blank">半山国际房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000630/" target="_blank">育才小学房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000631/" target="_blank">汾东路房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000632/" target="_blank">恒大绿洲房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000633/" target="_blank">龙城大街房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000122/" target="_blank">晋阳街房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000634/" target="_blank">通达街房价</a></li>
+																<li><a href="https://ty.5i5j.com/fangjia/businessarea_100000123/" target="_blank">南中环房价</a></li>
+								</ul><ul class="hide" title="热门房产网">								<li><a href="https://bj.5i5j.com/" target="_blank">北京房产网</a></li>
+																<li><a href="https://cd.5i5j.com/" target="_blank">成都房产网</a></li>
+																<li><a href="https://cs.5i5j.com/" target="_blank">长沙房产网</a></li>
+																<li><a href="https://hz.5i5j.com/" target="_blank">杭州房产网</a></li>
+																<li><a href="https://nj.5i5j.com/" target="_blank">南京房产网</a></li>
+																<li><a href="https://nn.5i5j.com/" target="_blank">南宁房产网</a></li>
+																<li><a href="https://sh.5i5j.com/" target="_blank">上海房产网</a></li>
+																<li><a href="https://sz.5i5j.com/" target="_blank">苏州房产网</a></li>
+																<li><a href="https://tj.5i5j.com/" target="_blank">天津房产网</a></li>
+																<li><a href="https://ty.5i5j.com/" target="_blank">太原房产网</a></li>
+																<li><a href="https://wh.5i5j.com/" target="_blank">武汉房产网</a></li>
+																<li><a href="https://wx.5i5j.com/" target="_blank">无锡房产网</a></li>
+																<li><a href="https://zz.5i5j.com/" target="_blank">郑州房产网</a></li>
+								</ul><ul class="hide" title="房产百科">								<li><a href="https://bj.5i5j.com/zhishi/" target="_blank">北京房产百科</a></li>
+																<li><a href="https://cd.5i5j.com/zhishi/" target="_blank">成都房产百科</a></li>
+																<li><a href="https://cs.5i5j.com/zhishi/" target="_blank">长沙房产百科</a></li>
+																<li><a href="https://hz.5i5j.com/zhishi/" target="_blank">杭州房产百科</a></li>
+																<li><a href="https://nj.5i5j.com/zhishi/" target="_blank">南京房产百科</a></li>
+																<li><a href="https://nn.5i5j.com/zhishi/" target="_blank">南宁房产百科</a></li>
+																<li><a href="https://sh.5i5j.com/zhishi/" target="_blank">上海房产百科</a></li>
+																<li><a href="https://sz.5i5j.com/zhishi/" target="_blank">苏州房产百科</a></li>
+																<li><a href="https://tj.5i5j.com/zhishi/" target="_blank">天津房产百科</a></li>
+																<li><a href="https://ty.5i5j.com/zhishi/" target="_blank">太原房产百科</a></li>
+																<li><a href="https://wh.5i5j.com/zhishi/" target="_blank">武汉房产百科</a></li>
+																<li><a href="https://wx.5i5j.com/zhishi/" target="_blank">无锡房产百科</a></li>
+																<li><a href="https://zz.5i5j.com/zhishi/" target="_blank">郑州房产百科</a></li>
+								</ul>			</div>
+		</div>
+	</div>
+	<!--友情链接 end-->
+<!-- 底部 start -->
+<div class="footer-box">
+	<div class="main">
+		<div class="footer-nav-box">
+			<div class="foot-logo"><a href="/" class="logo-img">我爱我家</a>
+			</div>
+			<ul class="footer-nav">
+				<li><a href="https://000560.5i5j.com" target="_blank" rel="nofollow">关于我们</a></li>
+				<!-- <li><a href="#" target="_blank" rel="nofollow">客户服务</a></li> -->
+				<li><a href="https://000560.5i5j.com/company/contactus" target="_blank" rel="nofollow">联系我们</a></li>
+				<!-- <li><a href="#" target="_blank" rel="nofollow">电子杂志</a></li> -->
+				<!-- <li><a href="#" target="_blank" rel="nofollow">客户投诉</a></li> -->
+				<li><a href="/websitemap" target="_blank">站点地图</a></li>
+				<!-- <li><a href="#" target="_blank" rel="nofollow">网站记事</a></li> -->
+				<li><a href="/friendlink" target="_blank" rel="nofollow">友情链接</a></li>
+			</ul>
+		</div>
+		<div class="footer-info">			
+			 				
+			<dl class="f-iphone">
+				<dt><i class="icon-phone"></i></dt>
+				<dd>客服电话</dd>
+				<dd class="kf-num">4008-515-515</dd>
+			</dl>
+			<dl>
+				<dd>地理位置</dd>
+				<dd>山西省太原市小店区华宇百花谷D座17层</dd>
+				<dd>邮编： 030000</dd>
+			</dl>
+			<div class="footer-code">
+				<div class="code">
+					<p><img src="https://res.5i5j.com/pc/common/images/code-app.png" alt="APP下载"/></p>
+					<p class="wz">APP下载</p>
+				</div>
+				<div class="code code2">
+					<p><img src="https://res.5i5j.com/pc/common/images/code-wx.png" alt="官方微信"/></p>
+					<p class="wz">官方微信</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-cr">北京我爱我家房地产经纪有限公司 版权所有 | 网络经营许可证 京ICP备09041444号-1 ©2017 5i5j.com, all rights reserved.
+				<!--        -->
+        </div>
+        <div  class="footer-jb">
+        	<span class="jb_font"><i></i>违法和不良信息举报</span>
+        	<span>电话：4008 515 515</span>
+        	<span>邮箱：kg_internet@5i5j.com</span>
+        </div>
+		<div class="beianhao">
+	 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502036296">
+	 			<img src='https://res.5i5j.com/pc/common/images/transparent.png' lazysrc="" class="fl"/>
+	 			<p>京公网安备 11010502036296号</p>
+	 		</a>
+	 	</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var phpstaturl = 'https://stat.bacic5i5j.com';
+</script>
+<script id="phpstat_js_id_10000001" src="https://res.5i5j.com/pc/common/10000001.js?2018121523"></script>
+<!--图片默认资源-->
+<!--script  src="https://res.5i5j.com/pc/common/image-error.js?20181215"></script-->
+<!-- 底部 end -->
+<!-- bottom end -->
+<script type="text/javascript">
+    var urlNoPrice = "";
+    var urlAction = "ershoufang";
+    var urlLocation = "";
+    var urlCondition = "";
+    var urlKeywords = "";
+    var isImage = "";//是否大图模式标识
+	var isSearchtype = "";//是否带有小区
+    var baseUrl = "https://res.5i5j.com";//显示404图片是需要资源域名
+    var companysid = "6";
+    var preUrl = "https%3A%2F%2Fty.5i5j.com%2Fershoufang%2F";
+</script>
+<script type="text/javascript" src="https://res.5i5j.com/pc/common/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://res.5i5j.com/pc/common/basic.js"></script>
+<script type="text/javascript" src="https://res.5i5j.com/pc/common/online.service.js"></script>
+<script type="text/javascript" src="https://res.5i5j.com/pc/common/image-error.js?9554bc0d239d8ce4924ea23c7a200925"></script>
+<!-- <script type="text/javascript" src="/pc/sale/sale.js?9554bc0d239d8ce4924ea23c7a200925"></script> -->
+<script type="text/javascript" src="https://res.5i5j.com/pc/sale/sale.js?"></script>
+
+<script type="text/javascript" src="https://res.5i5j.com/pc/common/js/SuperSlide.js"></script>
+<script type="text/javascript" src="https://res.5i5j.com/pc/common/js/znxf.js"></script>
+<script type="text/javascript" src="https://res.5i5j.com/pc/common/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://res.5i5j.com/pc/common/js/range.min.js"></script>
+                <style>
+    .webim-msg-img {
+        max-width: 100%;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+</style>
+<!--span onclick="addBroker(287071)"></span-->
+
+<div class="xBox talk-box">
+    <!-- 单列 -->
+    <div class="one_list">
+        <!-- 默认  -->
+        <div class="xiaoxiBox"><div class="mo"><p class="zhankai" id="total">咨询经纪人<i class="nums hide" id="num_total">0</i><a class="hide"></a></p></div></div>
+                    <div class="w-login hide">
+                <p class="login-tip">登录查看新消息！</p><a href="/reglogin?preUrl=https://ty.5i5j.com/ershoufang/">去登录</a>
+            </div>
+            </div>
+    <!-- 消息内容 -->
+    <div class="two_cons hide">
+        <div class="closed"><p><a>关闭</a></p></div>
+        <ul class="t_Mains" id="t_Mains">
+            <!--经纪人爱聊-->
+
+        </ul>
+    </div>
+</div>
+
+<input type="hidden" id="toReceiver" value="">
+<input type="hidden" id="lastData" value="">
+<script>
+    var contactUserId = '0';
+    var isActived = '1'; //是否是禁言
+    var userName = 'unknown';
+    var userPic = "https://res.5i5j.com/pc/user/images/mem-tx.jpg";
+    var RESOURCES = 'https://res.5i5j.com';
+    var cityId = 6;
+    var city_domain = 'ty';
+    var host = '.5i5j.com';
+    var imloginurl = "/reglogin?preUrl=https://ty.5i5j.com/ershoufang/";
+    var textext = {
+        //"ChatUserName": "zhuanzhu_user_0cac0d10d70574f363e1b61f",
+        "userhid": contactUserId+'uid',
+        "nickname": userName,
+        "imageurl": userPic,
+        "phonenum": ''
+    };
+    var imHouse = {};
+    var cityIdDomain = {"1":"bj","2":"hz","5":"sz","6":"ty","7":"tj","8":"nj","9":"sh","15":"cd","16":"nn","18":"zz","19":"wx","20":"wh","22":"cs"};
+    
+    var MESSAGE_TYPE_COMMUNITY_NEWS = 5;
+    var MESSAGE_TYPE_HOUSE_NEWS = 6;
+    var MESSAGE_TYPE_SMART_CARD = 7;
+
+    var facePath = "https://res.5i5j.com/pc/im/images/face/";
+    var faceMap = {"[):]":"ee_1.png","[:D]":"ee_2.png","[;)]":"ee_3.png","[:-o]":"ee_4.png","[:p]":"ee_5.png","[(H)]":"ee_6.png","[:@]":"ee_7.png","[:s]":"ee_8.png","[:$]":"ee_9.png","[:(]":"ee_10.png","[:'(]":"ee_11.png","[:|]":"ee_12.png","[(a)]":"ee_13.png","[8o|]":"ee_14.png","[8-|]":"ee_15.png","[+o(]":"ee_16.png","[<o)]":"ee_17.png","[|-)]":"ee_18.png","[*-)]":"ee_19.png","[:-#]":"ee_20.png","[:-*]":"ee_21.png","[^o)]":"ee_22.png","[8-)]":"ee_23.png","[(|)]":"ee_24.png","[(u)]":"ee_25.png","[(S)]":"ee_26.png","[(*)]":"ee_27.png","[(#)]":"ee_28.png","[(R)]":"ee_29.png","[({)]":"ee_30.png","[(})]":"ee_31.png","[(k)]":"ee_32.png","[(F)]":"ee_33.png","[(W)]":"ee_34.png","[(D)]":"ee_35.png"};
+    var org_name = "5i5j";
+    var app_name = "moshou";
+    var wsIP = "";
+    var wsWS = "wss";
+
+    $(function() {
+        $(document).on('mouseover', '.face-icon',
+            function () {
+                $(this).unbind();
+                var toReceiver = $("#toReceiver").val();
+                $(this).qqFace({
+                    id: 'facebox', //表情盒子的ID
+                    assign: 'chat_'+toReceiver, //给那个控件赋值
+                    //path:'face/'	//表情存放的路径
+                    path: facePath,	//表情存放的路径
+                    map : faceMap
+                });
+            }
+        )
+    })
+    //查看结果
+    function replace_em(msg){
+        //console.log(WebIM.utils.parseEmoji);
+            var path =  facePath ; /*表情包路径*/
+            var map = faceMap;
+            for (var face in map) {
+                while (msg.indexOf(face) > -1) {
+                    msg = msg.replace(face, '<img style="display: inline" src="' + path + map[face] + '" />');
+                }
+            }
+        return msg;
+    }
+    function defaultBrokerError(obj) {//经纪人列表页404图片
+        obj.onerror = "";
+        obj.src = RESOURCES+"/pc/common/images/brokerList404.jpg";
+        obj.onerror=null;
+    }
+
+    var timestamp = new Date().getTime();
+</script>
+<script src="https://res.5i5j.com/pc/im/js/xxJs.js"></script>
+<script src="https://res.5i5j.com/pc/im/js/webim.config.js"></script>
+<script src="https://res.5i5j.com/wap/common/jquery.cookie.js"></script>
+<script src="https://res.5i5j.com/pc/im/js/socket.js"></script>
+<script src="https://res.5i5j.com/pc/im/js/strophe-1.2.8.min.js"></script>
+<script src="https://res.5i5j.com/pc/im/js/websdk-1.4.13.js"></script>
+<!--script src="https://res.5i5j.com/pc/im/js/swfobject.js"></script-->
+<script src="https://res.5i5j.com/pc/im/js/web_socket.js"></script>
+<script src="https://res.5i5j.com/pc/im/js/im.init.js"></script>
+<script src="https://res.5i5j.com/pc/im/js/jquery.browser.js"></script>
+<script src="https://res.5i5j.com/pc/im/js/jquery.qqFace.js"></script>
+
+<!-- 提示弹层 -->
+<style>
+/*弹窗*/
+.popup-box-common{width:100%;height:100%;background: none;}
+.popup-mask{width:100%;height:100%;background:#000;filter:alpha(opacity=60);opacity:0.6;position:fixed;top:0;left:0;z-index:1100;}
+.popup-con{min-width:160px;padding:20px;line-height:36px;background:#fff;position:fixed;top:20%;left:50%;margin-left:-100px;z-index:1111;}
+.popup-wz1{font-size:16px;text-align:center;color:#535d6a;padding-left:10px}
+.popup-wz2{font-size:14px;text-align:center;}
+.popup-wz3{text-indent:2em;line-height:28px;margin-top:20px;}
+.popup-btn{text-align:center;margin-top:40px;}
+.popup-btn a{display:inline-block;width:116px;line-height:34px;font-size:16px;border-radius:3px;border:1px solid #f0a92d;}
+.popup-btn .popup-btn1{background:#f9af3f;color:#fff;margin-right:70px;}
+.popup-btn .popup-btn2{background:#fff;color:#f9af3f;}
+.popup-close{width:24px;height:24px;background:url(https://res.5i5j.com/pc/common/images/pop-close.png) no-repeat;position:absolute;right:20px;top:20px;}
+.popup-con2{width:700px;margin-left:-390px;padding:40px 0 60px 40px;top:10%;}
+.popup-tit{font-size:24px;padding-bottom:20px;border-bottom:1px solid #ececec;}
+.popup-tit .popup-line{width:5px;height:36px;display:inline-block;margin-right:18px;background:#f9af3f;vertical-align:middle;}
+.popup-info{height:400px;padding-top:28px;padding-right:40px;overflow-y:auto;}
+.hide{display:none;}
+.cg-icon,.loser-icon{width:26px;height:26px;float:left;margin-top:5px; margin-right: 10px;}
+.cg-icon{background:url(https://res.5i5j.com/pc/common/images/cg-icon.png) no-repeat;}
+.loser-icon{background:url(https://res.5i5j.com/pc/common/images/loser-icon.png) no-repeat;}
+</style>
+<div class="popup-box-common hide">
+    <div class="popup-mask"></div>
+    <div class="popup-con popup_1 hide">
+        <p class="popup-wz1 popup_title"></p>
+        <p class="popup-wz3 popup_content"></p>
+    </div>
+    <div class="popup-con popup_2 hide">
+        <p class="popup-wz1 popup_title"></p>
+        <p class="popup-wz2 popup_content"></p>
+    </div>
+    <div class="popup-con popup_3 hide">
+        <p class="popup-wz1 popup_title"></p>
+        <p class="popup-wz2 popup_content"></p>
+        <div class="popup-btn">
+            <a href="javascript:void(0);" status="1" class="popup-btn1">删除</a>
+            <a href="javascript:void(0);" status="0" class="popup-btn2">取消</a>
+        </div>
+    </div>
+</div>
+<script>
+
+$(".popup-btn2").on("click",function(){
+	$(".popup-box-common").addClass("hide");
+
+});
+function openPop(titel, content, type) {
+
+    var reutrnHide = $(".popup-con").hasClass("hide");//判断弹框是否隐藏
+    if(reutrnHide){
+        $(".popup-con").addClass("hide");
+    }
+    $(".popup-box-common").removeClass("hide");//全屏变灰
+    $(".popup_" + type).removeClass("hide");//1,小提示框2，大提示框
+    
+    
+    
+    if(titel) {
+        var losericon = '';
+        var cgicon = '';
+        if(type == 1){//成功
+            cgicon = '<div class="cg-icon fl"></div>'; //关注失败图标
+            $(".popup_title").html(cgicon+titel);//加粗提示的话语
+            widthPopCon(1);
+            closeSetTime();
+        }else if(type == 2){//失败
+            losericon = '<div class="loser-icon fl"></div>'; //关注失败图标
+            $(".popup_title").html(losericon+titel);//加粗提示的话语
+            widthPopCon(2);
+            closeSetTime();
+        }else if(type == 3){//按钮
+        	$(".popup_title").html(titel);//加粗提示的话语
+        	widthPopCon(3);
+        	$(".popup-btn .popup-btn2").on("click",function(){
+				closePop();
+			});
+        }
+        	
+        
+    } else {
+        $(".popup_title").remove();
+    }
+    if(content) {
+        $(".popup_content").html(content);//普通提示语
+    } else {
+        $(".popup_content").remove();
+    }
+    function closeSetTime(){
+    	window.setTimeout('closePop()', 2000);
+    }
+//  if(type) {
+//      window.setTimeout('closePop()', 2000); //
+//  }
+}
+
+function widthPopCon(type){
+	var widthPop = $(".popup_" + type).outerWidth();
+    $(".popup_" + type).css("margin-left",-widthPop/2);
+}
+
+function closePop(type) {
+  $(".popup-box-common").addClass("hide");
+}
+$(document).on('click', ".popup-btn .popup-btn2,.popup-close", function(){
+  closePop();
+});
+</script>	        <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>    <area href="/pepp4_thunder" /></body>
+</html>
+<!-- （baidutongji） -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?94ed3d23572054a86ed341d64b267ec6";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+

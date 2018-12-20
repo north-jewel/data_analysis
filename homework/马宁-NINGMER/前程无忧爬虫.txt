@@ -1,0 +1,5 @@
+前程无忧爬虫
+	官网url：https://search.51job.com/list/000000,\n000000,0000,00,9,99,python,2,2.html?lang\n=c&stype=1&postchannel=0000&workyea\nr=99&cotype=99&degreefrom=99&jobter\nm=99&companysize=99&lonlat=0%2C0&\nradius=-1&ord_field=0&confirmdate=9&fr\nomType=&dibiaoid=0&address=&line=&s\npecialarea=00&from=&welfare=
+	抓取首页上的总页数 字段 115页
+	用bs抓取 所有的职位\n根据首页的链接格式来生成115页的全部爬取链接
+	详情页 解析\n其他细节问题：1、增量爬取（网站每隔一段时间会有发布新的职位信息）解决方法  定时爬取\n2、

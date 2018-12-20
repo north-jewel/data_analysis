@@ -1,0 +1,41 @@
+1、json.dumps()和json.loads()是json格式处理函数（可以这么理解，json是字符串）
+　　(1)json.dumps()函数是将一个Python数据类型列表进行json格式的编码（可以这么理解，json.dumps()函数是将字典转化为字符串）
+　　(2)json.loads()函数是将json格式数据转换为字典（可以这么理解，json.loads()函数是将字符串转化为字典）
+
+合并两个list生成dict（一个为keys，一个为values）
+先对两个list用zip函数，最后转换成dict。
+
+dict转换成元素为tuple的list
+用dict的items函数
+	dict.items()
+
+两个list元素分别相加生成求和后的list
+from operator import add
+用map和operator.add	
+	sum = map(add,l1,l2)
+	
+	
+生成requirements.txt文件
+pip freeze > requirements.txt
+安装requirements.txt依赖
+pip install -r requirements.txt
+
+
+中文：font_path='./fonts/simhei.ttf'		
+
+conda istall numpy
+conda remove numpy
+
+
+
+创建虚拟环境
+	conda create -n python_name python=3.5
+激活虚拟环境
+	source activate python3-tensorflow
+	activate tensorflow
+查看当前环境
+	conda env list
+进入虚拟环境
+	activate 环境
+退出环境
+	source deactivate
