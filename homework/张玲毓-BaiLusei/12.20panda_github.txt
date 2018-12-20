@@ -1,0 +1,23 @@
+for key,values in  dataframe.goupby('columns')    列表里边是个字典   可以进行迭代     key键 values值  
+
+首字母变大写    capitalize  
+
+applymap   相当于  map函数   数据依次执行applymap里边传入得函数 
+
+查看列得类型  可以使用    dataframe.info()
+
+更改数据类型   
+	pd.to_dataetime(df.columns,format = '%Y')   时间戳类型
+	
+	将某列设为索引   df.set_index('columns',drop = True)
+		drop   = True  删除原来得索引   默认为True
+		drop    = False   不删除原来得索引
+
+
+删除某列  两个方法
+	del   df['columns']   改变原数组
+
+	df.drop(columns = 'columnsx',inplace = True)    为True 时  删除columns
+						为False时  不删除columns
+
+
