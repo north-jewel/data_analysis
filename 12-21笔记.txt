@@ -1,0 +1,11 @@
+字符编码：asci,latin1(yi)
+
+画图库：sns  import seaborn as sns
+g=sns.FacetGrid(数据,col=标题,col_order=[标题顺序])
+		g.map(plt.scatter,xlabel,ylabel,alpha(透明度))
+		plt.scatter(x,y)
+		
+去重：
+	df.drop_duplicates() 去掉重复的值df
+	df[列名].unique()  返回去掉重复值后ndarray
+	
