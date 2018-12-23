@@ -1,0 +1,62 @@
+查看数据是否为空值：
+	pd.notnull()   
+	pd.isnull()
+	
+查看数据：
+	df.head()   查看前五行
+	df.tail()   查看后五行
+	
+数据排序：
+	ascending = True/False 升序排序的开关
+	Series: s.sort_index() 按索引
+			s.sort_value() 按值
+			
+	DataFrame：
+		df.sort_index() 按索引
+			axis 按指定轴的索引 0为x轴上的索引  1为y轴上的索引
+		df.sort_value() 按值	
+			by   按指定列的值 可传列表 
+		df.nlargest(n，列名)  根据列的值进行降序排序 并返回前n行
+			
+any()、all()：
+	pd.Series([True,False]).any() 有任何一个为True就返回True
+	pd.Series([True,False]).all() 所有的为True才返回True
+	
+query()：
+	仅适用于DataFrame类型
+	df.query(条件) 根据条件查询 条件为字符串类型
+	
+更改索引：
+
+	直接进行赋值(直接在原数据上更改)
+		df.columns=[]  df.index=[]
+		
+	rename函数(不改变原数据,使用inplace参数可以在原数据上更改)
+		df.raname(columns={原:改为})
+		
+	set_axis函数(不改变原数据,使用inplace参数可以在原数据上更改)
+		df.set_axis([改为],axis='columns/index',inplace=False)
+		inplace为必传参数
+
+drop：
+	删除重复元素的行
+	df.drop_duplicates('a',keep='first',inplace)
+		去除a列的重复元素,保留第一次出现的行,inplace是否在原数据上
+	
+	删除空值的行
+	df.dropna(how='any/all')
+		any任何一个为空删除,all全部为空才删除
+	
+	删除某一行
+	df.drop(标签,axis)
+		删除某一列或某一行 axis：0删除行,1删除列
+	
+索引：
+	df.loc[df['A']>3,['A','C']]
+		A，C两列大于3的数
+		
+
+		
+			
+
+	
