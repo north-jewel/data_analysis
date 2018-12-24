@@ -70,7 +70,7 @@ class WIWJ:
         self.headers = { 'User-Agent':'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 '}
     def Page_url(self):
         page_url_list = []
-        for i in range(1,self.sum):
+        for i in range(7,self.sum):
             page_url ='https://bj.5i5j.com/zufang/n{}/'.format(i)
             page_url_list.append(page_url)
         return page_url_list
@@ -78,49 +78,68 @@ class WIWJ:
         UA = dict({'User-Agent': np.random.choice(self.list_ua, 1)[0]})
         return UA
     def Cycl(self,a,b):
-        global S_S
-        S_S= requests.Session()
-        single_info = S_S.get(a,headers=self.Ua()).text
+        self.b= requests.Session()
+        print(a,5555555555555555)
+        single_info = self.b.get(a,headers=self.Ua()).text
         fake_url_F = re.findall('<p><b>URL : </b><span>(.*?)</span></p>',single_info)
-        #print(fake_url_F,000)
         if fake_url_F == []:
             fake_url = re.findall("<script>window.location.href='(.*?)';</script>", single_info)
         else:
-            fake_info = S_S.get(fake_url_F[0],headers=self.Ua()).text
+            print(single_info,9999999999999999999)
+            fake_info = self.b.get(fake_url_F[0],headers=self.Ua()).text
             fake_url = re.findall("<script>window.location.href='(.*?)';</script>",fake_info)
             if fake_url == []:
-                fake_urll = a
-                ckk = S_S.get(a, headers=self.Ua()).text
-                print(ckk)
-                fake_url = re.findall('<p><b>URL : </b><span>(.*?)</span></p>', ckk)
-                if fake_url==[]:
-                    fake_url = re.findall("<script>window.location.href='(.*?)';</script>",ckk)
-                print(fake_url,5555555)
-        #print(a,1111111,fake_url_F,222222,fake_url)
+                fake_url = re.findall('<p><b>URL : </b><span>(.*?)</span></p>', fake_info)
+                aaa =self.b.get(fake_url[0],self.Ua()).text
+                fake_url = re.findall("<script>window.location.href='(.*?)';</script>",aaa)
+        print('46848516848948964869')
+        print(fake_url,5999999999999555555555522222222)
         return fake_url
     def Single(self):
         url =self.Page_url()
         for i,ii in enumerate(url):
-
+                ss = requests.Session()
                 print('正在爬取第：' + str(i + 1) + '页')
                 real_url = self.Cycl(ii,i)[0]
                 print(real_url,44444444444)
-                real_info = S_S.get(real_url, headers=self.Ua()).text
-                soup = BeautifulSoup(real_info, 'html.parser')
-                house_name_list = soup.find(class_='pList')
-                if house_name_list == []:
-                    print(real_url,333333333)
-                    continue
+                real_info = ss.get(real_url, headers=self.Ua()).text
+                soup1 = BeautifulSoup(real_info, 'html.parser')
+                house_name_list = soup1.find(class_='pList')
+                if house_name_list == None:
+                    print(1111111111111111111111111111111111111111111)
+                    fake_url = re.findall("<script>window.location.href='(.*?)';</script>",real_info)
+                    if fake_url ==[]:
+                        print(222222222222222222222222222)
+                        fake_url = re.findall("<p><b>URL : </b><span>(.*?)</span></p>", real_info)
+                    real_info = ss.get(fake_url[0], headers=self.Ua()).text
+                    soup2 = BeautifulSoup(real_info, 'html.parser')
+                    house_name_list = soup2.find(class_='pList')
+                    if house_name_list ==None:
+                        print(5555666666666611111111111111)
+                        fake_url_1 = re.findall("<script>window.location.href='(.*?)';</script>",soup)
+                        soup3 = BeautifulSoup(real_info, 'html.parser')
+                        house_name_list = soup3.find(class_='pList')
                 house_name_li = house_name_list.find_all(class_='listTit')
 
                 for ck,dk in enumerate(house_name_li):
+                    s_s = requests.Session()
                     print('正在抓取第：'+str(ck+1)+'个')
                     house_url = 'https://bj.5i5j.com'+dk.find('a').get('href')
+                    print(house_url,6666666666)
                     houskeyword = dk.find('a').text
                     real_url_2 = self.Cycl(house_url,ck)[0]
-                    real_info_2 = S_S.get(real_url_2,headers=self.Ua()).text
+                    print(real_url_2,77777777)
+                    real_info_2 = s_s.get(real_url_2,headers=self.Ua()).text
                     soup2 = BeautifulSoup(real_info_2,'html.parser')
                     renting_info = soup2.find_all(class_='jlinfo')
+                    if renting_info == None:
+                        print(2222222222222)
+                        xx_url = fake_url = re.findall("<script>window.location.href='(.*?)';</script>", real_info_2)[0]
+                        real_info_2 = s_s.get(xx_url, headers=self.Ua()).text
+                        soup2 = BeautifulSoup(real_info_2, 'html.parser')
+                        renting_info = soup2.find_all(class_='jlinfo')
+                        print(real_info_2,8888888888)
+                    print(3333333333333333333333)
                     try:
                         rent = renting_info[0].text                     #租金
                         housetype = renting_info[1].text                #户型
@@ -136,7 +155,6 @@ class WIWJ:
                         building_info = soup2.find(class_='zushous')
                         detail_info=re.findall('</span>(.*?)</li>',str(building_info))
                         district =re.findall('[\u4E00-\u9FA5]+',str(detail_info[0]))[0]#小区
-
                         tage =detail_info[1]            #楼层
                         orientation = detail_info[2]    #朝向
                         decoration = detail_info[3]     #装修
@@ -158,17 +176,18 @@ class WIWJ:
                         developers = np.nan
                         if '开发商' in developers_l:
                             developers=str(developers_l).replace('开发商','')         #开发商
-                        a = np.array([houskeyword,rent,housetype,area,payment,district,tage,orientation,decoration,towertype,heating,rentway,looktime,tradingarea,metor,str(housingfacilities_list),record_recently,record_week,record_month,developers])
+                        a = np.array([houskeyword,rent,housetype,area,payment,district,tage,orientation,decoration,towertype,heating,rentway,looktime,tradingarea,metor,str(housingfacilities_list),record_recently,record_week,record_month,developers,real_url_2])
                         print(a)
+                        print(888888888888888888888888888888888885555555555555555555555555555555555)
                         df = pd.DataFrame(a).T
                         df.to_csv('woaiwojia_test.csv', mode='a', index=False, header=None, encoding='gbk')
 
                     except:
-                        print(renting_info)
+                        pass
                     else:
                         print(111111111)
 
 
 if __name__ == '__main__':
-    a = WIWJ(10)
+    a = WIWJ(20)
     print(a.Single())
